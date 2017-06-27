@@ -1,0 +1,54 @@
+﻿body {
+}
+
+.row {
+    margin-top : 30px;
+
+}
+.event-container {
+    width:350px;
+}
+.event-image-div {
+    width: 350px;
+    height: 200px;
+}
+
+.event-image {
+    align-content:center;
+    max-width:100%;
+    height:200px;
+    width: auto;
+}
+
+.event-container{
+    box-shadow: 3px 3px 16px grey;
+}
+
+.event-desc-date {
+    font-size: 14px;
+    color: gray;
+}
+
+.event-desc-title {
+    font-size: 24px;
+}
+
+.event-desc-location {
+    
+    font-size: 16px;
+    color: gray;
+    border-bottom: 1px solid gray;
+}
+
+.event-desc-category {
+    font-size: 14px;
+    color: gray;
+}
+
+.event-desc-category:hover {
+    color: cadetblue;
+}
+
+.event-desc-div {
+    margin-left: 5px;
+}

@@ -1,6 +1,9 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="EventManagementSystem.Login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/MainPage.Master" CodeBehind="Login.aspx.cs" Inherits="EventManagementSystem.Login" %>
 
-<!DOCTYPE html>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <!DOCTYPE html>
+
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -55,3 +58,4 @@
 
 </body>
 </html>
+</asp:Content>

@@ -79,6 +79,7 @@
     <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
     <Content Include="bin\roslyn\vbc.exe" />
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="CheckAvailability.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Event.aspx" />
     <Content Include="Homepage.aspx" />
@@ -109,13 +110,22 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Login.aspx" />
+    <Content Include="RigistrationForm.aspx" />
     <Content Include="Scripts\Event.css" />
     <Content Include="Scripts\Homepage.css" />
     <Content Include="Scripts\Login.css" />
     <Content Include="Scripts\Navigation.css" />
+    <Content Include="Scripts\RegistrationForm.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CheckAvailability.aspx.cs">
+      <DependentUpon>CheckAvailability.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckAvailability.aspx.designer.cs">
+      <DependentUpon>CheckAvailability.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -155,6 +165,13 @@
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RigistrationForm.aspx.cs">
+      <DependentUpon>RigistrationForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RigistrationForm.aspx.designer.cs">
+      <DependentUpon>RigistrationForm.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="obj\Debug\TempPE\" />

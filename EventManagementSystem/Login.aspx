@@ -26,7 +26,7 @@
             <div class="login-div">
                 <label>Login</label>
             </div>
-            <form class="form-horizontal">
+            <div class="form-horizontal">
 
 
                 <div class="form-group">
@@ -48,7 +48,7 @@
                         <button type="submit" class="btn btn-default">Submit</button>
                     </div>
                 </div>
-            </form>
+            </div>
             <div class="login-div">
                 <asp:HyperLink ID="HyperLink1" runat="server">Don't have an account? Sign up!</asp:HyperLink>
             </div>

@@ -12,11 +12,12 @@ namespace EventManagementSystem
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void datetimepicker_TextChanged(object sender, EventArgs e)
         {
+            
             String validation = datetimepicker.Text.ToString();
             DateTime parsed;
             bool valid = DateTime.TryParseExact(validation, "dd-MM-yyyy",
@@ -33,5 +34,10 @@ namespace EventManagementSystem
             }
                 //datetimepicker.Attributes.Remove("disabled");
             }
+
+        protected void ddlVenue_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
+    }
     }

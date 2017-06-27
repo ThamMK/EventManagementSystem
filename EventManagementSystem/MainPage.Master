@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainPage.master.cs" Inherits="EventManagementSystem.MainPage" %>
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="Scripts/Navigation.css" rel="stylesheet" type="text/css" />
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="nav">
+            <div id="nav_wrapper">
+            <ul id="nav-ul">
+                <li><asp:HyperLink runat="server">Home</asp:HyperLink></li>
+                <li><asp:HyperLink runat="server">About Us</asp:HyperLink></li>
+                <li><asp:HyperLink runat="server">My Account</asp:HyperLink>
+                    <ul>
+                        <li><asp:HyperLink runat="server">My Event</asp:HyperLink></li>
+                        <li><asp:HyperLink runat="server">Create Event</asp:HyperLink></li>
+                    </ul>
+                </li>
+                <li><asp:HyperLink runat="server">Contact</asp:HyperLink></li>
+            </ul>
+            </div>
+            <div style="float:right">
+                <asp:Button runat="server" CommandName="LogIn" />
+            </div>
+        </div>
+
+    </form>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+</body>
+</html>

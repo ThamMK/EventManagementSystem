@@ -30,8 +30,7 @@
             </div>
             <div class="form-group">
                 <asp:label runat="server" ID="lbldob">Date of Birth</asp:label>
-                <asp:DropDownList ID="DropDownListYear" runat="server" OnSelectedIndexChanged="DropDownList3_SelectedIndexChanged" AutoPostBack="True">
-                    <asp:ListItem></asp:ListItem>
+                <asp:DropDownList ID="DropDownListYear" runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownListYear_SelectedIndexChanged">
                 </asp:DropDownList>
                 <asp:DropDownList ID="DropDownListMonth" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" AutoPostBack="True" >
                     <asp:ListItem>January</asp:ListItem>
@@ -51,73 +50,31 @@
                 </asp:DropDownList>
             </div>
             <div class="form-group">
-                <label for="country" class="col-sm-3 control-label">Country</label>
-                <div class="col-sm-9">
-                    <select id="country" class="form-control">
-                        <option>Afghanistan</option>
-                        <option>Bahamas</option>
-                        <option>Cambodia</option>
-                        <option>Denmark</option>
-                        <option>Ecuador</option>
-                        <option>Fiji</option>
-                        <option>Gabon</option>
-                        <option>Haiti</option>
-                    </select>
-                </div>
+                <asp:label id="lblcountry" runat="server">Country</asp:label>
+                &nbsp;<asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True">
+                </asp:DropDownList>
             </div> <!-- /.form-group -->
             <div class="form-group">
-                <label class="control-label col-sm-3">Gender</label>
-                <div class="col-sm-6">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <label class="radio-inline">
-                                <input type="radio" id="femaleRadio" value="Female"/>Female
-                            </label>
-                        </div>
-                        <div class="col-sm-4">
-                            <label class="radio-inline">
-                                <input type="radio" id="maleRadio" value="Male">Male
-                            </label>
-                        </div>
-                        <div class="col-sm-4">
-                            <label class="radio-inline">
-                                <input type="radio" id="uncknownRadio" value="Unknown">Unknown
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- /.form-group -->
-            <div class="form-group">
-            <label class="control-label col-sm-3">Meal Preference</label>
-            <div class="col-sm-9">
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox" id="calorieCheckbox" value="Low calorie">Low calorie
-                    </label>
-                </div>
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox" id="saltCheckbox" value="Low salt">Low salt
-                    </label>
-                </div>
+                <asp:label id="lblGender" runat="server">Gender</asp:label>
+                <asp:RadioButtonList ID="RadioButtonList1" runat="server" RepeatColumns="2" 
+                    RepeatDirection="Vertical" RepeatLayout="Table">
+                    <asp:ListItem>Male</asp:ListItem>
+                    <asp:ListItem>Female</asp:ListItem>
+                </asp:RadioButtonList>
             </div>
-            </div> <!-- /.form-group -->
             <div class="form-group">
-                <div class="col-sm-9 col-sm-offset-3">
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox">I accept <a href="#">terms</a>
-                        </label>
-                    </div>
-                </div>
-            </div> <!-- /.form-group -->
+            <asp:label id="lblmealpreference" runat="server">Meal Preference</asp:label>
+                <asp:CheckBoxList ID="CheckBoxList1" runat="server" Width="163px">
+                    <asp:ListItem>Junk Food</asp:ListItem>
+                    <asp:ListItem>More Junk Food</asp:ListItem>
+                </asp:CheckBoxList>
+            </div> 
             <div class="form-group">
-                <div class="col-sm-9 col-sm-offset-3">
-                    <button type="submit" class="btn btn-primary btn-block">Register</button>
-                </div>
-            </div>
-               
+                <asp:CheckBox ID="CheckBox1" runat="server" Text="I had read the terms and conditions"/>
+            </div> 
+            <div class="form-group">
+                <asp:Button ID="Button1" runat="server" Text="Register" OnClick="Button1_Click" />
+            </div> 
         </form>
-        <!-- /form -->
     </body>
 </html>

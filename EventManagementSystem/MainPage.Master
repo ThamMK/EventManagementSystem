@@ -1,39 +1,78 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainPage.master.cs" Inherits="EventManagementSystem.MainPage" %>
 
-
+<link href="Scripts/Navigation.css" rel="stylesheet" type="text/css" />
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <link href="Scripts/Navigation.css" rel="stylesheet" type="text/css" />
     <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#search-button").click(function (e) {
+                e.preventDefault();
+                $('.navigation-bar').slideToggle('fast');
+                $('.search-bar').slideToggle('fast');
+            });
+            $("#exit-button").click(function (e) {
+                e.preventDefault();
+                $('.navigation-bar').slideToggle('fast');
+                $('.search-bar').slideToggle('fast');
+            });
+        });
+
+    </script>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div id="nav">
-            <div id="nav_wrapper">
-            <ul id="nav-ul">
-                <li><asp:HyperLink runat="server">Home</asp:HyperLink></li>
-                <li><asp:HyperLink runat="server">About Us</asp:HyperLink></li>
-                <li><asp:HyperLink runat="server">My Account</asp:HyperLink>
-                    <ul>
-                        <li><asp:HyperLink runat="server">My Event</asp:HyperLink></li>
-                        <li><asp:HyperLink runat="server">Create Event</asp:HyperLink></li>
-                    </ul>
-                </li>
-                <li><asp:HyperLink runat="server">Contact</asp:HyperLink></li>
-            </ul>
+
+        <div class="header">
+            <div class="search-bar">
+                <asp:Image runat="server" ImageUrl="Images/Navigation/search-button.png" id="searchIcon" />
+                <asp:TextBox runat="server" ID="seachTextbox" placeholder="Search"></asp:TextBox>
+                <input type="image" src="Images/Navigation/cross.png" id="exit-button" onmouseover="this.src='Images/Navigation/cross-blue.png'" onmouseout="this.src='Images/Navigation/cross.png'" />
             </div>
-            <div style="float:right">
-                <asp:Button runat="server" CommandName="LogIn" />
+
+            <div class="navigation-bar">
+                <div class="container">
+                    <nav>
+                        <ul class="left_ul">
+                            <li>
+                                <asp:HyperLink runat="server">Home</asp:HyperLink></li>
+                            <li>
+                                <asp:HyperLink runat="server">About Us</asp:HyperLink></li>
+                            <li>
+                                <asp:HyperLink runat="server">Contact Us</asp:HyperLink></li>
+                        </ul>
+
+                        <div class="right-side-navi">
+                            <asp:ImageButton runat="server" ImageUrl="Images/Navigation/search-button.png" id="searchButton" onmouseover="this.src='Images/Navigation/search-button-blue.png'" onmouseout="this.src='Images/Navigation/search-button.png'" />
+
+                            <ul class="right_ul">
+                                <li style="padding-top: -10px">
+                                    <asp:HyperLink runat="server">Login</asp:HyperLink></li>
+                                <li style="margin-top: -10px">
+                                    <asp:HyperLink runat="server">Sign Up</asp:HyperLink></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="seperator"></div>
+
             </div>
+
+            
         </div>
         <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
         </div>
-    </form>
 
+    </form>
 </body>
 </html>

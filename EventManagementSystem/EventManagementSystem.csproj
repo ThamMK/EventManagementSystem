@@ -91,6 +91,10 @@
     <Content Include="Images\Event\promo 1.png" />
     <Content Include="Images\Event\promo 2.png" />
     <Content Include="Images\Event\promo 3.png" />
+    <Content Include="Images\Navigation\cross-blue.png" />
+    <Content Include="Images\Navigation\cross.png" />
+    <Content Include="Images\Navigation\search-button-blue.png" />
+    <Content Include="Images\Navigation\search-button.png" />
     <Content Include="obj\Debug\EventManagementSystem.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\EventManagementSystem.dll" />
     <Content Include="obj\Debug\EventManagementSystem.pdb" />

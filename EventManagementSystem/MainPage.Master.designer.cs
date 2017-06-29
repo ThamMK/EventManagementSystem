@@ -31,15 +31,6 @@ namespace EventManagementSystem {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// searchIcon control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image searchIcon;
-        
-        /// <summary>
         /// seachTextbox control.
         /// </summary>
         /// <remarks>
@@ -47,15 +38,6 @@ namespace EventManagementSystem {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox seachTextbox;
-        
-        /// <summary>
-        /// searchButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton searchButton;
         
         /// <summary>
         /// ContentPlaceHolder1 control.

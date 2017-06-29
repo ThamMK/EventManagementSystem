@@ -9,7 +9,7 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
@@ -32,7 +32,7 @@
 
         <div class="header">
             <div class="search-bar">
-                <asp:Image runat="server" ImageUrl="Images/Navigation/search-button.png" id="searchIcon" />
+                <img src="Images/Navigation/search-button.png" id="search-icon" />
                 <asp:TextBox runat="server" ID="seachTextbox" placeholder="Search"></asp:TextBox>
                 <input type="image" src="Images/Navigation/cross.png" id="exit-button" onmouseover="this.src='Images/Navigation/cross-blue.png'" onmouseout="this.src='Images/Navigation/cross.png'" />
             </div>
@@ -50,7 +50,7 @@
                         </ul>
 
                         <div class="right-side-navi">
-                            <asp:ImageButton runat="server" ImageUrl="Images/Navigation/search-button.png" id="searchButton" onmouseover="this.src='Images/Navigation/search-button-blue.png'" onmouseout="this.src='Images/Navigation/search-button.png'" />
+                            <input type="image" src="Images/Navigation/search-button.png" id="search-button" onmouseover="this.src='Images/Navigation/search-button-blue.png'" onmouseout="this.src='Images/Navigation/search-button.png'" />
 
                             <ul class="right_ul">
                                 <li style="padding-top: -10px">

@@ -57,7 +57,7 @@ nav a:hover::before{
     width:100%;
 }
 
-#searchButton{
+#search-button{
     float:left;
     padding-top: 24px; 
     padding-right: 25px;
@@ -65,7 +65,7 @@ nav a:hover::before{
     width:18px;
 }
 
-#searchButton:focus{
+#search-button:focus{
     outline:none !important;
 }
 
@@ -88,14 +88,13 @@ nav a:hover::before{
     background-color:white;
     height:65px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    z-index:100000000000000000000;
 }
 
 .right-side-navi{
     float:right;
 }
 
-#searchIcon{
+#search-icon{
     float:left;
     padding-top: 23px; 
     padding-left: 35px;

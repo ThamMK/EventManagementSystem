@@ -26,13 +26,54 @@ namespace EventManagementSystem
                                     out parsed);
             if (valid == true)
             {
+
+                ddlTime.Items.Clear();
                 ddlVenue.Enabled = true;
+            
+                if (ddlVenue.SelectedIndex == 1)
+                {
+                    ddlVenue.Items.RemoveAt(0);
+                    ddlTime.Enabled = true;
+                    ddlTime.Items.Add("08:00 - 10:00");
+                    ddlTime.Items.Add("10:00 - 12:00");
+                    ddlTime.Items.Add("12:00 - 14:00");
+                }
+                else if (ddlVenue.SelectedIndex == 1)
+                {
+                    ddlVenue.Items.RemoveAt(0);
+                    ddlTime.Enabled = true;
+                    ddlTime.Items.Add("08:30 - 10:30");
+                    ddlTime.Items.Add("10:30 - 12:30");
+                    ddlTime.Items.Add("12:30 - 14:30");
+                }
+                else if (ddlVenue.SelectedIndex == 2)
+                {
+                    ddlVenue.Items.RemoveAt(0);
+                    ddlTime.Enabled = true;
+                    ddlTime.Items.Add("08:15 - 10:15");
+                    ddlTime.Items.Add("10:15 - 12:15");
+                    ddlTime.Items.Add("12:15 - 14:15");
+                }
+                else if (ddlVenue.SelectedIndex == 3)
+                {
+                    ddlVenue.Items.RemoveAt(0);
+                    ddlTime.Enabled = true;
+                    ddlTime.Items.Add("08:00 - 10:00");
+                    ddlTime.Items.Add("11:00 - 13:00");
+                    ddlTime.Items.Add("16:00 - 18:00");
+                }
+                else {
+                    ddlTime.Enabled = false;
+
+                }
+
             }
             else
             {
                 ddlVenue.Enabled = false;
+                ddlTime.Enabled = false;
             }
-                //datetimepicker.Attributes.Remove("disabled");
+               
             }
 
         protected void ddlVenue_SelectedIndexChanged(object sender, EventArgs e)

@@ -59,8 +59,8 @@ nav a:hover::before{
 
 #search-button{
     float:left;
-    padding-top: 24px; 
-    padding-right: 25px;
+    margin-top: 24px; 
+    margin-right: 25px;
     height:18px;
     width:18px;
 }
@@ -96,16 +96,16 @@ nav a:hover::before{
 
 #search-icon{
     float:left;
-    padding-top: 23px; 
-    padding-left: 35px;
+    margin-top: 23px; 
+    margin-left: 35px;
     height:18px;
     width:18px;
 }
 
 #exit-button{
     float:right;
-    padding-top: 23px; 
-    padding-right: 35px;
+    margin-top: 23px; 
+    margin-right: 35px;
     height:18px;
     width:18px;
 }

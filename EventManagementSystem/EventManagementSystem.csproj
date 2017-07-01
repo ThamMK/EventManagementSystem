@@ -115,6 +115,7 @@
   <ItemGroup>
     <Content Include="Login.aspx" />
     <Content Include="RigistrationForm.aspx" />
+    <Content Include="Scripts\bootstrap.css" />
     <Content Include="Scripts\Event.css" />
     <Content Include="Scripts\Homepage.css" />
     <Content Include="Scripts\Login.css" />

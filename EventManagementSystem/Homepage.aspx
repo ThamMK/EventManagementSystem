@@ -1,9 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Homepage.aspx.cs" Inherits="EventManagementSystem.Homepage" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/MainPage.Master" CodeBehind="Homepage.aspx.cs" Inherits="EventManagementSystem.Homepage" %>
 
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<head>
     <title></title>
     <link href="Scripts/Homepage.css" rel="stylesheet" />
     <!-- Latest compiled and minified CSS -->
@@ -16,7 +17,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <form id="form1" runat="server">
+    
     <div class="container">
         <div class="row">
             <div class="col-sm-4">
@@ -226,7 +227,8 @@
             </div>
             </div>
 
-
-    </form>
+        </div>
+    
 </body>
 </html>
+</asp:Content>

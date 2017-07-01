@@ -1,6 +1,6 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainPage.master.cs" Inherits="EventManagementSystem.MainPage" %>
 
-<link href="Scripts/Navigation.css" rel="stylesheet" type="text/css" />
+
 
 <!DOCTYPE html>
 
@@ -9,6 +9,13 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+
+        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link href="Scripts/bootstrap.css" rel="stylesheet" />
+
+    <link href="Scripts/Navigation.css" rel="stylesheet" type="text/css" />
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
     <script type="text/javascript">
@@ -50,8 +57,7 @@
                         </ul>
 
                         <div class="right-side-navi">
-                            <input type="image" src="Images/Navigation/search-button.png" id="search-button" onmouseover="this.src='Images/Navigation/search-button-blue.png'" onmouseout="this.src='Images/Navigation/search-button.png'" />
-
+                            <img src="Images/Navigation/search-button.png" id="search-button" onmouseover="this.src='Images/Navigation/search-button-blue.png'" onmouseout="this.src='Images/Navigation/search-button.png'" />
                             <ul class="right_ul">
                                 <li style="padding-top: -10px">
                                     <asp:HyperLink runat="server">Login</asp:HyperLink></li>

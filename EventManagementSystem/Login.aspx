@@ -57,7 +57,7 @@
                         </div>
                     </div>
                     <div class="login-div">
-                        <a class="no-account-signup" id="ContentPlaceHolder1_HyperLink1">Don't have an account? Sign up!</a>
+                        <asp:HyperLink runat="server" CssClass="no-account-signup" Text="Don't have an account? Sign up!"></asp:HyperLink>
                     </div>
             </div>
         </div>

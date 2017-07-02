@@ -59,12 +59,8 @@
                     <div class="login-div">
                         <a class="no-account-signup" id="ContentPlaceHolder1_HyperLink1">Don't have an account? Sign up!</a>
                     </div>
-
             </div>
-
         </div>
-
-
     </body>
     </html>
 </asp:Content>

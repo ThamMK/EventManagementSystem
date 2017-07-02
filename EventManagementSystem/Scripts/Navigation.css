@@ -47,7 +47,7 @@ nav a:before{
     width:100%;
     background-color:deepskyblue;
     position: absolute;
-    bottom:-23px;
+    bottom:-19px;
     width:0%;
 
     transition:all ease-in-out 250ms;

@@ -49,20 +49,20 @@
                     <nav>
                         <ul class="left_ul">
                             <li>
-                                <asp:HyperLink runat="server">Home</asp:HyperLink></li>
+                                <asp:HyperLink runat="server" style="text-decoration:none">Home</asp:HyperLink></li>
                             <li>
-                                <asp:HyperLink runat="server">About Us</asp:HyperLink></li>
+                                <asp:HyperLink runat="server" style="text-decoration:none">About Us</asp:HyperLink></li>
                             <li>
-                                <asp:HyperLink runat="server">Contact Us</asp:HyperLink></li>
+                                <asp:HyperLink runat="server" style="text-decoration:none">Contact Us</asp:HyperLink></li>
                         </ul>
 
                         <div class="right-side-navi">
                             <img src="Images/Navigation/search-button.png" id="search-button" onmouseover="this.src='Images/Navigation/search-button-blue.png'" onmouseout="this.src='Images/Navigation/search-button.png'" />
                             <ul class="right_ul">
                                 <li style="padding-top: -10px">
-                                    <asp:HyperLink runat="server">Login</asp:HyperLink></li>
+                                    <asp:HyperLink runat="server" style="text-decoration:none">Login</asp:HyperLink></li>
                                 <li style="margin-top: -10px">
-                                    <asp:HyperLink runat="server">Sign Up</asp:HyperLink></li>
+                                    <asp:HyperLink runat="server" style="text-decoration:none">Sign Up</asp:HyperLink></li>
                             </ul>
                         </div>
                     </nav>

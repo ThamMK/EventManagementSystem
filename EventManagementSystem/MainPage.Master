@@ -56,6 +56,10 @@
                                 <asp:HyperLink runat="server" style="text-decoration:none">Contact Us</asp:HyperLink></li>
                         </ul>
 
+                        <div class="logo_div">
+                            <img src="Images/Navigation/logo.png" id="logo" />
+                        </div>
+
                         <div class="right-side-navi">
                             <img src="Images/Navigation/search-button.png" id="search-button" onmouseover="this.src='Images/Navigation/search-button-blue.png'" onmouseout="this.src='Images/Navigation/search-button.png'" />
                             <ul class="right_ul">

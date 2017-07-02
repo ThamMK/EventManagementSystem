@@ -128,3 +128,11 @@ nav a:hover::before{
     outline:none !important;
 }
 
+#logo{
+    float:left;
+    margin-left:150px;
+    margin-top:7px;
+    height:55px;
+    width:180px;
+}
+

@@ -96,6 +96,7 @@
     <Content Include="Images\Login\password-icon.png" />
     <Content Include="Images\Navigation\cross-blue.png" />
     <Content Include="Images\Navigation\cross.png" />
+    <Content Include="Images\Navigation\logo.png" />
     <Content Include="Images\Navigation\search-button-blue.png" />
     <Content Include="Images\Navigation\search-button.png" />
     <Content Include="obj\Debug\EventManagementSystem.csproj.FileListAbsolute.txt" />

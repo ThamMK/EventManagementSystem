@@ -2,60 +2,69 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-<!DOCTYPE html>
+    <!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>
+        <link href="Scripts/Login.css" rel="stylesheet" />
+    </head>
+    <body>
 
+        <div id="background">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title></title>
-    <link href="Scripts/Login.css" rel="stylesheet" />
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+            <div id="left-login-panel">
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                <div id="not-member">NOT A MEMBER ?</div>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
-
-
-    <div id="background">
-        <div id="login">
-            <div class="login-div">
-                <label>Login</label>
-            </div>
-            <div class="form-horizontal">
-
-
-                <div class="form-group">
-
-                    <label class="control-label col-sm-2" for="email">Email</label>
-                    <div class="col-sm-10">
-                        <input type="email" class="form-control" id="email" placeholder="Enter email" />
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="control-label col-sm-2" for="pwd">Password</label>
-                    <div class="col-sm-10">
-                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" />
-                    </div>
+                <div id="not-member-content">
+                    <p>
+                        Register now to become the member of TAR2DAY. Membership of TAR2DAY<br>
+                        offers variety of benefits to register for college events and create event for<br>
+                        advertising. Click on the button below to sign up now.
+                    </p>
                 </div>
 
-                <div class="form-group">
-                    <div class="col-sm-2 col-sm-10">
-                        <button type="submit" class="btn btn-default">Submit</button>
+                <asp:Button runat="server" CssClass="login-signup-button" Height="50px" Width="350px" Text="Sign Up" />
+            </div>
+
+            <div id="login">
+
+                    <div class="login-div">
+                        <label>Login</label>
                     </div>
-                </div>
+
+
+                    <div class="form-horizontal">
+                        <div class="email-input">
+                            <div id="email-icon">
+                                <img style="width:22px;height:22px;margin-top:11px;margin-left:11px;" src="Images/Login/email-icon.png" />
+                            </div>
+                            <input id="email" type="email" placeholder="Email" />
+                        </div>
+
+                        <div class="password-input">
+                            <div id="password-icon">
+                                <img style="width:22px;height:22px;margin-top:11px;margin-left:11px;" src="Images/Login/password-icon.png" />
+                            </div>
+                            <input id="pwd" type="password" placeholder="Password" />
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="login-button">
+                                <button id="btn-submit" type="submit">Log In</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login-div">
+                        <a class="no-account-signup" id="ContentPlaceHolder1_HyperLink1">Don't have an account? Sign up!</a>
+                    </div>
+
             </div>
-            <div class="login-div">
-                <asp:HyperLink ID="HyperLink1" runat="server">Don't have an account? Sign up!</asp:HyperLink>
-            </div>
+
         </div>
-    </div>
 
 
-</body>
-</html>
+    </body>
+    </html>
 </asp:Content>

@@ -91,6 +91,9 @@
     <Content Include="Images\Event\promo 1.png" />
     <Content Include="Images\Event\promo 2.png" />
     <Content Include="Images\Event\promo 3.png" />
+    <Content Include="Images\Login\email-icon.png" />
+    <Content Include="Images\Login\login.jpg" />
+    <Content Include="Images\Login\password-icon.png" />
     <Content Include="Images\Navigation\cross-blue.png" />
     <Content Include="Images\Navigation\cross.png" />
     <Content Include="Images\Navigation\search-button-blue.png" />

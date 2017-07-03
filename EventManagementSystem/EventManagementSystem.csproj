@@ -82,6 +82,7 @@
     <Content Include="CheckAvailability.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Event.aspx" />
+    <Content Include="EventDetail.aspx" />
     <Content Include="Homepage.aspx" />
     <Content Include="Images\Event\event1.PNG" />
     <Content Include="Images\Event\event2.PNG" />
@@ -117,6 +118,7 @@
     <Content Include="RigistrationForm.aspx" />
     <Content Include="Scripts\bootstrap.css" />
     <Content Include="Scripts\Event.css" />
+    <Content Include="Scripts\EventDetail.css" />
     <Content Include="Scripts\Homepage.css" />
     <Content Include="Scripts\Login.css" />
     <Content Include="Scripts\Navigation.css" />
@@ -144,6 +146,13 @@
     </Compile>
     <Compile Include="Event.aspx.designer.cs">
       <DependentUpon>Event.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EventDetail.aspx.cs">
+      <DependentUpon>EventDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventDetail.aspx.designer.cs">
+      <DependentUpon>EventDetail.aspx</DependentUpon>
     </Compile>
     <Compile Include="Homepage.aspx.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>

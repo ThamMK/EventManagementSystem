@@ -47,7 +47,7 @@ nav a:before{
     width:100%;
     background-color:deepskyblue;
     position: absolute;
-    bottom:-24px;
+    bottom:-19px;
     width:0%;
 
     transition:all ease-in-out 250ms;
@@ -126,5 +126,13 @@ nav a:hover::before{
 #seachTextbox:focus{
     border:none;
     outline:none !important;
+}
+
+#logo{
+    float:left;
+    margin-left:150px;
+    margin-top:7px;
+    height:55px;
+    width:180px;
 }
 

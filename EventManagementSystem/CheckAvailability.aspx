@@ -19,6 +19,7 @@
 <body>
         <div class="container">
                 <div class='col-sm-6'>
+                    
                     <asp:TextBox ID="datetimepicker" class="datetimepicker" runat="server" placeholder="dd-mm-yyyy" OnTextChanged="datetimepicker_TextChanged" AutoPostBack="True" ></asp:TextBox>
                     <asp:Label ID="lblTest" runat="server" Text=""></asp:Label>
                     <asp:DropDownList ID="ddlVenue" runat="server" Enabled ="false" AutoPostBack="True" OnSelectedIndexChanged="ddlVenue_SelectedIndexChanged">
@@ -34,6 +35,7 @@
                         <asp:ListItem>10:00-12:00</asp:ListItem>
                         <asp:ListItem>12:00 - 14:00</asp:ListItem>
                     </asp:DropDownList>
+                    <asp:Label ID="txt" runat="server" Text=""></asp:Label>
             </div>
         </div>
 </body>

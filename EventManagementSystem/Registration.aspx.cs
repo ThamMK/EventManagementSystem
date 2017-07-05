@@ -7,25 +7,25 @@ using System.Web.UI.WebControls;
 
 namespace EventManagementSystem
 {
-    public partial class RigistrationForm : System.Web.UI.Page
+    public partial class Registration : System.Web.UI.Page
     {
         int day_max_value = 31;
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
-            { 
+            {
                 SetupYear();
                 SetupDate();
-            }   
+            }
         }
 
-        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        protected void DropDownListMonth_SelectedIndexChanged(object sender, EventArgs e)
         {
             SetupMaxDate();
             SetupDate();
         }
 
-        
+
 
         protected void DropDownListYear_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -34,7 +34,7 @@ namespace EventManagementSystem
         }
 
         protected void DropDownList2_SelectedIndexChanged(object sender, EventArgs e)
-        { 
+        {
         }
 
         public void SetupMaxDate()
@@ -61,7 +61,7 @@ namespace EventManagementSystem
         {
             int maxDayLimit = day_max_value;
             DropDownListDay.Items.Clear();
-            for(int x = 1; x <= maxDayLimit; x++)
+            for (int x = 1; x <= maxDayLimit; x++)
             {
                 DropDownListDay.Items.Add(x.ToString());
             }
@@ -71,7 +71,7 @@ namespace EventManagementSystem
         {
             int currYear = DateTime.Now.Year;
             DropDownListYear.Items.Clear();
-            for (int x = currYear-100;x <= currYear; x++)
+            for (int x = currYear - 100; x <= currYear; x++)
             {
                 DropDownListYear.Items.Add(x.ToString());
             }

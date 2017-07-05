@@ -18,8 +18,8 @@
 
                 <div id="not-member-content">
                     <p>
-                        Register now to become the member of TAR2DAY. Membership of TAR2DAY<br>
-                        offers variety of benefits to register for college events and create event for<br>
+                        Register now to become the member of TAR2DAY. Membership of TAR2DAY<br />
+                        offers variety of benefits to register for college events and create event for<br />
                         advertising. Click on the button below to sign up now.
                     </p>
                 </div>

@@ -83,7 +83,22 @@
     <Content Include="CreateEvent.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Event.aspx" />
+    <Content Include="EventDetail.aspx" />
     <Content Include="Homepage.aspx" />
+    <Content Include="Images\Categories\Background\business.jpg" />
+    <Content Include="Images\Categories\Background\food.jpg" />
+    <Content Include="Images\Categories\Background\meetup.jpg" />
+    <Content Include="Images\Categories\Background\music.jpg" />
+    <Content Include="Images\Categories\Background\outdoor.jpg" />
+    <Content Include="Images\Categories\Background\technology.jpg" />
+    <Content Include="Images\Categories\business.png" />
+    <Content Include="Images\Categories\food.png" />
+    <Content Include="Images\Categories\music.png" />
+    <Content Include="Images\Categories\outdoor.png" />
+    <Content Include="Images\Categories\Background\seminar.jpg" />
+    <Content Include="Images\Categories\seminar.png" />
+    <Content Include="Images\Categories\social.png" />
+    <Content Include="Images\Categories\technology.png" />
     <Content Include="Images\Event\event1.PNG" />
     <Content Include="Images\Event\event2.PNG" />
     <Content Include="Images\Event\event3.PNG" />
@@ -119,10 +134,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Login.aspx" />
-    <Content Include="RigistrationForm.aspx" />
+    <Content Include="Registration.aspx" />
     <Content Include="Scripts\bootstrap.css" />
     <Content Include="Scripts\CreateEvent.css" />
     <Content Include="Scripts\Event.css" />
+    <Content Include="Scripts\EventDetail.css" />
     <Content Include="Scripts\Homepage.css" />
     <Content Include="Scripts\Login.css" />
     <Content Include="Scripts\Navigation.css" />
@@ -158,6 +174,13 @@
     <Compile Include="Event.aspx.designer.cs">
       <DependentUpon>Event.aspx</DependentUpon>
     </Compile>
+    <Compile Include="EventDetail.aspx.cs">
+      <DependentUpon>EventDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventDetail.aspx.designer.cs">
+      <DependentUpon>EventDetail.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Homepage.aspx.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -183,12 +206,12 @@
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RigistrationForm.aspx.cs">
-      <DependentUpon>RigistrationForm.aspx</DependentUpon>
+    <Compile Include="Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="RigistrationForm.aspx.designer.cs">
-      <DependentUpon>RigistrationForm.aspx</DependentUpon>
+    <Compile Include="Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

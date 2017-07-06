@@ -26,46 +26,42 @@ namespace EventManagementSystem
                                     out parsed);
             if (valid == true)
             {
-                ddlTime.Items.Clear();
                 ddlVenue.Enabled = true;
-            
-                if (ddlVenue.SelectedIndex == 1)
+
+                if (ddlVenue.SelectedItem.Value.Equals("1"))
                 {
-                    txt.Text = ddlVenue.SelectedIndex+"";
-                    ddlVenue.Items.RemoveAt(0);
+                    ddlVenue.Items.Remove(ddlVenue.Items.FindByText("Venue"));
                     ddlTime.Enabled = true;
                     ddlTime.Items.Add("08:00 - 10:00");
                     ddlTime.Items.Add("10:00 - 12:00");
                     ddlTime.Items.Add("12:00 - 14:00");
                 }
-                else if (ddlVenue.SelectedIndex == 1)
+                else if (ddlVenue.SelectedItem.Value.Equals("2"))
                 {
-                    txt.Text = ddlVenue.SelectedIndex + "";
-                    ddlVenue.Items.RemoveAt(0);
+                    ddlVenue.Items.Remove(ddlVenue.Items.FindByText("Venue"));
                     ddlTime.Enabled = true;
                     ddlTime.Items.Add("08:30 - 10:30");
                     ddlTime.Items.Add("10:30 - 12:30");
                     ddlTime.Items.Add("12:30 - 14:30");
                 }
-                else if (ddlVenue.SelectedIndex == 2)
+                else if (ddlVenue.SelectedItem.Value.Equals("3"))
                 {
-                    txt.Text = ddlVenue.SelectedIndex + "";
-                    ddlVenue.Items.RemoveAt(0);
+                    ddlVenue.Items.Remove(ddlVenue.Items.FindByText("Venue"));
                     ddlTime.Enabled = true;
                     ddlTime.Items.Add("08:15 - 10:15");
                     ddlTime.Items.Add("10:15 - 12:15");
                     ddlTime.Items.Add("12:15 - 14:15");
                 }
-                else if (ddlVenue.SelectedIndex == 3)
+                else if (ddlVenue.SelectedItem.Value.Equals("4"))
                 {
-                    txt.Text = ddlVenue.SelectedIndex + "";
-                    ddlVenue.Items.RemoveAt(0);
+                    ddlVenue.Items.Remove(ddlVenue.Items.FindByText("Venue"));
                     ddlTime.Enabled = true;
                     ddlTime.Items.Add("08:00 - 10:00");
                     ddlTime.Items.Add("11:00 - 13:00");
                     ddlTime.Items.Add("16:00 - 18:00");
                 }
-                else {
+                else
+                {
                     ddlTime.Enabled = false;
 
                 }
@@ -92,37 +88,33 @@ namespace EventManagementSystem
                 ddlTime.Items.Clear();
                 ddlVenue.Enabled = true;
 
-                if (ddlVenue.SelectedIndex == 1)
+                if (ddlVenue.SelectedItem.Value.Equals("1"))
                 {
-                    txt.Text = ddlVenue.SelectedIndex + "";
-                    ddlVenue.Items.Remove("Venue");
+                    ddlVenue.Items.Remove(ddlVenue.Items.FindByText("Venue"));
                     ddlTime.Enabled = true;
                     ddlTime.Items.Add("08:00 - 10:00");
                     ddlTime.Items.Add("10:00 - 12:00");
                     ddlTime.Items.Add("12:00 - 14:00");
                 }
-                else if (ddlVenue.SelectedIndex == 1)
+                else if (ddlVenue.SelectedItem.Value.Equals("2"))
                 {
-                    txt.Text = ddlVenue.SelectedIndex + "";
-                    ddlVenue.Items.Remove("Venue");
+                    ddlVenue.Items.Remove(ddlVenue.Items.FindByText("Venue"));
                     ddlTime.Enabled = true;
                     ddlTime.Items.Add("08:30 - 10:30");
                     ddlTime.Items.Add("10:30 - 12:30");
                     ddlTime.Items.Add("12:30 - 14:30");
                 }
-                else if (ddlVenue.SelectedIndex == 2)
+                else if (ddlVenue.SelectedItem.Value.Equals("3"))
                 {
-                    txt.Text = ddlVenue.SelectedIndex + "";
-                    ddlVenue.Items.Remove("Venue");
+                    ddlVenue.Items.Remove(ddlVenue.Items.FindByText("Venue"));
                     ddlTime.Enabled = true;
                     ddlTime.Items.Add("08:15 - 10:15");
                     ddlTime.Items.Add("10:15 - 12:15");
                     ddlTime.Items.Add("12:15 - 14:15");
                 }
-                else if (ddlVenue.SelectedIndex == 3)
+                else if (ddlVenue.SelectedItem.Value.Equals("4"))
                 {
-                    txt.Text = ddlVenue.SelectedIndex + "";
-                    ddlVenue.Items.Remove("Venue");
+                    ddlVenue.Items.Remove(ddlVenue.Items.FindByText("Venue"));
                     ddlTime.Enabled = true;
                     ddlTime.Items.Add("08:00 - 10:00");
                     ddlTime.Items.Add("11:00 - 13:00");

@@ -7,6 +7,7 @@
 <head>
     <title></title>
         <!-- Latest compiled and minified CSS -->
+    <link href="Scripts/Event.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 
     <!-- jQuery library -->
@@ -22,20 +23,16 @@
         <div class="container">
                 <div class='col-sm-6'>
                     
-                    <asp:TextBox ID="datetimepicker" class="datetimepicker" runat="server" placeholder="dd-mm-yyyy" OnTextChanged="datetimepicker_TextChanged" AutoPostBack="True" ></asp:TextBox>
-                    <asp:Label ID="lblTest" runat="server" Text=""></asp:Label>
+                    <asp:TextBox ID="datetimepicker" Cssclass="dateTextBox"   runat="server" placeholder="dd-mm-yyyy" OnTextChanged="datetimepicker_TextChanged" AutoPostBack="True" ></asp:TextBox>
                     <asp:DropDownList ID="ddlVenue" runat="server" Enabled ="false" AutoPostBack="True" OnSelectedIndexChanged="ddlVenue_SelectedIndexChanged">
-                        <asp:ListItem Selected="True" Value="0" >Venue</asp:ListItem>
-                        <asp:ListItem>Yum Yum</asp:ListItem>
-                        <asp:ListItem>Sport Complex</asp:ListItem>
-                        <asp:ListItem>Red Brick</asp:ListItem>
-                        <asp:ListItem>Toilet</asp:ListItem>
+                        <asp:ListItem Value="" Text="Venue" ></asp:ListItem>
+                        <asp:ListItem Value="1">Yum Yum</asp:ListItem>
+                        <asp:ListItem Value="2">Sport Complex</asp:ListItem>
+                        <asp:ListItem Value="3">Red Brick</asp:ListItem>
+                        <asp:ListItem Value="4">Toilet</asp:ListItem>
                     </asp:DropDownList>
                     <asp:DropDownList ID="ddlTime" runat="server" Enabled ="false" AutoPostBack="True">
-                        <asp:ListItem Text="Time"></asp:ListItem>
-                        <asp:ListItem>8:00 - 10:00</asp:ListItem>
-                        <asp:ListItem>10:00-12:00</asp:ListItem>
-                        <asp:ListItem>12:00 - 14:00</asp:ListItem>
+                        <asp:ListItem Value="" Text="Time"></asp:ListItem>
                     </asp:DropDownList>
                     <asp:Label ID="txt" runat="server" Text=""></asp:Label>
             </div>

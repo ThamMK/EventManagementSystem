@@ -80,6 +80,7 @@
     <Content Include="bin\roslyn\vbc.exe" />
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
     <Content Include="CheckAvailability.aspx" />
+    <Content Include="CreateEvent.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Event.aspx" />
     <Content Include="Homepage.aspx" />
@@ -120,6 +121,7 @@
     <Content Include="Login.aspx" />
     <Content Include="RigistrationForm.aspx" />
     <Content Include="Scripts\bootstrap.css" />
+    <Content Include="Scripts\CreateEvent.css" />
     <Content Include="Scripts\Event.css" />
     <Content Include="Scripts\Homepage.css" />
     <Content Include="Scripts\Login.css" />
@@ -134,6 +136,13 @@
     </Compile>
     <Compile Include="CheckAvailability.aspx.designer.cs">
       <DependentUpon>CheckAvailability.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateEvent.aspx.cs">
+      <DependentUpon>CreateEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateEvent.aspx.designer.cs">
+      <DependentUpon>CreateEvent.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

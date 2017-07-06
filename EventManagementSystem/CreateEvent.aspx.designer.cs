@@ -31,13 +31,13 @@ namespace EventManagementSystem {
         protected global::System.Web.UI.WebControls.Label lblEventTitle;
         
         /// <summary>
-        /// txtEventDetail control.
+        /// txtEventTitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEventDetail;
+        protected global::System.Web.UI.WebControls.TextBox txtEventTitle;
         
         /// <summary>
         /// lblLocation control.
@@ -76,13 +76,13 @@ namespace EventManagementSystem {
         protected global::System.Web.UI.WebControls.TextBox startdatetimepicker;
         
         /// <summary>
-        /// ddlTime control.
+        /// ddlStartTime control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlTime;
+        protected global::System.Web.UI.WebControls.DropDownList ddlStartTime;
         
         /// <summary>
         /// lblEnd control.
@@ -103,30 +103,138 @@ namespace EventManagementSystem {
         protected global::System.Web.UI.WebControls.TextBox enddatetimepicker;
         
         /// <summary>
-        /// DropDownList1 control.
+        /// ddlEndTime control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.DropDownList ddlEndTime;
         
         /// <summary>
-        /// lblCreateTicket control.
+        /// lblEventImage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCreateTicket;
+        protected global::System.Web.UI.WebControls.Label lblEventImage;
         
         /// <summary>
-        /// lblAdditionalSetting control.
+        /// imgAddImage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAdditionalSetting;
+        protected global::System.Web.UI.WebControls.Image imgAddImage;
+        
+        /// <summary>
+        /// lblEventDescription control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblEventDescription;
+        
+        /// <summary>
+        /// CKEditor1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::CKEditor.NET.CKEditorControl CKEditor1;
+        
+        /// <summary>
+        /// lblOrganizerDetail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblOrganizerDetail;
+        
+        /// <summary>
+        /// lblOrganizerName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblOrganizerName;
+        
+        /// <summary>
+        /// txtOrganizerName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtOrganizerName;
+        
+        /// <summary>
+        /// lblOrganizationContactNumber control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblOrganizationContactNumber;
+        
+        /// <summary>
+        /// txtOrganizationContactNumber control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtOrganizationContactNumber;
+        
+        /// <summary>
+        /// lblOrganizationEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblOrganizationEmail;
+        
+        /// <summary>
+        /// txtOrganizationEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtOrganizationEmail;
+        
+        /// <summary>
+        /// btnReset control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnReset;
+        
+        /// <summary>
+        /// btnCancel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnCancel;
+        
+        /// <summary>
+        /// btnSubmit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSubmit;
     }
 }

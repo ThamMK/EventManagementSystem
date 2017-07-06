@@ -43,6 +43,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CKEditor.NET">
+      <HintPath>D:\HCI TOOL\bin\Release\CKEditor.NET.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -99,6 +102,7 @@
     <Content Include="Images\Categories\seminar.png" />
     <Content Include="Images\Categories\social.png" />
     <Content Include="Images\Categories\technology.png" />
+    <Content Include="Images\Event\ADD_IMAGE.png" />
     <Content Include="Images\Event\event1.PNG" />
     <Content Include="Images\Event\event2.PNG" />
     <Content Include="Images\Event\event3.PNG" />

@@ -10,13 +10,14 @@
 
 #left-login-panel{
     float:left;
-    margin-left:10%;
-    margin-top:11%;
+    margin-left:8%;
+    margin-top:13%;
+    position:absolute;
 }
 
 #not-member{
     color:white;
-    font-size:380%;
+    font-size:300%;
     font-weight:bold;
 }
 
@@ -41,11 +42,12 @@
 
 #login{
     float:left;
-    margin-top:-325px;
+    margin-top:48px;
     margin-left:57%;
     width:450px;
     height:450px;
     background-color:white;
+    position:absolute;
 }
 
 .login-div label{
@@ -60,7 +62,7 @@
 }
 
 .email-input{
-    margin-top:42px;
+    margin-top:30px;
 }
 
 #email-icon{
@@ -116,7 +118,7 @@
     background-color:deepskyblue;
     border:none;
     cursor:pointer;
-    margin-top:30px;
+    margin-top:15px;
     margin-bottom:57px;
     color:white;
     font-size:16px;
@@ -130,6 +132,12 @@
 
 .login-div a{
     margin-left:125px;
+}
+
+.forget-password{
+    float:right;
+    margin-right:35px;
+    margin-top:15px;
 }
 
 

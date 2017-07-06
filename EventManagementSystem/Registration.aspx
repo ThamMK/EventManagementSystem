@@ -1,9 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="RigistrationForm.aspx.cs" Inherits="EventManagementSystem.RigistrationForm" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head runat="server">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainPage.Master" AutoEventWireup="true" CodeBehind="Registration.aspx.cs" Inherits="EventManagementSystem.Registration" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server"> 
+    
         <title></title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 
@@ -12,10 +9,13 @@
 
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        
-    </head>
+         
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    
     <body>
-        <form id="form1" runat="server">
+        
             <div class="form-group">
                 <h2>Registration Form</h2>
             </div>
@@ -44,13 +44,11 @@
                     <div class="form-group">
                     <asp:DropDownList ID="DropDownListYear" runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownListYear_SelectedIndexChanged">
                     </asp:DropDownList>
-                    <asp:DropDownList ID="DropDownListMonth" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" AutoPostBack="True">
+                    <asp:DropDownList ID="DropDownListMonth" runat="server" OnSelectedIndexChanged="DropDownListMonth_SelectedIndexChanged" AutoPostBack="True">
                         <asp:ListItem>January</asp:ListItem>
                         <asp:ListItem>February</asp:ListItem>
                         <asp:ListItem>March</asp:ListItem>
                         <asp:ListItem>April</asp:ListItem>
-                        <asp:ListItem>May</asp:ListItem>
-                        <asp:ListItem>June</asp:ListItem>
                         <asp:ListItem>July</asp:ListItem>
                         <asp:ListItem>August</asp:ListItem>
                         <asp:ListItem>September</asp:ListItem>
@@ -87,10 +85,10 @@
                 </div>
             </div> 
             <div class="form-group">
-                <div class="col-sm-9 col-sm-offset-3">
                     <button type="submit" class="btn btn-primary btn-block">Register</button>
                 </div>
             </div> 
-        </form>
+     
     </body>
 </html>
+</asp:Content>

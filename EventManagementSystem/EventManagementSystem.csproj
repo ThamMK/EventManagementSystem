@@ -79,7 +79,6 @@
     <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
     <Content Include="bin\roslyn\vbc.exe" />
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
-    <Content Include="CancelEvent.aspx" />
     <Content Include="CheckAvailability.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Event.aspx" />
@@ -122,7 +121,6 @@
     <Content Include="Login.aspx" />
     <Content Include="Registration.aspx" />
     <Content Include="Scripts\bootstrap.css" />
-    <Content Include="Scripts\CancelEvent.css" />
     <Content Include="Scripts\Event.css" />
     <Content Include="Scripts\Homepage.css" />
     <Content Include="Scripts\Login.css" />
@@ -131,13 +129,6 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CancelEvent.aspx.cs">
-      <DependentUpon>CancelEvent.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="CancelEvent.aspx.designer.cs">
-      <DependentUpon>CancelEvent.aspx</DependentUpon>
-    </Compile>
     <Compile Include="CheckAvailability.aspx.cs">
       <DependentUpon>CheckAvailability.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -158,9 +149,6 @@
     </Compile>
     <Compile Include="Event.aspx.designer.cs">
       <DependentUpon>Event.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Event.cs">
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Homepage.aspx.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>

@@ -43,11 +43,11 @@ nav ul li a:hover{
 nav a:before{
     content:'';
     display:block;
-    height:3px;
+    height:2.5px;
     width:100%;
     background-color:deepskyblue;
     position: absolute;
-    top:0px;
+    bottom:-19px;
     width:0%;
 
     transition:all ease-in-out 250ms;
@@ -130,7 +130,7 @@ nav a:hover::before{
 
 #logo{
     float:left;
-    margin-left:175px;
+    margin-left:200px;
     margin-top:7px;
     height:55px;
     width:180px;

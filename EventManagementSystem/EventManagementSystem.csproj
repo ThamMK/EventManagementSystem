@@ -82,7 +82,22 @@
     <Content Include="CheckAvailability.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Event.aspx" />
+    <Content Include="EventDetail.aspx" />
     <Content Include="Homepage.aspx" />
+    <Content Include="Images\Categories\Background\business.jpg" />
+    <Content Include="Images\Categories\Background\food.jpg" />
+    <Content Include="Images\Categories\Background\meetup.jpg" />
+    <Content Include="Images\Categories\Background\music.jpg" />
+    <Content Include="Images\Categories\Background\outdoor.jpg" />
+    <Content Include="Images\Categories\Background\technology.jpg" />
+    <Content Include="Images\Categories\business.png" />
+    <Content Include="Images\Categories\food.png" />
+    <Content Include="Images\Categories\music.png" />
+    <Content Include="Images\Categories\outdoor.png" />
+    <Content Include="Images\Categories\Background\seminar.jpg" />
+    <Content Include="Images\Categories\seminar.png" />
+    <Content Include="Images\Categories\social.png" />
+    <Content Include="Images\Categories\technology.png" />
     <Content Include="Images\Event\event1.PNG" />
     <Content Include="Images\Event\event2.PNG" />
     <Content Include="Images\Event\event3.PNG" />
@@ -122,6 +137,7 @@
     <Content Include="Registration.aspx" />
     <Content Include="Scripts\bootstrap.css" />
     <Content Include="Scripts\Event.css" />
+    <Content Include="Scripts\EventDetail.css" />
     <Content Include="Scripts\Homepage.css" />
     <Content Include="Scripts\Login.css" />
     <Content Include="Scripts\Navigation.css" />
@@ -149,6 +165,13 @@
     </Compile>
     <Compile Include="Event.aspx.designer.cs">
       <DependentUpon>Event.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EventDetail.aspx.cs">
+      <DependentUpon>EventDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventDetail.aspx.designer.cs">
+      <DependentUpon>EventDetail.aspx</DependentUpon>
     </Compile>
     <Compile Include="Homepage.aspx.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>

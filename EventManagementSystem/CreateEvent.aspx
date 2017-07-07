@@ -62,7 +62,7 @@
 
                     <asp:Label ID="lblEventTitle" CssClass="lblEventTitle" runat="server" Text="EVENT TITLE"></asp:Label>
 
-                    <asp:TextBox ID="txtEventTitle" CssClass="txtEventTitle" runat="server" ></asp:TextBox>
+                    <asp:TextBox ID="txtEventTitle" CssClass="txtEventTitle" runat="server"  ></asp:TextBox>
 
                 </div>
 
@@ -90,9 +90,7 @@
 
                                 <div class="eventDetail-StartDate-Time">
 
-                                    <asp:DropDownList ID="ddlStartTime" CssClass="ddlStartTime" runat="server" Enabled="true" AutoPostBack="True" OnSelectedIndexChanged="ddlTime_SelectedIndexChanged">
-
-                                        <asp:ListItem Value="" Text="Time"></asp:ListItem>
+                                    <asp:DropDownList ID="ddlStartTime" CssClass="ddlStartTime" runat="server" Enabled="true" AutoPostBack="True" OnSelectedIndexChanged="ddlTime_SelectedIndexChanged" placeholder="Please select a time.">
 
                                         <asp:ListItem>8:30</asp:ListItem>
                                         <asp:ListItem>9:00</asp:ListItem>
@@ -120,9 +118,7 @@
 
                             <div class="eventDetail-EndDate-Time">
 
-                                <asp:DropDownList ID="ddlEndTime" CssClass="ddlEndTime" runat="server" Enabled="true" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
-
-                                    <asp:ListItem Value="" Text="Time"></asp:ListItem>
+                                <asp:DropDownList ID="ddlEndTime" CssClass="ddlEndTime" runat="server" Enabled="true" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" placeholder="Please select a time.">
 
                                     <asp:ListItem>10:30</asp:ListItem>
                                     <asp:ListItem>11:00</asp:ListItem>

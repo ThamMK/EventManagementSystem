@@ -428,12 +428,14 @@
 .eventButton {
     margin-top: 25px;
     margin-right: 50px;
+    width: 100%;
     float: left;
     clear: left;
 
 }
 
 .btnSubmit{
+    float: left;
    margin-left: 7%;
     margin-top: 2%;    
   background: #34d960;
@@ -454,6 +456,7 @@
 }
 
 .btnReset{
+    float: left;
    margin-left: 7%;
     margin-top: 2%;    
   -webkit-border-radius: 8px;
@@ -468,6 +471,7 @@
 }
 
 .btnCancel{
+    float: left;
    margin-left: 7%;
     margin-top: 2%;    
   -webkit-border-radius: 8px;

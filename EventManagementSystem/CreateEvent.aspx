@@ -58,43 +58,73 @@
 
                 </div>
 
-                <div class="eventDetail-Title">
+                <div class="eventDetail-2">
 
-                    <asp:Label ID="lblEventTitle" CssClass="lblEventTitle" runat="server" Text="EVENT TITLE"></asp:Label>
+                    <div class="eventDetail-Title">
 
-                    <asp:TextBox ID="txtEventTitle" CssClass="txtEventTitle" runat="server"  ></asp:TextBox>
+                        <asp:Label ID="lblEventTitle" CssClass="lblEventTitle" runat="server" Text="EVENT TITLE"></asp:Label>
 
-                </div>
+                        <asp:TextBox ID="txtEventTitle" CssClass="txtEventTitle" runat="server"  ></asp:TextBox>
 
-                <div class="eventDetail-Location">
+                    </div>
 
-                    <asp:Label ID="lblLocation" CssClass="lblLocation" runat="server" Text="LOCATION"></asp:Label>
+                    <div class="eventDetail-Location">
 
-                    <asp:TextBox ID="txtLocation" CssClass="txtLocation" runat="server" ></asp:TextBox>
+                        <asp:Label ID="lblLocation" CssClass="lblLocation" runat="server" Text="LOCATION"></asp:Label>
 
-                </div>
+                        <asp:TextBox ID="txtLocation" CssClass="txtLocation" runat="server" ></asp:TextBox>
 
-                <div class="eventDetail-Date">
+                    </div>
 
-                    <div class="eventDetail-StartDate">
+                    <div class="eventDetail-Date">
 
-                     <asp:Label ID="lblStart" CssClass="lblStart" runat="server" Text="START"></asp:Label>
+                        <div class="eventDetail-StartDate">
 
-                            <div class="eventDetail-StartDateTime">
+                         <asp:Label ID="lblStart" CssClass="lblStart" runat="server" Text="START"></asp:Label>
 
-                                <div class="eventDetail-StartDate-Date">
+                                <div class="eventDetail-StartDateTime">
 
-                                    <asp:TextBox ID="startdatetimepicker" CssClass="startDateTextBox" runat="server" placeholder="dd-mm-yyyy" OnTextChanged="datetimepicker_TextChanged" AutoPostBack="True"></asp:TextBox>
+                                    <div class="eventDetail-StartDate-Date">
+
+                                        <asp:TextBox ID="startdatetimepicker" CssClass="startDateTextBox" runat="server" placeholder="dd-mm-yyyy" OnTextChanged="datetimepicker_TextChanged" AutoPostBack="True"></asp:TextBox>
                         
+                                    </div>
+
+                                    <div class="eventDetail-StartDate-Time">
+
+                                        <asp:DropDownList ID="ddlStartTime" CssClass="ddlStartTime" runat="server" Enabled="true" AutoPostBack="True" OnSelectedIndexChanged="ddlTime_SelectedIndexChanged" placeholder="Please select a time.">
+
+                                            <asp:ListItem>8:30</asp:ListItem>
+                                            <asp:ListItem>9:00</asp:ListItem>
+                                            <asp:ListItem>9:30</asp:ListItem>
+
+                                        </asp:DropDownList>
+
+                                    </div>
+
                                 </div>
 
-                                <div class="eventDetail-StartDate-Time">
+                        </div>
 
-                                    <asp:DropDownList ID="ddlStartTime" CssClass="ddlStartTime" runat="server" Enabled="true" AutoPostBack="True" OnSelectedIndexChanged="ddlTime_SelectedIndexChanged" placeholder="Please select a time.">
+                        <div class="eventDetail-EndDate">
+                        
+                                <asp:Label ID="lblEnd" CssClass="lblEnd" runat="server" Text="END"></asp:Label>
+                          
+                            <div class="eventDetail-EndDateTime">  
 
-                                        <asp:ListItem>8:30</asp:ListItem>
-                                        <asp:ListItem>9:00</asp:ListItem>
-                                        <asp:ListItem>9:30</asp:ListItem>
+                                <div class="eventDetail-EndDate-Date">
+
+                                    <asp:TextBox ID="enddatetimepicker" CssClass="endDateTextBox" runat="server" placeholder="dd-mm-yyyy" OnTextChanged="datetimepicker_TextChanged" AutoPostBack="True"></asp:TextBox>
+
+                                </div>
+
+                                <div class="eventDetail-EndDate-Time">
+
+                                    <asp:DropDownList ID="ddlEndTime" CssClass="ddlEndTime" runat="server" Enabled="true" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" placeholder="Please select a time.">
+
+                                        <asp:ListItem>10:30</asp:ListItem>
+                                        <asp:ListItem>11:00</asp:ListItem>
+                                        <asp:ListItem>11:30</asp:ListItem>
 
                                     </asp:DropDownList>
 
@@ -102,58 +132,49 @@
 
                             </div>
 
-                    </div>
-
-                    <div class="eventDetail-EndDate">
-                        
-                            <asp:Label ID="lblEnd" CssClass="lblEnd" runat="server" Text="END"></asp:Label>
-                          
-                        <div class="eventDetail-EndDateTime">  
-
-                            <div class="eventDetail-EndDate-Date">
-
-                                <asp:TextBox ID="enddatetimepicker" CssClass="endDateTextBox" runat="server" placeholder="dd-mm-yyyy" OnTextChanged="datetimepicker_TextChanged" AutoPostBack="True"></asp:TextBox>
-
-                            </div>
-
-                            <div class="eventDetail-EndDate-Time">
-
-                                <asp:DropDownList ID="ddlEndTime" CssClass="ddlEndTime" runat="server" Enabled="true" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" placeholder="Please select a time.">
-
-                                    <asp:ListItem>10:30</asp:ListItem>
-                                    <asp:ListItem>11:00</asp:ListItem>
-                                    <asp:ListItem>11:30</asp:ListItem>
-
-                                </asp:DropDownList>
-
-                            </div>
-
                         </div>
 
                     </div>
 
-                </div>
+                    <div>
 
-                <div class="eventDetail-EventImage">
+                        <asp:Label ID="lblCategory" CssClass="lblCategory" runat="server" Text="EVENT CATEGORY"></asp:Label>   
 
-                    <asp:Label ID="lblEventImage" CssClass="lblEventImage" runat="server" Text="EVENT IMAGE"></asp:Label>    
+                        <asp:DropDownList ID="ddlCategory" CssClass="ddlCategory" runat="server" Enabled="true" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" placeholder="Please select a category.">
 
-                    <asp:Image ID="imgAddImage" CssClass="imgAddImage" runat="server"  ImageUrl="\Images\Event\ADD_IMAGE.png" />
+                                        <asp:ListItem>Business</asp:ListItem>
+                                        <asp:ListItem>Foods & Dining</asp:ListItem>
+                                        <asp:ListItem>Musics</asp:ListItem>
+                                        <asp:ListItem>Outdoors</asp:ListItem>
+                                        <asp:ListItem>Seminars & Talks</asp:ListItem>
+                                        <asp:ListItem>Socials</asp:ListItem>
+                                        <asp:ListItem>Technologies</asp:ListItem>
 
-                </div>
+                                    </asp:DropDownList>
 
-                <div class="eventDetail-EventDescription">
+                    </div>
 
-                    <asp:Label ID="lblEventDescription" CssClass="lblEventDescription" runat="server" Text="EVENT DESCRIPTION"></asp:Label>  
+                    <div class="eventDetail-EventImage">
+
+                        <asp:Label ID="lblEventImage" CssClass="lblEventImage" runat="server" Text="EVENT IMAGE"></asp:Label>    
+
+                        <asp:Image ID="imgAddImage" CssClass="imgAddImage" runat="server"  ImageUrl="\Images\Event\ADD_IMAGE.png" />
+
+                    </div>
+
+                    <div class="eventDetail-EventDescription">
+
+                        <asp:Label ID="lblEventDescription" CssClass="lblEventDescription" runat="server" Text="EVENT DESCRIPTION"></asp:Label>  
                 
-                    <div class="eventDetail-CKEditor">
+                        <div class="eventDetail-CKEditor">
 
-                        <CKEditor:CKEditorControl ID="CKEditor1" CssClass="CKEditor1"  BasePath="/ckeditor/" runat="server" float="left" clear="left"></CKEditor:CKEditorControl>  
+                            <CKEditor:CKEditorControl ID="CKEditor1" CssClass="CKEditor1"  BasePath="/ckeditor/" runat="server" float="left" clear="left"></CKEditor:CKEditorControl>  
 
-                    </div> 
+                        </div> 
            
-                </div>
+                    </div>
 
+                </div>
             </div>
 
             <div class="organizationDetail">
@@ -164,34 +185,33 @@
 
                 </div>
 
-                <div class="organizationDetail-OrganizerName">
+                <div class="organizationDetail-2">
 
-                    <asp:Label ID="lblOrganizerName" CssClass="lblOrganizerName" runat="server" Text="ORGANIZER NAME"></asp:Label>  
+                    <div class="organizationDetail-OrganizerName">
 
-                    <asp:TextBox ID="txtOrganizerName" CssClass="txtOrganizerName" runat="server"></asp:TextBox>
+                        <asp:Label ID="lblOrganizerName" CssClass="lblOrganizerName" runat="server" Text="ORGANIZER NAME"></asp:Label>  
+
+                        <asp:TextBox ID="txtOrganizerName" CssClass="txtOrganizerName" runat="server"></asp:TextBox>
+
+                    </div>
+
+                    <div class="organizationDetail-OrganizerContactNumber">
+
+                        <asp:Label ID="lblOrganizationContactNumber" CssClass="lblOrganizerContactNumber" runat="server" Text="ORGANIZER Contact Number"></asp:Label>  
+
+                        <asp:TextBox ID="txtOrganizationContactNumber" CssClass="txtOrganizerContactNumber" placeholder="e.g. 016-1234567" runat="server"></asp:TextBox>
+
+                    </div>
+
+                    <div class="organizationDetail-OrganizerEmail">
+
+                        <asp:Label ID="lblOrganizationEmail" CssClass="lblOrganizerEmail" runat="server" Text="ORGANIZER Email Address"></asp:Label>  
+
+                        <asp:TextBox ID="txtOrganizationEmail" CssClass="txtOrganizerEmail" placeholder="e.g. xxx_xx@gmail.com" runat="server"></asp:TextBox>
+
+                    </div>
 
                 </div>
-
-                <div class="organizationDetail-OrganizerContactNumber">
-
-                    <asp:Label ID="lblOrganizationContactNumber" CssClass="lblOrganizerContactNumber" runat="server" Text="ORGANIZER Contact Number"></asp:Label>  
-
-                    <asp:TextBox ID="txtOrganizationContactNumber" CssClass="txtOrganizerContactNumber" placeholder="e.g. 016-1234567" runat="server"></asp:TextBox>
-
-                </div>
-
-                <div class="organizationDetail-OrganizerEmail">
-
-                    <asp:Label ID="lblOrganizationEmail" CssClass="lblOrganizerEmail" runat="server" Text="ORGANIZER Email Address"></asp:Label>  
-
-                    <asp:TextBox ID="txtOrganizationEmail" CssClass="txtOrganizerEmail" placeholder="e.g. xxx_xx@gmail.com" runat="server"></asp:TextBox>
-
-                </div>
-
-            </div>
-
-            <div class="createTicket">
-
 
             </div>
 

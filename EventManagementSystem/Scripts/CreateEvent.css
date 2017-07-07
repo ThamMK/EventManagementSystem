@@ -1,31 +1,30 @@
-﻿.container-CreateEvent{
-    padding: 20px;
-    margin-top: 20px;
-    margin-left: 20px;
-    width: 80%;
-    height: 100%;
+﻿.container-CreateEvent {
+    padding: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+    width: 100%;
+    height: 300%    ;
     color: #666666;
-
 }
 
 .eventDetail {
     width: 100%;
 }
 
-.eventDetail-Header{ 
-     border-bottom:2px dotted #0800FF;
-     border-style : none none solid none
+.eventDetail-Header {
+    border-bottom: 2px dotted #0800FF;
+    border-style: none none solid none;
 }
 
-.lblEventDetail { 
+.lblEventDetail {
     -webkit-border-top-left-radius: 30px;
     -moz-border-radius-topleft: 30px;
     -moz-border-radius-bottomleft: 30px;
     -webkit-border-bottom-left-radius: 30px;
-    height:20px; 
-    width: 220px; 
-    font-size:  25pt;
-  }
+    height: 20px;
+    width: 220px;
+    font-size: 25pt;
+}
 
 .lblEventTitle {
     margin-top: 5px;
@@ -33,67 +32,65 @@
     clear: left;
 }
 
-.txtEventTitle { 
-    border: 1px solid #c4c4c4; 
-    height: 25px; 
-    width: 100%; 
-    font-size: 13px; 
-    padding: 4px 4px 4px 4px; 
-    border-radius: 4px; 
-    -moz-border-radius: 4px; 
-    -webkit-border-radius: 4px; 
-    box-shadow: 0px 0px 8px #d9d9d9; 
-    -moz-box-shadow: 0px 0px 8px #d9d9d9; 
-    -webkit-box-shadow: 0px 0px 8px #d9d9d9; 
+.txtEventTitle {
+    border: 1px solid #c4c4c4;
+    height: 25px;
+    width: 100%;
+    font-size: 13px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 8px #d9d9d9;
+    -moz-box-shadow: 0px 0px 8px #d9d9d9;
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
     float: left;
     clear: left;
     top: 0px;
     left: 0px;
     margin-top: 5px;
-} 
- 
-.txtEventTitle:focus { 
-    outline: none; 
-    border: 1px solid #7bc1f7; 
-    box-shadow: 0px 0px 8px #7bc1f7; 
-    -moz-box-shadow: 0px 0px 8px #7bc1f7; 
-    -webkit-box-shadow: 0px 0px 8px #7bc1f7; 
-
 }
+
+    .txtEventTitle:focus {
+        outline: none;
+        border: 1px solid #7bc1f7;
+        box-shadow: 0px 0px 8px #7bc1f7;
+        -moz-box-shadow: 0px 0px 8px #7bc1f7;
+        -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+    }
 
 .lblLocation {
     margin-top: 5px;
     float: left;
-    clear: left
+    clear: left;
 }
 
-.txtLocation{
+.txtLocation {
     margin-top: 5px;
     float: left;
     clear: left;
     width: 100%;
     height: 25px;
-    border: 1px solid #c4c4c4; 
-    height: 25px; 
-    width: 100%; 
-    font-size: 13px; 
-    padding: 4px 4px 4px 4px; 
-    border-radius: 4px; 
-    -moz-border-radius: 4px; 
-    -webkit-border-radius: 4px; 
-    box-shadow: 0px 0px 8px #d9d9d9; 
-    -moz-box-shadow: 0px 0px 8px #d9d9d9; 
-    -webkit-box-shadow: 0px 0px 8px #d9d9d9; 
+    border: 1px solid #c4c4c4;
+    height: 25px;
+    width: 100%;
+    font-size: 13px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 8px #d9d9d9;
+    -moz-box-shadow: 0px 0px 8px #d9d9d9;
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
 }
 
-.txtLocation:focus { 
-    outline: none; 
-    border: 1px solid #7bc1f7; 
-    box-shadow: 0px 0px 8px #7bc1f7; 
-    -moz-box-shadow: 0px 0px 8px #7bc1f7; 
-    -webkit-box-shadow: 0px 0px 8px #7bc1f7; 
-
-} 
+    .txtLocation:focus {
+        outline: none;
+        border: 1px solid #7bc1f7;
+        box-shadow: 0px 0px 8px #7bc1f7;
+        -moz-box-shadow: 0px 0px 8px #7bc1f7;
+        -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+    }
 
 .eventDetail-Date {
     margin-top: 5px;
@@ -140,59 +137,56 @@
 }
 
 .startDateTextBox {
-     border: 1px solid #c4c4c4; 
-    height: 25px; 
-    width: 100%; 
-    font-size: 13px; 
-    padding: 4px 4px 4px 4px; 
-    border-radius: 4px; 
-    -moz-border-radius: 4px; 
-    -webkit-border-radius: 4px; 
-    box-shadow: 0px 0px 8px #d9d9d9; 
-    -moz-box-shadow: 0px 0px 8px #d9d9d9; 
-    -webkit-box-shadow: 0px 0px 8px #d9d9d9; 
+    border: 1px solid #c4c4c4;
+    height: 25px;
+    width: 100%;
+    font-size: 13px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 8px #d9d9d9;
+    -moz-box-shadow: 0px 0px 8px #d9d9d9;
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
     float: left;
     clear: left;
     top: 0px;
     left: 0px;
-     
 }
 
-.startDateTextBox:focus { 
-    outline: none; 
-    border: 1px solid #7bc1f7; 
-    box-shadow: 0px 0px 8px #7bc1f7; 
-    -moz-box-shadow: 0px 0px 8px #7bc1f7; 
-    -webkit-box-shadow: 0px 0px 8px #7bc1f7; 
-
-}
+    .startDateTextBox:focus {
+        outline: none;
+        border: 1px solid #7bc1f7;
+        box-shadow: 0px 0px 8px #7bc1f7;
+        -moz-box-shadow: 0px 0px 8px #7bc1f7;
+        -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+    }
 
 .ddlStartTime {
-     border: 1px solid #c4c4c4; 
-    height: 25px; 
-    width: 100%; 
-    font-size: 13px; 
-    padding: 4px 4px 4px 4px; 
-    border-radius: 4px; 
-    -moz-border-radius: 4px; 
-    -webkit-border-radius: 4px; 
-    box-shadow: 0px 0px 8px #d9d9d9; 
-    -moz-box-shadow: 0px 0px 8px #d9d9d9; 
-    -webkit-box-shadow: 0px 0px 8px #d9d9d9; 
+    border: 1px solid #c4c4c4;
+    height: 25px;
+    width: 100%;
+    font-size: 13px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 8px #d9d9d9;
+    -moz-box-shadow: 0px 0px 8px #d9d9d9;
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
     float: left;
     clear: left;
     top: 0px;
     left: 0px;
 }
 
-.ddlStartTime:focus { 
-    outline: none; 
-    border: 1px solid #7bc1f7; 
-    box-shadow: 0px 0px 8px #7bc1f7; 
-    -moz-box-shadow: 0px 0px 8px #7bc1f7; 
-    -webkit-box-shadow: 0px 0px 8px #7bc1f7; 
-
-}
+    .ddlStartTime:focus {
+        outline: none;
+        border: 1px solid #7bc1f7;
+        box-shadow: 0px 0px 8px #7bc1f7;
+        -moz-box-shadow: 0px 0px 8px #7bc1f7;
+        -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+    }
 
 .eventDetail-EndDate {
     float: left;
@@ -202,60 +196,58 @@
 }
 
 .endDateTextBox {
-     border: 1px solid #c4c4c4; 
-    height: 25px; 
-    width: 100%; 
-    font-size: 13px; 
-    padding: 4px 4px 4px 4px; 
-    border-radius: 4px; 
-    -moz-border-radius: 4px; 
-    -webkit-border-radius: 4px; 
-    box-shadow: 0px 0px 8px #d9d9d9; 
-    -moz-box-shadow: 0px 0px 8px #d9d9d9; 
-    -webkit-box-shadow: 0px 0px 8px #d9d9d9; 
+    border: 1px solid #c4c4c4;
+    height: 25px;
+    width: 100%;
+    font-size: 13px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 8px #d9d9d9;
+    -moz-box-shadow: 0px 0px 8px #d9d9d9;
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
     float: left;
     clear: left;
     top: 0px;
     left: 0px;
 }
 
-.endDateTextBox:focus { 
-    outline: none; 
-    border: 1px solid #7bc1f7; 
-    box-shadow: 0px 0px 8px #7bc1f7; 
-    -moz-box-shadow: 0px 0px 8px #7bc1f7; 
-    -webkit-box-shadow: 0px 0px 8px #7bc1f7; 
+    .endDateTextBox:focus {
+        outline: none;
+        border: 1px solid #7bc1f7;
+        box-shadow: 0px 0px 8px #7bc1f7;
+        -moz-box-shadow: 0px 0px 8px #7bc1f7;
+        -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+    }
 
-}
-
-.ddlEndTime:focus { 
-    outline: none; 
-    border: 1px solid #7bc1f7; 
-    box-shadow: 0px 0px 8px #7bc1f7; 
-    -moz-box-shadow: 0px 0px 8px #7bc1f7; 
-    -webkit-box-shadow: 0px 0px 8px #7bc1f7; 
-
+.ddlEndTime:focus {
+    outline: none;
+    border: 1px solid #7bc1f7;
+    box-shadow: 0px 0px 8px #7bc1f7;
+    -moz-box-shadow: 0px 0px 8px #7bc1f7;
+    -webkit-box-shadow: 0px 0px 8px #7bc1f7;
 }
 
 .ddlEndTime {
-     border: 1px solid #c4c4c4; 
-    height: 25px; 
-    width: 100%; 
-    font-size: 13px; 
-    padding: 4px 4px 4px 4px; 
-    border-radius: 4px; 
-    -moz-border-radius: 4px; 
-    -webkit-border-radius: 4px; 
-    box-shadow: 0px 0px 8px #d9d9d9; 
-    -moz-box-shadow: 0px 0px 8px #d9d9d9; 
-    -webkit-box-shadow: 0px 0px 8px #d9d9d9; 
+    border: 1px solid #c4c4c4;
+    height: 25px;
+    width: 100%;
+    font-size: 13px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 8px #d9d9d9;
+    -moz-box-shadow: 0px 0px 8px #d9d9d9;
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
     float: left;
     clear: left;
     top: 0px;
     left: 0px;
 }
 
-.lblEventImage{
+.lblEventImage {
     margin-top: 5px;
     float: left;
     clear: left;
@@ -263,18 +255,18 @@
 
 .imgAddImage {
     margin-top: 5px;
-    border: 1px solid #0800FF; 
+    border: 1px solid #0800FF;
     float: left;
-    clear: left
+    clear: left;
 }
 
-.imgAddImage:focus {
-    outline: none;
-    border: 1px solid #7bc1f7;
-    box-shadow: 0px 0px 8px #7bc1f7;
-    -moz-box-shadow: 0px 0px 8px #7bc1f7;
-    -webkit-box-shadow: 0px 0px 8px #7bc1f7;
-}
+    .imgAddImage:focus {
+        outline: none;
+        border: 1px solid #7bc1f7;
+        box-shadow: 0px 0px 8px #7bc1f7;
+        -moz-box-shadow: 0px 0px 8px #7bc1f7;
+        -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+    }
 
 .eventDetail-EventDescription {
     margin-top: 5px;
@@ -283,12 +275,12 @@
 .lblEventDescription {
     margin-top: 5px;
     float: left;
-    clear: left
+    clear: left;
 }
 
 .eventDetail-CKEditor {
     margin-top: 5px;
-    width: 100%; 
+    width: 100%;
     float: left;
     clear: left;
 }
@@ -300,29 +292,29 @@
     margin-top: 15px;
 }
 
-.lblOrganizerDetail { 
+.lblOrganizerDetail {
     -webkit-border-top-left-radius: 30px;
     -moz-border-radius-topleft: 30px;
     -moz-border-radius-bottomleft: 30px;
     -webkit-border-bottom-left-radius: 30px;
-    height:20px; 
-    width: 100%; 
-    font-size:  25pt;
+    height: 20px;
+    width: 100%;
+    font-size: 25pt;
     float: left;
     clear: left;
-  }
+}
 
-.organizerDetail-Header{ 
-     border-bottom:2px dotted #0800FF;
-     border-style : none none solid none;
-     height: 40px;
-     width: 100%;
-     float: left;
-     clear: left;
+.organizerDetail-Header {
+    border-bottom: 2px dotted #0800FF;
+    border-style: none none solid none;
+    height: 40px;
+    width: 100%;
+    float: left;
+    clear: left;
 }
 
 .organizationDetail-OrganizerName {
-    width: 100%; 
+    width: 100%;
     float: left;
     clear: left;
 }
@@ -336,34 +328,34 @@
 .txtOrganizerName {
     margin-top: 5px;
     float: left;
-    border: 1px solid #c4c4c4; 
-    height: 25px; 
-    width: 100%; 
-    font-size: 13px; 
-    padding: 4px 4px 4px 4px; 
-    border-radius: 4px; 
-    -moz-border-radius: 4px; 
-    -webkit-border-radius: 4px; 
-    box-shadow: 0px 0px 8px #d9d9d9; 
-    -moz-box-shadow: 0px 0px 8px #d9d9d9; 
-    -webkit-box-shadow: 0px 0px 8px #d9d9d9; 
+    border: 1px solid #c4c4c4;
+    height: 25px;
+    width: 100%;
+    font-size: 13px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 8px #d9d9d9;
+    -moz-box-shadow: 0px 0px 8px #d9d9d9;
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
     float: left;
     clear: left;
     top: 0px;
     left: 0px;
 }
 
-.txtOrganizerName:focus {
-    outline: none;
-    border: 1px solid #7bc1f7;
-    box-shadow: 0px 0px 8px #7bc1f7;
-    -moz-box-shadow: 0px 0px 8px #7bc1f7;
-    -webkit-box-shadow: 0px 0px 8px #7bc1f7;
-}
+    .txtOrganizerName:focus {
+        outline: none;
+        border: 1px solid #7bc1f7;
+        box-shadow: 0px 0px 8px #7bc1f7;
+        -moz-box-shadow: 0px 0px 8px #7bc1f7;
+        -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+    }
 
 .organizationDetail-OrganizerContactNumber {
     margin-top: 5px;
-    width: 100%; 
+    width: 100%;
     float: left;
     clear: left;
 }
@@ -375,17 +367,17 @@
 }
 
 .txtOrganizerContactNumber {
-    border: 1px solid #c4c4c4; 
-    height: 25px; 
-    width: 100%; 
-    font-size: 13px; 
-    padding: 4px 4px 4px 4px; 
-    border-radius: 4px; 
-    -moz-border-radius: 4px; 
-    -webkit-border-radius: 4px; 
-    box-shadow: 0px 0px 8px #d9d9d9; 
-    -moz-box-shadow: 0px 0px 8px #d9d9d9; 
-    -webkit-box-shadow: 0px 0px 8px #d9d9d9; 
+    border: 1px solid #c4c4c4;
+    height: 25px;
+    width: 100%;
+    font-size: 13px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 8px #d9d9d9;
+    -moz-box-shadow: 0px 0px 8px #d9d9d9;
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
     float: left;
     clear: left;
     top: 0px;
@@ -395,7 +387,7 @@
 
 .organizationDetail-OrganizerEmail {
     margin-top: 5px;
-    width: 100%; 
+    width: 100%;
     float: left;
     clear: left;
 }
@@ -407,17 +399,17 @@
 }
 
 .txtOrganizerEmail {
-    border: 1px solid #c4c4c4; 
-    height: 25px; 
-    width: 100%; 
-    font-size: 13px; 
-    padding: 4px 4px 4px 4px; 
-    border-radius: 4px; 
-    -moz-border-radius: 4px; 
-    -webkit-border-radius: 4px; 
-    box-shadow: 0px 0px 8px #d9d9d9; 
-    -moz-box-shadow: 0px 0px 8px #d9d9d9; 
-    -webkit-box-shadow: 0px 0px 8px #d9d9d9; 
+    border: 1px solid #c4c4c4;
+    height: 25px;
+    width: 100%;
+    font-size: 13px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 8px #d9d9d9;
+    -moz-box-shadow: 0px 0px 8px #d9d9d9;
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
     float: left;
     clear: left;
     top: 0px;
@@ -426,61 +418,80 @@
 }
 
 .eventButton {
-    margin-top: 25px;
+    margin-top: 18px;
     margin-right: 50px;
+    margin-bottom: 150px;
     width: 100%;
     float: left;
     clear: left;
-
 }
 
-.btnSubmit{
+.btnSubmit {
     float: left;
-   margin-left: 7%;
-    margin-top: 2%;    
-  background: #34d960;
-  background-image: -webkit-linear-gradient(top, #34d960, #2bb82b);
-  background-image: -moz-linear-gradient(top, #34d960, #2bb82b);
-  background-image: -ms-linear-gradient(top, #34d960, #2bb82b);
-  background-image: -o-linear-gradient(top, #34d960, #2bb82b);
-  background-image: linear-gradient(to bottom, #34d960, #2bb82b);
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 1% 25% 1% 25%;
-  text-decoration: none;
-  border-style:none;
+    margin-left: 7%;
+    margin-top: 2%;
+    background: #34d960;
+    background-image: -webkit-linear-gradient(top, #34d960, #2bb82b);
+    background-image: -moz-linear-gradient(top, #34d960, #2bb82b);
+    background-image: -ms-linear-gradient(top, #34d960, #2bb82b);
+    background-image: -o-linear-gradient(top, #34d960, #2bb82b);
+    background-image: linear-gradient(to bottom, #34d960, #2bb82b);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    border-style: none;
 }
 
-.btnReset{
+.btnReset {
     float: left;
-   margin-left: 7%;
-    margin-top: 2%;    
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 1% 25% 1% 25%;
-  text-decoration: none;
-  border-style:none;
+    margin-left: 7%;
+    margin-top: 2%;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    border-style: none;
 }
 
-.btnCancel{
+.btnCancel {
     float: left;
-   margin-left: 7%;
-    margin-top: 2%;    
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 1% 25% 1% 25%;
-  text-decoration: none;
-  border-style:none;
+    margin-left: 7%;
+    margin-top: 2%;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    border-style: none;
+}
+
+
+.lblCategory {
+    margin-top: 5px;
+    float: left;
+    clear: left;
+}
+
+.ddlCategory {
+    width: 350px;
+    margin-top: 5px;
+    float: left;
+    clear: left;
+}
+
+.eventDetail-2 {
+padding-right: 80px;
+}
+
+.organizationDetail-2 {
+padding-right: 80px;
 }

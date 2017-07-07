@@ -1,20 +1,22 @@
 ﻿#background {
     width: 100%;
     height: 100%;
-    background-color: #0099cc;
-    background-image:url("../Images/Login/login.jpg");
+    background-color: #12ABE3;
+    background-image:url("../Images/Login/login.png");
+    background-size:80%;
     position:fixed;
+    background-repeat:repeat-x;
 }
 
 #left-login-panel{
     float:left;
-    margin-left:100px;
-    margin-top:150px;
+    margin-left:10%;
+    margin-top:11%;
 }
 
 #not-member{
     color:white;
-    font-size:40px;
+    font-size:380%;
     font-weight:bold;
 }
 
@@ -39,8 +41,8 @@
 
 #login{
     float:left;
-    margin-top:-340px;
-    margin-left:735px;
+    margin-top:-325px;
+    margin-left:57%;
     width:450px;
     height:450px;
     background-color:white;

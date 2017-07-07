@@ -82,6 +82,7 @@
     <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
     <Content Include="bin\roslyn\vbc.exe" />
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="CancelEvent.aspx" />
     <Content Include="CheckAvailability.aspx" />
     <Content Include="CreateEvent.aspx" />
     <Content Include="Default.aspx" />
@@ -113,6 +114,7 @@
     <Content Include="Images\Event\promo 3.png" />
     <Content Include="Images\Login\email-icon.png" />
     <Content Include="Images\Login\login.jpg" />
+    <Content Include="Images\Login\login.png" />
     <Content Include="Images\Login\password-icon.png" />
     <Content Include="Images\Navigation\cross-blue.png" />
     <Content Include="Images\Navigation\cross.png" />
@@ -150,6 +152,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CancelEvent.aspx.cs">
+      <DependentUpon>CancelEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CancelEvent.aspx.designer.cs">
+      <DependentUpon>CancelEvent.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CheckAvailability.aspx.cs">
       <DependentUpon>CheckAvailability.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -177,6 +186,9 @@
     </Compile>
     <Compile Include="Event.aspx.designer.cs">
       <DependentUpon>Event.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Event.cs">
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="EventDetail.aspx.cs">
       <DependentUpon>EventDetail.aspx</DependentUpon>

@@ -14,28 +14,28 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <script>
+        <script>
 
         $(document).ready(function () {
+
+
             $(".tint").hover(
                 function () {
                     $(this).siblings(".event-image-category-logo").animate({ top: '100px' });
-                    $(this).siblings("h6").css("visibility","visible");
+                    $(this).siblings("h6").css("visibility", "visible");
                 },
 
-            function () {
-                $(this).siblings(".event-image-category-logo").animate({ top: '125px' });
-                $(this).siblings("h6").css("visibility", "hidden");
-            }
+                function () {
+                    $(this).siblings(".event-image-category-logo").animate({ top: '125px' });
+                    $(this).siblings("h6").css("visibility", "hidden");
+                }
 
             );
-
-
+            
 
 
         });
     </script>
-
 </head>
 <body>
     
@@ -44,6 +44,7 @@
         <h2>Popular Events</h2>
         <div class="row">
             <div class="col-sm-4">
+                <a href="EventDetail.aspx">
                 <div class="event-container">
                     <div class="event-image-div">
                         <asp:Image runat="server" CssClass="event-image" ImageUrl="\Images\Event\event1.png" />
@@ -65,6 +66,7 @@
                         </div>
                     </div>
                  </div>
+                </a>
             </div>
             
             <div class="col-sm-4">
@@ -321,5 +323,7 @@
         </div>
     </div>
 </body>
+    
+
 </html>
 </asp:Content>

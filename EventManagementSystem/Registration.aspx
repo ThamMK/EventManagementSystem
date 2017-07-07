@@ -9,7 +9,15 @@
 
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-         
+         <script type="text/javascript">
+             $(document).ready(function () {
+                 $('#<%= butCancel.ClientID %>').click(function(e) 
+                 {
+                     showDialog('#txtFullName'.toString());
+                 })
+                 return false;
+             });
+         </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <html xmlns="http://www.w3.org/1999/xhtml">
@@ -22,20 +30,26 @@
             <div class="form-group">
                 <label for="firstName" class="col-sm-3 control-label">Full Name</label>
                 <div class="col-sm-9">
-                    <input type="text" id="firstName" placeholder="Full Name" class="form-control" autofocus>
-                    <span class="help-block">Last Name First Name, eg.: Smith Harry</span>
+                    <input type="text" id="txtFullName" name="txtFullName" placeholder="Full Name" class="form-control"/>
+                    <span class="help-block">Full Name = Last Name First Name, eg.: Smith Harry or Zuo Jun Yong</span>
                 </div>
             </div>
             <div class="form-group">
                 <label for="email" class="col-sm-3 control-label">Email</label>
                 <div class="col-sm-9">
-                    <input type="email" id="email" placeholder="Email" class="form-control">
+                    <input type="email" id="txtEmail" placeholder="Email" class="form-control"/>
                 </div>
             </div>
             <div class="form-group">
                 <label for="password" class="col-sm-3 control-label">Password</label>
                 <div class="col-sm-9">
-                    <input type="password" id="password" placeholder="Password" class="form-control">
+                    <input type="password" id="txtPassword" placeholder="Password" class="form-control"/>
+                </div>
+            </div>
+        <div class="form-group">
+                <label for="password" class="col-sm-3 control-label">Comfirm Password</label>
+                <div class="col-sm-9">
+                    <input type="password" id="txtComfirmPassword" placeholder="Comfirm Password" class="form-control"/>
                 </div>
             </div>
             <div class="form-group">
@@ -61,33 +75,12 @@
                         </div>
                 </div>
             </div>
-            <!-- /.form-group -->
             <div class="form-group">
-                <label class="control-label col-sm-3">Gender</label>
-                <div class="col-sm-6">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <label class="radio-inline">
-                                <input type="radio" id="femaleRadio" value="Female">Female
-                            </label>
-                        </div>
-                        <div class="col-sm-4">
-                            <label class="radio-inline">
-                                <input type="radio" id="maleRadio" value="Male">Male
-                            </label>
-                        </div>
-                        <div class="col-sm-4">
-                            <label class="radio-inline">
-                                <input type="radio" id="uncknownRadio" value="Unknown">Unknown
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-            <div class="form-group">
-                    <button type="submit" class="btn btn-primary btn-block">Register</button>
-                </div>
-            </div> 
+                    <asp:Button ID="butRegister" runat="server" Text="Register"/>
+                    <asp:Button ID="butCancel" runat="server" Text="Cancel" Width="70px"  />
+                    <asp:Button ID="butReset" runat="server" Text="Reset" />
+             </div>
+            
      
     </body>
 </html>

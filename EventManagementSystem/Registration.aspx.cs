@@ -14,6 +14,7 @@ namespace EventManagementSystem
         {
             if (!IsPostBack)
             {
+                
                 SetupYear();
                 SetupDate();
             }
@@ -78,6 +79,22 @@ namespace EventManagementSystem
         }
 
         protected void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void butCancel_Click(object sender, EventArgs e)
+        {
+            
+            DropDownListMonth.SelectedIndex = 0;
+            SetupYear();
+            SetupMaxDate();
+            SetupDate();
+
+
+        }
+
+        protected void butReset_Click(object sender, EventArgs e)
         {
 
         }

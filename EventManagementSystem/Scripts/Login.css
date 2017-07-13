@@ -60,7 +60,7 @@
 }
 
 .email-input{
-    margin-top:42px;
+    margin-top:20px;
 }
 
 #email-icon{
@@ -108,6 +108,13 @@
     border-style:solid solid solid none;
 }
 
+.forget-password{
+    margin-top:15px;
+    margin-right:35px;
+    float:right;
+
+}
+
 .login-button{
     clear:both;
 }
@@ -116,7 +123,7 @@
     background-color:deepskyblue;
     border:none;
     cursor:pointer;
-    margin-top:30px;
+    margin-top:15px;
     margin-bottom:57px;
     color:white;
     font-size:16px;

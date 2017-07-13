@@ -4,10 +4,9 @@
     font-family:sans-serif;
 }
 
-.container{
+.master-container{
     width:100%;
     margin:0;
-    margin-left:-15px;
 }
 
 .left_ul{

@@ -44,7 +44,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CKEditor.NET">
-      <HintPath>D:\HCI TOOL\bin\Release\CKEditor.NET.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\ckeditor_aspnet_3.6.6.2\bin\Debug\CKEditor.NET.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
@@ -113,6 +113,10 @@
     <Content Include="Images\Event\promo 2.png" />
     <Content Include="Images\Event\promo 3.png" />
     <Content Include="Images\Login\email-icon.png" />
+    <Content Include="Images\Registeration\emailicon.png" />
+    <Content Include="Images\Registeration\comfirm-pass-icon.png" />
+    <Content Include="Images\Registeration\password-icon.png" />
+    <Content Include="Images\Registeration\usericon.png" />
     <Content Include="Images\Login\login.jpg" />
     <Content Include="Images\Login\login.png" />
     <Content Include="Images\Login\password-icon.png" />

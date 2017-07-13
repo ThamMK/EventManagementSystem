@@ -9,79 +9,62 @@
 
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-         <script type="text/javascript">
-             $(document).ready(function () {
-                 $('#<%= butCancel.ClientID %>').click(function(e) 
-                 {
-                     showDialog('#txtFullName'.toString());
-                 })
-                 return false;
-             });
-         </script>
+         <link href="Scripts/RegistrationForm.css" rel="stylesheet" type="text/css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <html xmlns="http://www.w3.org/1999/xhtml">
-    
-    <body>
-        
-            <div class="form-group">
-                <h2>Registration Form</h2>
-            </div>
-            <div class="form-group">
-                <label for="firstName" class="col-sm-3 control-label">Full Name</label>
-                <div class="col-sm-9">
-                    <input type="text" id="txtFullName" name="txtFullName" placeholder="Full Name" class="form-control"/>
-                    <span class="help-block">Full Name = Last Name First Name, eg.: Smith Harry or Zuo Jun Yong</span>
+        <body>
+            <div class="container-RegistrationForm">
+                <h2>Registration Form</h2>       
+                <div class="username-input">
+                    <div id="username-icon">
+                        <img style="width:22px;height:22px;margin-top:11px;margin-left:11px;" src="Images/Registeration/usericon.png" />
+                    </div>
+                    <input type="text" id="txtFullName" class="txtFullName" name="txtFullName" placeholder="Username" runat="server" />  
+                </div>
+                <div class="Email">    
+                    <div id="email-icon">
+                        <img style="width:22px;height:22px;margin-top:11px;margin-left:11px;" src="Images/Registeration/emailicon.png" />
+                    </div>
+                    <input type="email" id="txtEmail" class="txtEmail" name="txtEmail" placeholder="Email" runat="server"/>
+                </div> 
+                <div class="pass-input">  
+                    <div id="pass-icon">
+                        <img style="width:22px;height:22px;margin-top:11px;margin-left:11px;" src="Images/Registeration/password-icon.png" />
+                    </div>
+                    <input type="password" id="txtPassword" class="txtPassword" placeholder="Password" runat="server"/> 
+                </div>   
+                <div class="confirmPass">  
+                    <div id="comfirm-pass-icon">
+                        <img style="width:22px;height:22px;margin-top:11px;margin-left:11px;" src="Images/Registeration/comfirm-pass-icon.png" />
+                    </div>  
+                    <input type="password" id="txtComfirmPassword" class="txtComfirmPassword" placeholder="Comfirm Password"  runat="server"/>
+                </div>    
+                <div class="birthdropdownlist">
+                    <div class="container">
+                        <asp:DropDownList ID="DropDownListYear" runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownListYear_SelectedIndexChanged">
+                        </asp:DropDownList>
+                        <asp:DropDownList ID="DropDownListMonth" runat="server" OnSelectedIndexChanged="DropDownListMonth_SelectedIndexChanged" AutoPostBack="True">
+                            <asp:ListItem>January</asp:ListItem>
+                            <asp:ListItem>February</asp:ListItem>
+                            <asp:ListItem>March</asp:ListItem>
+                            <asp:ListItem>April</asp:ListItem>
+                            <asp:ListItem>July</asp:ListItem>
+                            <asp:ListItem>August</asp:ListItem>
+                            <asp:ListItem>September</asp:ListItem>
+                            <asp:ListItem>October</asp:ListItem>
+                            <asp:ListItem>November</asp:ListItem>
+                            <asp:ListItem>December</asp:ListItem>
+                        </asp:DropDownList>
+                        <asp:DropDownList ID="DropDownListDay" runat="server" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged" AutoPostBack="True">
+                        </asp:DropDownList>           
+                    </div>
+                </div>
+                <div class="buttonaction">
+                    <asp:Button ID="btnRegister" class="btnRegister" runat="server" Text="Register" />
+                    <asp:Button ID="btnCancel" class="btnCancel" runat="server" Text="Cancel" />
                 </div>
             </div>
-            <div class="form-group">
-                <label for="email" class="col-sm-3 control-label">Email</label>
-                <div class="col-sm-9">
-                    <input type="email" id="txtEmail" placeholder="Email" class="form-control"/>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="password" class="col-sm-3 control-label">Password</label>
-                <div class="col-sm-9">
-                    <input type="password" id="txtPassword" placeholder="Password" class="form-control"/>
-                </div>
-            </div>
-        <div class="form-group">
-                <label for="password" class="col-sm-3 control-label">Comfirm Password</label>
-                <div class="col-sm-9">
-                    <input type="password" id="txtComfirmPassword" placeholder="Comfirm Password" class="form-control"/>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="birthDate" class="col-sm-3 control-label">Date of Birth</label>
-                <div class="container">
-                    <div class="form-group">
-                    <asp:DropDownList ID="DropDownListYear" runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownListYear_SelectedIndexChanged">
-                    </asp:DropDownList>
-                    <asp:DropDownList ID="DropDownListMonth" runat="server" OnSelectedIndexChanged="DropDownListMonth_SelectedIndexChanged" AutoPostBack="True">
-                        <asp:ListItem>January</asp:ListItem>
-                        <asp:ListItem>February</asp:ListItem>
-                        <asp:ListItem>March</asp:ListItem>
-                        <asp:ListItem>April</asp:ListItem>
-                        <asp:ListItem>July</asp:ListItem>
-                        <asp:ListItem>August</asp:ListItem>
-                        <asp:ListItem>September</asp:ListItem>
-                        <asp:ListItem>October</asp:ListItem>
-                        <asp:ListItem>November</asp:ListItem>
-                        <asp:ListItem>December</asp:ListItem>
-                    </asp:DropDownList>
-                    <asp:DropDownList ID="DropDownListDay" runat="server" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged" AutoPostBack="True">
-                    </asp:DropDownList>
-                        </div>
-                </div>
-            </div>
-            <div class="form-group">
-                    <asp:Button ID="butRegister" runat="server" Text="Register"/>
-                    <asp:Button ID="butCancel" runat="server" Text="Cancel" Width="70px"  />
-                    <asp:Button ID="butReset" runat="server" Text="Reset" />
-             </div>
-            
-     
-    </body>
-</html>
+        </body>
+    </html>
 </asp:Content>

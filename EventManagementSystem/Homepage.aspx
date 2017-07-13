@@ -14,28 +14,7 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-        <script>
 
-        $(document).ready(function () {
-
-
-            $(".tint").hover(
-                function () {
-                    $(this).siblings(".event-image-category-logo").animate({ top: '100px' });
-                    $(this).siblings("h6").css("visibility", "visible");
-                },
-
-                function () {
-                    $(this).siblings(".event-image-category-logo").animate({ top: '125px' });
-                    $(this).siblings("h6").css("visibility", "hidden");
-                }
-
-            );
-            
-
-
-        });
-    </script>
 </head>
 <body>
     
@@ -46,6 +25,9 @@
             <div class="col-sm-4">
                 <a href="EventDetail.aspx">
                 <div class="event-container">
+                    <div class="event-desc-title">
+                            TARUC Final Exam
+                    </div>
                     <div class="event-image-div">
                         <asp:Image runat="server" CssClass="event-image" ImageUrl="\Images\Event\event1.png" />
                     </div>
@@ -53,9 +35,7 @@
                         <div class="event-desc-date">
                             Saturday, 24th July 2017
                         </div>
-                        <div class="event-desc-title">
-                            TARUC Final Exam
-                        </div>
+
                         <div class="event-desc-location">
                             Block ABC
                             
@@ -71,6 +51,9 @@
             
             <div class="col-sm-4">
                 <div class="event-container">
+                    <div class="event-desc-title">
+                        TARUC Final Exam
+                    </div>
                     <div class="event-image-div">
                         <asp:Image runat="server" CssClass="event-image" ImageUrl="\Images\Event\event2.png" />
                     </div>
@@ -78,9 +61,7 @@
                         <div class="event-desc-date">
                             Saturday, 24th July 2017
                         </div>
-                        <div class="event-desc-title">
-                            TARUC Final Exam
-                        </div>
+
                         <div class="event-desc-location">
                             Block ABC
                         </div>
@@ -93,6 +74,9 @@
             
             <div class="col-sm-4">
                 <div class="event-container">
+                    <div class="event-desc-title">
+                        TARUC Final Exam
+                    </div>
                      <div class="event-image-div">
                         <asp:Image runat="server" CssClass="event-image" ImageUrl="\Images\Event\event3.png" />
                     </div>
@@ -100,9 +84,7 @@
                         <div class="event-desc-date">
                             Saturday, 24th July 2017
                         </div>
-                        <div class="event-desc-title">
-                            TARUC Final Exam
-                        </div>
+
                         <div class="event-desc-location">
                             Block ABC
                         </div>
@@ -117,6 +99,9 @@
         <div class="row">
             <div class="col-sm-4">
                 <div class="event-container">
+                    <div class="event-desc-title">
+                        TARUC Final Exam
+                    </div>
                     <div class="event-image-div">
                         <asp:Image runat="server" CssClass="event-image" ImageUrl="\Images\Event\event1.png" />
                     </div>
@@ -124,9 +109,7 @@
                         <div class="event-desc-date">
                             Saturday, 24th July 2017
                         </div>
-                        <div class="event-desc-title">
-                            TARUC Final Exam
-                        </div>
+
                         <div class="event-desc-location">
                             Location : Block ABC
                         </div>
@@ -139,6 +122,9 @@
             
             <div class="col-sm-4">
                 <div class="event-container">
+                    <div class="event-desc-title">
+                        TARUC Final Exam
+                    </div>
                     <div class="event-image-div">
                         <asp:Image runat="server" CssClass="event-image" ImageUrl="\Images\Event\event2.png" />
                     </div>
@@ -146,9 +132,7 @@
                         <div class="event-desc-date">
                             Saturday, 24th July 2017
                         </div>
-                        <div class="event-desc-title">
-                            TARUC Final Exam
-                        </div>
+
                         <div class="event-desc-location">
                             Location : Block ABC
                         </div>
@@ -161,6 +145,9 @@
             
             <div class="col-sm-4">
                 <div class="event-container">
+                    <div class="event-desc-title">
+                        TARUC Final Exam
+                    </div>
                      <div class="event-image-div">
                         <asp:Image runat="server" CssClass="event-image" ImageUrl="\Images\Event\event3.png" />
                     </div>
@@ -168,9 +155,7 @@
                         <div class="event-desc-date">
                             Saturday, 24th July 2017
                         </div>
-                        <div class="event-desc-title">
-                            TARUC Final Exam
-                        </div>
+
                         <div class="event-desc-location">
                             Location : Block ABC
                         </div>
@@ -185,6 +170,9 @@
         <div class="row">
             <div class="col-sm-4">
                 <div class="event-container">
+                    <div class="event-desc-title">
+                        TARUC Final Exam
+                    </div>
                     <div class="event-image-div">
                         <asp:Image runat="server" CssClass="event-image" ImageUrl="\Images\Event\event1.png" />
                     </div>
@@ -192,9 +180,7 @@
                         <div class="event-desc-date">
                             Saturday, 24th July 2017
                         </div>
-                        <div class="event-desc-title">
-                            TARUC Final Exam
-                        </div>
+
                         <div class="event-desc-location">
                             Block ABC
                             
@@ -209,6 +195,9 @@
             
             <div class="col-sm-4">
                 <div class="event-container">
+                    <div class="event-desc-title">
+                        TARUC Final Exam
+                    </div>
                     <div class="event-image-div">
                         <asp:Image runat="server" CssClass="event-image" ImageUrl="\Images\Event\event2.png" />
                     </div>
@@ -216,9 +205,7 @@
                         <div class="event-desc-date">
                             Saturday, 24th July 2017
                         </div>
-                        <div class="event-desc-title">
-                            TARUC Final Exam
-                        </div>
+
                         <div class="event-desc-location">
                             Block ABC
                         </div>
@@ -231,6 +218,9 @@
             
             <div class="col-sm-4">
                 <div class="event-container">
+                    <div class="event-desc-title">
+                        TARUC Final Exam
+                    </div>
                      <div class="event-image-div">
                         <asp:Image runat="server" CssClass="event-image" ImageUrl="\Images\Event\event3.png" />
                     </div>
@@ -238,9 +228,7 @@
                         <div class="event-desc-date">
                             Saturday, 24th July 2017
                         </div>
-                        <div class="event-desc-title">
-                            TARUC Final Exam
-                        </div>
+
                         <div class="event-desc-location">
                             Block ABC
                         </div>

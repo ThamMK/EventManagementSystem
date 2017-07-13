@@ -64,9 +64,9 @@
                             <img src="Images/Navigation/search-button.png" id="search-button" onmouseover="this.src='Images/Navigation/search-button-blue.png'" onmouseout="this.src='Images/Navigation/search-button.png'" />
                             <ul class="right_ul">
                                 <li style="padding-top: -10px">
-                                    <asp:HyperLink runat="server" style="text-decoration:none">Login</asp:HyperLink></li>
+                                    <asp:HyperLink runat="server" style="text-decoration:none" NavigateUrl="~/Login.aspx">Login</asp:HyperLink></li>
                                 <li style="margin-top: -10px">
-                                    <asp:HyperLink runat="server" style="text-decoration:none">Sign Up</asp:HyperLink></li>
+                                    <asp:HyperLink runat="server" style="text-decoration:none" NavigateUrl="~/Registration.aspx">Sign Up</asp:HyperLink></li>
                             </ul>
                         </div>
                     </nav>

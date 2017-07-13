@@ -49,15 +49,15 @@
                     <nav>
                         <ul class="left_ul">
                             <li>
-                                <asp:HyperLink runat="server" style="text-decoration:none">Home</asp:HyperLink></li>
+                                <asp:HyperLink runat="server" style="text-decoration:none" NavigateUrl="~/Homepage.aspx">Home</asp:HyperLink></li>
                             <li>
-                                <asp:HyperLink runat="server" style="text-decoration:none">About Us</asp:HyperLink></li>
+                                <asp:HyperLink runat="server" style="text-decoration:none" NavigateUrl="~/AboutUs.aspx">About Us</asp:HyperLink></li>
                             <li>
-                                <asp:HyperLink runat="server" style="text-decoration:none">Contact Us</asp:HyperLink></li>
+                                <asp:HyperLink runat="server" style="text-decoration:none" NavigateUrl="~/ContactUs.aspx">Contact Us</asp:HyperLink></li>
                         </ul>
 
                         <div class="logo_div">
-                            <img src="Images/Navigation/logo.png" id="logo" />
+                            <a href="Homepage.aspx"><img src="Images/Navigation/logo.png" id="logo" /></a>
                         </div>
 
                         <div class="right-side-navi">

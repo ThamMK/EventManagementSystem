@@ -69,6 +69,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AboutUs.aspx" />
     <Content Include="bin\EventManagementSystem.dll" />
     <Content Include="bin\EventManagementSystem.pdb" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
@@ -84,6 +85,7 @@
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
     <Content Include="CancelEvent.aspx" />
     <Content Include="CheckAvailability.aspx" />
+    <Content Include="ContactUs.aspx" />
     <Content Include="CreateEvent.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Event.aspx" />
@@ -121,6 +123,10 @@
     <Content Include="Images\Navigation\logo.png" />
     <Content Include="Images\Navigation\search-button-blue.png" />
     <Content Include="Images\Navigation\search-button.png" />
+    <Content Include="Images\Registeration\comfirm-pass-icon.png" />
+    <Content Include="Images\Registeration\emailicon.png" />
+    <Content Include="Images\Registeration\password-icon.png" />
+    <Content Include="Images\Registeration\usericon.png" />
     <Content Include="obj\Debug\EventManagementSystem.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\EventManagementSystem.dll" />
     <Content Include="obj\Debug\EventManagementSystem.pdb" />
@@ -160,6 +166,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CancelEvent.aspx.cs">
       <DependentUpon>CancelEvent.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -173,6 +186,13 @@
     </Compile>
     <Compile Include="CheckAvailability.aspx.designer.cs">
       <DependentUpon>CheckAvailability.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
     </Compile>
     <Compile Include="CreateEvent.aspx.cs">
       <DependentUpon>CreateEvent.aspx</DependentUpon>

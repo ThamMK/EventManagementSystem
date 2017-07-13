@@ -38,10 +38,12 @@
                 <h1>TARUC FINAL EXAM</h1>
             </div>
             <div class="event-organizer">
-                <h3>Software Engineering</h3>
+                <h5>Organized by</h5>
+                <h3>Software Engineering Society</h3>
             </div>
             <div class="event-price">
-                <h5>RM 1000.00</h5>
+                <h4>Price</h4>
+                <h3>RM 1000.00</h3>
             </div>
 
         </div>

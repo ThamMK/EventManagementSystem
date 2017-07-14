@@ -138,5 +138,13 @@ namespace EventManagementSystem
                 ddlTime.Enabled = false;
             }
         }
+
+        protected void btnProceed_Click(object sender, EventArgs e)
+        {
+            if (1==1) {
+                Response.Redirect("CreateEvent.aspx",false);
+                Context.ApplicationInstance.CompleteRequest();
+            }
+        }
     }
     }

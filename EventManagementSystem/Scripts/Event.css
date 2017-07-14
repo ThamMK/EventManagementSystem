@@ -31,7 +31,7 @@
 .imgNav{
     width: 650px;
     height: 200px;
-    margin-left: 375px
+    margin-left: 364px
 }
 
 .container-CheckAvailability {
@@ -56,10 +56,23 @@
 }
 .btnProceed{
     float: left;
+     border-radius: 8px;
+    font-family: Arial;
+    color: #ffffff;
+    background: #34d960;
+    font-size: 20px;
+    text-decoration: none;
+    border-style: none;
 }
 .btnCancel{
     float: left;
     margin-left: 10px;
+    border-radius: 8px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    border-style: none;
 }
 
 

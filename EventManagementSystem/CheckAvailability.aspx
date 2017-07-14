@@ -42,7 +42,7 @@
             </div>
             <div class="container-Button">
 
-                <asp:Button ID="btnProceed" CssClass="btnProceed" runat="server" Text="Proceed" />
+                <asp:Button ID="btnProceed" CssClass="btnProceed" runat="server" Text="Proceed" OnClick="btnProceed_Click" />
                 <asp:Button ID="btnCancel" CssClass="btnCancel" runat="server" Text="Cancel" />
 
             </div>

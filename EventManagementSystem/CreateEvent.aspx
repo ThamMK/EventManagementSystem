@@ -29,13 +29,13 @@
     <body>
         <div class="container-CreateEvent">
 
-            <div class="eventDetail">
-
-                <div class="container-Navigation">
+             <div class="container-Navigation">
 
                     <asp:Image ID="imgNav2" CssClass="imgNav2" ImageUrl="~/Images/Event/navigation2.png" runat="server"  />
 
                 </div>
+
+            <div class="eventDetail">
 
                 <div class="eventDetail-Header">
 
@@ -60,6 +60,18 @@
                         <asp:Label ID="lblLocation" CssClass="lblLocation" runat="server" Text="Location"></asp:Label>
 
                         <asp:TextBox ID="txtLocation" CssClass="txtLocation" runat="server"></asp:TextBox>
+
+                    </div>
+
+                    <div class="eventDetail-EventDescription">
+
+                        <asp:Label ID="lblEventDescription" CssClass="lblEventDescription" runat="server" Text="Event Description"></asp:Label>
+
+                        <div class="eventDetail-CKEditor">
+
+                            <CKEditor:CKEditorControl ID="CKEditor1" CssClass="CKEditor1" BasePath="/ckeditor/" runat="server" float="left" clear="left"></CKEditor:CKEditorControl>
+
+                        </div>
 
                     </div>
 
@@ -183,18 +195,6 @@
                                 }
                             }
                         </script>
-
-                    </div>
-
-                    <div class="eventDetail-EventDescription">
-
-                        <asp:Label ID="lblEventDescription" CssClass="lblEventDescription" runat="server" Text="Event Description"></asp:Label>
-
-                        <div class="eventDetail-CKEditor">
-
-                            <CKEditor:CKEditorControl ID="CKEditor1" CssClass="CKEditor1" BasePath="/ckeditor/" runat="server" float="left" clear="left"></CKEditor:CKEditorControl>
-
-                        </div>
 
                     </div>
 

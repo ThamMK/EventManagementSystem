@@ -17,6 +17,7 @@
 
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
         <link rel="stylesheet" href="https://unpkg.com/flatpickr/dist/flatpickr.min.css" />
         <script src="https://unpkg.com/flatpickr"></script>
 
@@ -30,7 +31,15 @@
 
             <div class="eventDetail">
 
+                <div class="container-Navigation">
+
+                    <asp:Image ID="imgNav2" CssClass="imgNav2" ImageUrl="~/Images/Event/navigation2.png" runat="server"  />
+
+                </div>
+
                 <div class="eventDetail-Header">
+
+                    <asp:Image ID="imgeOne" CssClass="imgOne" ImageUrl="~/Images/Event/1.png" runat="server"  />
 
                     <asp:Label ID="lblEventDetail" CssClass="lblEventDetail" runat="server" Text="Event Details"></asp:Label>
 
@@ -40,7 +49,7 @@
 
                     <div class="eventDetail-Title">
 
-                        <asp:Label ID="lblEventTitle" CssClass="lblEventTitle" runat="server" Text="EVENT TITLE"></asp:Label>
+                        <asp:Label ID="lblEventTitle" CssClass="lblEventTitle" runat="server" Text="Event Title"></asp:Label>
 
                         <asp:TextBox ID="txtEventTitle" CssClass="txtEventTitle" runat="server"></asp:TextBox>
 
@@ -48,7 +57,7 @@
 
                     <div class="eventDetail-Location">
 
-                        <asp:Label ID="lblLocation" CssClass="lblLocation" runat="server" Text="LOCATION"></asp:Label>
+                        <asp:Label ID="lblLocation" CssClass="lblLocation" runat="server" Text="Location"></asp:Label>
 
                         <asp:TextBox ID="txtLocation" CssClass="txtLocation" runat="server"></asp:TextBox>
 
@@ -58,7 +67,7 @@
 
                         <div class="eventDetail-StartDate">
 
-                            <asp:Label ID="lblStart" CssClass="lblStart" runat="server" Text="START"></asp:Label>
+                            <asp:Label ID="lblStart" CssClass="lblStart" runat="server" Text="Start"></asp:Label>
 
                             <div class="eventDetail-StartDateTime">
 
@@ -98,7 +107,7 @@
 
                         <div class="eventDetail-EndDate">
 
-                            <asp:Label ID="lblEnd" CssClass="lblEnd" runat="server" Text="END"></asp:Label>
+                            <asp:Label ID="lblEnd" CssClass="lblEnd" runat="server" Text="End"></asp:Label>
 
                             <div class="eventDetail-EndDateTime">
 
@@ -140,7 +149,7 @@
 
                     <div>
 
-                        <asp:Label ID="lblCategory" CssClass="lblCategory" runat="server" Text="EVENT CATEGORY"></asp:Label>
+                        <asp:Label ID="lblCategory" CssClass="lblCategory" runat="server" Text="Event Category"></asp:Label>
 
                         <asp:DropDownList ID="ddlCategory" CssClass="ddlCategory" runat="server" Enabled="true" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" placeholder="Please select a category.">
 
@@ -158,15 +167,28 @@
 
                     <div class="eventDetail-EventImage">
 
-                        <asp:Label ID="lblEventImage" CssClass="lblEventImage" runat="server" Text="EVENT IMAGE"></asp:Label>
+                        <asp:Label ID="lblEventImage" CssClass="lblEventImage" runat="server" Text="Event Image"></asp:Label>
 
-                        <asp:Image ID="imgAddImage" CssClass="imgAddImage" runat="server" ImageUrl="\Images\Event\ADD_IMAGE.png" />
+                        <asp:FileUpload ID="FUImage" runat="server" style="display: none;"/>
+
+                        <asp:ImageButton  ID="imgAddImage" CssClass="imgAddImage" onClientClick="chooseFile();" runat="server" AutoPostBack="False" ImageUrl="~/Images/Event/ADD_IMAGE.png" />
+
+                        <script type="text/javascript">
+                            function chooseFile() {
+                                document.getElementById("FUImage").click();
+                                if (FUImage.HasFile) {
+                                    FUImage.SaveAs(MapPath("/Images/Event/" + FUImage.FileName));
+                                    //imgViewFile.ImageUrl = Server.MapPath("~/Event/" + FUImage.FileName);
+                                    imgAddImage.ImageUrl = "/Images/Event/" + FUImage.FileName;
+                                }
+                            }
+                        </script>
 
                     </div>
 
                     <div class="eventDetail-EventDescription">
 
-                        <asp:Label ID="lblEventDescription" CssClass="lblEventDescription" runat="server" Text="EVENT DESCRIPTION"></asp:Label>
+                        <asp:Label ID="lblEventDescription" CssClass="lblEventDescription" runat="server" Text="Event Description"></asp:Label>
 
                         <div class="eventDetail-CKEditor">
 
@@ -183,15 +205,17 @@
 
                 <div class="organizerDetail-Header">
 
+                    <asp:Image ID="imgTwo" CssClass="imgTwo" ImageUrl="~/Images/Event/2.png" runat="server"  />
+
                     <asp:Label ID="lblOrganizerDetail" CssClass="lblOrganizerDetail" runat="server" Text="Organizer Details"></asp:Label>
 
                 </div>
 
-                <div class="organizationDetail-2">
+                <div class="organizationDetail-Detail">
 
                     <div class="organizationDetail-OrganizerName">
 
-                        <asp:Label ID="lblOrganizerName" CssClass="lblOrganizerName" runat="server" Text="ORGANIZER NAME"></asp:Label>
+                        <asp:Label ID="lblOrganizerName" CssClass="lblOrganizerName" runat="server" Text="Organizer Name"></asp:Label>
 
                         <asp:TextBox ID="txtOrganizerName" CssClass="txtOrganizerName" runat="server"></asp:TextBox>
 
@@ -199,7 +223,7 @@
 
                     <div class="organizationDetail-OrganizerContactNumber">
 
-                        <asp:Label ID="lblOrganizationContactNumber" CssClass="lblOrganizerContactNumber" runat="server" Text="ORGANIZER Contact Number"></asp:Label>
+                        <asp:Label ID="lblOrganizationContactNumber" CssClass="lblOrganizerContactNumber" runat="server" Text="Organizer Contact Number"></asp:Label>
 
                         <asp:TextBox ID="txtOrganizationContactNumber" CssClass="txtOrganizerContactNumber" placeholder="e.g. 016-1234567" runat="server"></asp:TextBox>
 
@@ -207,7 +231,7 @@
 
                     <div class="organizationDetail-OrganizerEmail">
 
-                        <asp:Label ID="lblOrganizationEmail" CssClass="lblOrganizerEmail" runat="server" Text="ORGANIZER Email Address"></asp:Label>
+                        <asp:Label ID="lblOrganizationEmail" CssClass="lblOrganizerEmail" runat="server" Text="Organizer Email Address"></asp:Label>
 
                         <asp:TextBox ID="txtOrganizationEmail" CssClass="txtOrganizerEmail" placeholder="e.g. xxx_xx@gmail.com" runat="server"></asp:TextBox>
 
@@ -219,17 +243,13 @@
 
             <div class="eventButton">
 
-                <asp:Button ID="btnReset" CssClass="btnReset" runat="server" Text="Reset" />
+                <asp:Button ID="btnSubmit" CssClass="btnSubmit" runat="server" Text="Submit" />
 
                 <asp:Button ID="btnCancel" CssClass="btnCancel" runat="server" Text="Cancel" />
 
-                <asp:Button ID="btnSubmit" CssClass="btnSubmit" runat="server" Text="Submit" />
+                <asp:Button ID="btnReset" CssClass="btnReset" runat="server" Text="Reset" />
 
             </div>
-
-
-
-
 
         </div>
 

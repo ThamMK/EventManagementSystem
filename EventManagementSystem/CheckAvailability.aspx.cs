@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Globalization;
 using System.Linq;
 using System.Web;
@@ -12,7 +13,11 @@ namespace EventManagementSystem
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+           /* Bitmap bmpOriginal = Bitmap.FromFile("~/Images/Event/Navigation1.png");
+            Bitmap bmpResampled = new Bitmap(200, 50);
+            Graphics g = Graphics.FromImage(bmpResampled);
+            g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.Bilinear;
+            g.DrawImage(bmpOriginal, new Rectangle(0, 0, bmpResampled.Width + 1, bmpResampled.Height + 1));*/
         }
 
         protected void datetimepicker_TextChanged(object sender, EventArgs e)

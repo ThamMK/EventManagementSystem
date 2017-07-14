@@ -13,6 +13,24 @@ namespace EventManagementSystem {
     public partial class CreateEvent {
         
         /// <summary>
+        /// imgNav2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image imgNav2;
+        
+        /// <summary>
+        /// imgeOne control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image imgeOne;
+        
+        /// <summary>
         /// lblEventDetail control.
         /// </summary>
         /// <remarks>
@@ -139,13 +157,22 @@ namespace EventManagementSystem {
         protected global::System.Web.UI.WebControls.Label lblEventImage;
         
         /// <summary>
+        /// FUImage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload FUImage;
+        
+        /// <summary>
         /// imgAddImage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgAddImage;
+        protected global::System.Web.UI.WebControls.ImageButton imgAddImage;
         
         /// <summary>
         /// lblEventDescription control.
@@ -164,6 +191,15 @@ namespace EventManagementSystem {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::CKEditor.NET.CKEditorControl CKEditor1;
+        
+        /// <summary>
+        /// imgTwo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image imgTwo;
         
         /// <summary>
         /// lblOrganizerDetail control.
@@ -229,13 +265,13 @@ namespace EventManagementSystem {
         protected global::System.Web.UI.WebControls.TextBox txtOrganizationEmail;
         
         /// <summary>
-        /// btnReset control.
+        /// btnSubmit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnReset;
+        protected global::System.Web.UI.WebControls.Button btnSubmit;
         
         /// <summary>
         /// btnCancel control.
@@ -247,12 +283,12 @@ namespace EventManagementSystem {
         protected global::System.Web.UI.WebControls.Button btnCancel;
         
         /// <summary>
-        /// btnSubmit control.
+        /// btnReset control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSubmit;
+        protected global::System.Web.UI.WebControls.Button btnReset;
     }
 }

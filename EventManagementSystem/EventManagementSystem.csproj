@@ -88,6 +88,7 @@
     <Content Include="ContactUs.aspx" />
     <Content Include="CreateEvent.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="Default2.aspx" />
     <Content Include="Event.aspx" />
     <Content Include="EventDetail.aspx" />
     <Content Include="Homepage.aspx" />
@@ -142,6 +143,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Content Include="TestMaster.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -208,6 +210,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Default2.aspx.cs">
+      <DependentUpon>Default2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default2.aspx.designer.cs">
+      <DependentUpon>Default2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Event.aspx.cs">
       <DependentUpon>Event.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -268,6 +277,13 @@
     </Compile>
     <Compile Include="TestComfirmBox.aspx.designer.cs">
       <DependentUpon>TestComfirmBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestMaster.Master.cs">
+      <DependentUpon>TestMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestMaster.Master.designer.cs">
+      <DependentUpon>TestMaster.Master</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

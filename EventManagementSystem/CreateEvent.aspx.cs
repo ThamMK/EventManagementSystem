@@ -28,5 +28,28 @@ namespace EventManagementSystem
         {
 
         }
+
+        
+        /*
+protected void addImage_Click(object sender, ImageClickEventArgs e)
+{
+   if (FUImage.HasFile)
+   {
+       addImage.SaveAs(MapPath("/Images/Event/" + FUImage.FileName));
+       //imgViewFile.ImageUrl = Server.MapPath("~/Event/" + FUImage.FileName);
+       addImage.ImageUrl = "/Images/Event/" + FUImage.FileName;
+   }
+}*/
+
+        /*
+        protected void imgAddImage_Click(object sender, ImageClickEventArgs e)
+        {
+            if (FUImage.HasFile)
+            {
+                FUImage.SaveAs(MapPath("/Images/Event/" + FUImage.FileName));
+                //imgViewFile.ImageUrl = Server.MapPath("~/Event/" + FUImage.FileName);
+                imgAddImage.ImageUrl = "/Images/Event/" + FUImage.FileName;
+            }
+        }*/
     }
 }

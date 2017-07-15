@@ -20,7 +20,7 @@
     
     <div class="container-homepage">
     <div class="container">
-        <h2>Popular Events</h2>
+        <h2>Latest Events</h2>
         <div class="row">
             <div class="col-sm-4">
                 <a href="EventDetail.aspx">

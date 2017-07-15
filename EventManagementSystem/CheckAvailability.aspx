@@ -20,7 +20,8 @@
     </head>
     <body>
         <div class="container-CheckAvailability">
-            <div>
+            
+            <div class="container-Navigation">
                 <asp:Image ID="imgNav" CssClass="imgNav" ImageUrl="~/Images/Event/Navigation1.png" runat="server"  />
 
             </div>

@@ -102,27 +102,7 @@ namespace EventManagementSystem
 
         public void ReassignValue()
         {
-            name = Request.Form["txtFullName"];
-            email = Request.Form["txtEmail"];
-            password = Request.Form["txtPassword"];
-            comfirmPassword = Request.Form["txtComfirmPassword"];
-            selectedYear = DropDownListYear.SelectedIndex;
-
-            DropDownListYear.SelectedIndex = selectedYear;
-            txtFullName.Value = name;
-            txtEmail.Value = email;
-            txtPassword.Value = password;
-            txtComfirmPassword.Value = comfirmPassword;
-
-            if(DropDownListDay.SelectedValue == "1")
-            {
-
-            }
-            if(DropDownListMonth.SelectedValue == "January")
-            {
-
-            }
-
+            
         }
     }
 

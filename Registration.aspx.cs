@@ -9,11 +9,6 @@ namespace EventManagementSystem
 {
     public partial class Registration : System.Web.UI.Page
     {
-        String name;
-        String email;
-        String password;
-        String comfirmPassword;
-        int selectedYear;
         int day_max_value = 31;
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -26,6 +21,8 @@ namespace EventManagementSystem
 
         protected void DropDownListMonth_SelectedIndexChanged(object sender, EventArgs e)
         {
+            String name = Request.Form["txtFullName"];
+            txtFullName.Value = "";
             SetupMaxDate();
             SetupDate();
         }
@@ -97,31 +94,6 @@ namespace EventManagementSystem
 
         protected void butReset_Click(object sender, EventArgs e)
         {
-
-        }
-
-        public void ReassignValue()
-        {
-            name = Request.Form["txtFullName"];
-            email = Request.Form["txtEmail"];
-            password = Request.Form["txtPassword"];
-            comfirmPassword = Request.Form["txtComfirmPassword"];
-            selectedYear = DropDownListYear.SelectedIndex;
-
-            DropDownListYear.SelectedIndex = selectedYear;
-            txtFullName.Value = name;
-            txtEmail.Value = email;
-            txtPassword.Value = password;
-            txtComfirmPassword.Value = comfirmPassword;
-
-            if(DropDownListDay.SelectedValue == "1")
-            {
-
-            }
-            if(DropDownListMonth.SelectedValue == "January")
-            {
-
-            }
 
         }
     }

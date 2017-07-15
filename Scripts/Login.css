@@ -1,0 +1,144 @@
+﻿#background {
+    width: 100%;
+    height: 100%;
+    background-color: #12ABE3;
+    background-image:url("../Images/Login/login.png");
+    background-size:80%;
+    position:fixed;
+    background-repeat:repeat-x;
+}
+
+#left-login-panel{
+    float:left;
+    margin-left:10%;
+    margin-top:11%;
+}
+
+#not-member{
+    color:white;
+    font-size:380%;
+    font-weight:bold;
+}
+
+#not-member-content{
+    color:white;
+    margin-top:10px;
+    font-size:16px;
+}
+
+.login-signup-button{
+    background-color:transparent;
+    border:2px solid white;
+    margin-top:20px;
+    color:white;
+    font-size:16px;
+}
+
+.login-signup-button:hover{
+    background-color:white;
+    color:deepskyblue;
+}
+
+#login{
+    float:left;
+    margin-top:-325px;
+    margin-left:57%;
+    width:450px;
+    height:450px;
+    background-color:white;
+}
+
+.login-div label{
+    margin-top:30px;
+    margin-left:170px;
+    font-size:40px;
+    color:deepskyblue;
+}
+
+.form-horizontal{
+    margin-left:50px;
+}
+
+.email-input{
+    margin-top:20px;
+}
+
+#email-icon{
+    background-color:deepskyblue;
+    float:left;
+    width:45px;
+    height:45px;
+    margin-top:10px;
+    margin-left:-15px;
+}
+
+#email{
+    margin-top:15px;
+    height:35px;
+    width:335px;
+    padding-left:10px;
+    font-size:16px;
+    border-width:0.1px;
+    border-color:dimgrey;
+    border-style:solid solid solid none;
+}
+
+.password-input{
+    clear:both;
+    margin-top:15px;
+}
+
+#password-icon{
+    background-color:deepskyblue;
+    float:left;
+    width:45px;
+    height:45px;
+    margin-top:10px;
+    margin-left:-15px;
+}
+
+#pwd{
+    margin-top:15px;
+    height:35px;
+    width:335px;
+    padding-left:10px;
+    font-size:16px;
+    border-width:0.1px;
+    border-color:dimgrey;
+    border-style:solid solid solid none;
+}
+
+.forget-password{
+    margin-top:15px;
+    margin-right:35px;
+    float:right;
+
+}
+
+.login-button{
+    clear:both;
+}
+
+#btn-submit{
+    background-color:deepskyblue;
+    border:none;
+    cursor:pointer;
+    margin-top:15px;
+    margin-bottom:57px;
+    color:white;
+    font-size:16px;
+    height:50px;
+    width:380px;
+}
+
+#btn-submit:hover{
+    background-color:#3FA9F5;
+}
+
+.login-div a{
+    margin-left:125px;
+}
+
+
+
+

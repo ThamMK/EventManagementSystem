@@ -1,0 +1,550 @@
+﻿.container-CreateEvent {    
+    margin-left: 24%;
+    width: 100%;
+    height: 1500px;
+    color: #666666;
+}
+
+.eventDetail {
+    float: left;
+    clear: left;
+    width: 800px;
+    height: 870px; 
+}
+
+.eventDetail-Header {
+    border-bottom: 2px dotted #12ABE3;
+    border-style: none none solid none;
+    width: 100%;
+    float: left;
+    clear: left;
+
+}
+
+.lblEventDetail {
+    -webkit-border-top-left-radius: 30px;
+    -moz-border-radius-topleft: 30px;
+    -moz-border-radius-bottomleft: 30px;
+    -webkit-border-bottom-left-radius: 30px;
+    height: 20px;
+    width: 220px;
+    font-size: 25pt;
+}
+
+.lblEventTitle {
+    margin-top: 5px;
+    float: left;
+    clear: left;
+}
+
+.txtEventTitle {
+    border: 1px solid #c4c4c4;
+    height: 25px;
+    width: 100%;
+    font-size: 13px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 8px #d9d9d9;
+    -moz-box-shadow: 0px 0px 8px #d9d9d9;
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
+    float: left;
+    clear: left;
+    top: 0px;
+    left: 0px;
+    margin-top: 5px;
+}
+
+    .txtEventTitle:focus {
+        outline: none;
+        border: 1px solid #7bc1f7;
+        box-shadow: 0px 0px 8px #7bc1f7;
+        -moz-box-shadow: 0px 0px 8px #7bc1f7;
+        -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+    }
+
+.lblLocation {
+    margin-top: 5px;
+    float: left;
+    clear: left;
+}
+
+.txtLocation {
+    margin-top: 5px;
+    float: left;
+    clear: left;
+    width: 100%;
+    height: 25px;
+    border: 1px solid #c4c4c4;
+    height: 25px;
+    width: 100%;
+    font-size: 13px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 8px #d9d9d9;
+    -moz-box-shadow: 0px 0px 8px #d9d9d9;
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
+}
+
+    .txtLocation:focus {
+        outline: none;
+        border: 1px solid #7bc1f7;
+        box-shadow: 0px 0px 8px #7bc1f7;
+        -moz-box-shadow: 0px 0px 8px #7bc1f7;
+        -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+    }
+
+.eventDetail-Date {
+    margin-top: 5px;
+    width: 100%;
+}
+
+.eventDetail-StartDate {
+    margin-top: 5px;
+    float: left;
+    width: 45%;
+}
+
+.eventDetail-StartDate-Date {
+    float: left;
+    width: 40%;
+    margin-top: 5px;
+}
+
+.eventDetail-StartDate-Time {
+    margin-left: 4%;
+    margin-top: 5px;
+    float: left;
+    width: 40%;
+}
+
+.eventDetail-EndDate {
+    margin-top: 5px;
+    margin-left: 1%;
+    float: left;
+    width: 45%;
+}
+
+.eventDetail-EndDate-Date {
+    float: left;
+    margin-top: 5px;
+    width: 40%;
+}
+
+.eventDetail-EndDate-Time {
+    margin-left: 4%;
+    margin-top: 5px;
+    float: left;
+    width: 40%;
+}
+
+.startDateTextBox {
+    border: 1px solid #c4c4c4;
+    height: 25px;
+    width: 100%;
+    font-size: 13px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 8px #d9d9d9;
+    -moz-box-shadow: 0px 0px 8px #d9d9d9;
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
+    float: left;
+    clear: left;
+    top: 0px;
+    left: 0px;
+}
+
+    .startDateTextBox:focus {
+        outline: none;
+        border: 1px solid #7bc1f7;
+        box-shadow: 0px 0px 8px #7bc1f7;
+        -moz-box-shadow: 0px 0px 8px #7bc1f7;
+        -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+    }
+
+.ddlStartTime {
+    border: 1px solid #c4c4c4;
+    height: 25px;
+    width: 100%;
+    font-size: 13px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 8px #d9d9d9;
+    -moz-box-shadow: 0px 0px 8px #d9d9d9;
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
+    float: left;
+    clear: left;
+    top: 0px;
+    left: 0px;
+}
+
+    .ddlStartTime:focus {
+        outline: none;
+        border: 1px solid #7bc1f7;
+        box-shadow: 0px 0px 8px #7bc1f7;
+        -moz-box-shadow: 0px 0px 8px #7bc1f7;
+        -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+    }
+
+.eventDetail-EndDate {
+    float: left;
+}
+
+
+
+.endDateTextBox {
+    border: 1px solid #c4c4c4;
+    height: 25px;
+    width: 100%;
+    font-size: 13px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 8px #d9d9d9;
+    -moz-box-shadow: 0px 0px 8px #d9d9d9;
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
+    float: left;
+    clear: left;
+    top: 0px;
+    left: 0px;
+}
+
+    .endDateTextBox:focus {
+        outline: none;
+        border: 1px solid #7bc1f7;
+        box-shadow: 0px 0px 8px #7bc1f7;
+        -moz-box-shadow: 0px 0px 8px #7bc1f7;
+        -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+    }
+
+.ddlEndTime:focus {
+    outline: none;
+    border: 1px solid #7bc1f7;
+    box-shadow: 0px 0px 8px #7bc1f7;
+    -moz-box-shadow: 0px 0px 8px #7bc1f7;
+    -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+}
+
+.ddlEndTime {
+    border: 1px solid #c4c4c4;
+    height: 25px;
+    width: 100%;
+    font-size: 13px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 8px #d9d9d9;
+    -moz-box-shadow: 0px 0px 8px #d9d9d9;
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
+    float: left;
+    clear: left;
+    top: 0px;
+    left: 0px;
+}
+
+.lblEventImage {
+    margin-top: 5px;
+    float: left;
+    clear: left;
+}
+
+.imgAddImage {
+    margin-top: 5px;
+    border: 1px solid #0800FF;
+    float: left;
+    clear: left;
+}
+
+    .imgAddImage:focus {
+        outline: none;
+        border: 1px solid #7bc1f7;
+        box-shadow: 0px 0px 8px #7bc1f7;
+        -moz-box-shadow: 0px 0px 8px #7bc1f7;
+        -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+    }
+
+.eventDetail-EventDescription {
+    margin-top: 5px;
+    height: 100px;
+}
+
+.lblEventDescription {
+    margin-top: 5px;
+    float: left;
+    clear: left;
+}
+
+.eventDetail-CKEditor {
+    margin-top: 5px;
+    width: 100%;
+    float: left;
+    clear: left;
+}
+
+.organizationDetail {
+    float: left;
+    clear: left;
+    width: 800px;
+    margin-top: 15px;
+}
+
+.lblOrganizerDetail {
+    height: 20px;
+    width: 220px;
+    font-size: 25pt;
+}
+
+.organizerDetail-Header {
+    border-bottom: 2px dotted #12ABE3;
+    border-style: none none solid none;
+    width: 100%;
+    float: left;
+    clear: left;
+}
+
+.organizationDetail-OrganizerName {
+    width: 100%;
+    float: left;
+    clear: left;
+}
+
+.lblOrganizerName {
+    margin-top: 5px;
+    float: left;
+    clear: left;
+}
+
+.txtOrganizerName {
+    margin-top: 5px;
+    float: left;
+    border: 1px solid #c4c4c4;
+    height: 25px;
+    width: 100%;
+    font-size: 13px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 8px #d9d9d9;
+    -moz-box-shadow: 0px 0px 8px #d9d9d9;
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
+    float: left;
+    clear: left;
+    top: 0px;
+    left: 0px;
+}
+
+    .txtOrganizerName:focus {
+        outline: none;
+        border: 1px solid #7bc1f7;
+        box-shadow: 0px 0px 8px #7bc1f7;
+        -moz-box-shadow: 0px 0px 8px #7bc1f7;
+        -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+    }
+
+.organizationDetail-OrganizerContactNumber {
+    margin-top: 5px;
+    width: 100%;
+    float: left;
+    clear: left;
+}
+
+.lblOrganizerContactNumber {
+    margin-top: 5px;
+    float: left;
+    clear: left;
+}
+
+.txtOrganizerContactNumber {
+    border: 1px solid #c4c4c4;
+    height: 25px;
+    width: 100%;
+    font-size: 13px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 8px #d9d9d9;
+    -moz-box-shadow: 0px 0px 8px #d9d9d9;
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
+    float: left;
+    clear: left;
+    top: 0px;
+    left: 0px;
+    margin-top: 5px;
+}
+
+    .txtOrganizerContactNumber:focus {
+        outline: none;
+        border: 1px solid #7bc1f7;
+        box-shadow: 0px 0px 8px #7bc1f7;
+        -moz-box-shadow: 0px 0px 8px #7bc1f7;
+        -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+    }
+
+.organizationDetail-OrganizerEmail {
+    margin-top: 5px;
+    width: 100%;
+    float: left;
+    clear: left;
+}
+
+.lblOrganizerEmail {
+    margin-top: 5px;
+    float: left;
+    clear: left;
+}
+
+.txtOrganizerEmail {
+    border: 1px solid #c4c4c4;
+    height: 25px;
+    width: 100%;
+    font-size: 13px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 8px #d9d9d9;
+    -moz-box-shadow: 0px 0px 8px #d9d9d9;
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
+    float: left;
+    clear: left;
+    top: 0px;
+    left: 0px;
+    margin-top: 5px;
+}
+
+    .txtOrganizerEmail:focus {
+        outline: none;
+        border: 1px solid #7bc1f7;
+        box-shadow: 0px 0px 8px #7bc1f7;
+        -moz-box-shadow: 0px 0px 8px #7bc1f7;
+        -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+    }
+
+.eventButton {
+    width: 800px;
+    margin-top: 2%;
+    float: left;
+    clear: left;
+}
+
+.btnSubmit {
+    float: left;
+    margin-left: 20%;
+    background: #34d960;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    border-style: none;
+}
+
+.btnReset {
+    float: left;
+    margin-left: 7%;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    border-style: none;
+}
+
+.btnCancel {
+    float: left;
+    margin-left: 7%;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    border-style: none;
+}
+
+
+.lblCategory {
+    margin-top: 5px;
+    float: left;
+    clear: left;
+}
+
+.ddlCategory {
+    width: 350px;
+    margin-top: 5px;
+    border: 1px solid #c4c4c4;
+    height: 25px;
+    font-size: 13px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 8px #d9d9d9;
+    -moz-box-shadow: 0px 0px 8px #d9d9d9;
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
+    float: left;
+    clear: left;
+    top: 0px;
+    left: 0px;
+}
+
+    .ddlCategory:focus {
+        outline: none;
+        border: 1px solid #7bc1f7;
+        box-shadow: 0px 0px 8px #7bc1f7;
+        -moz-box-shadow: 0px 0px 8px #7bc1f7;
+        -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+    }
+
+.eventDetail-2 {
+    float: left;
+    clear: left;
+    width: 100%;
+    padding-right: 80px;
+}
+
+.organizationDetail-Detail {
+    padding-right: 80px;
+    width: 100%;
+    float: left;
+    clear: left;
+}
+
+.imgNav2{
+    width: 650px;
+    height: 200px;
+    margin-left: 30px
+}
+.imgOne{
+    width: 49px;
+    height: 49px;
+    float: left;
+}
+
+.imgTwo{
+    width: 49px;
+    height: 49px;
+    float: left;
+}
+
+.container-Navigation {
+    width: 650px;
+    height: 200px;
+    float: left;
+}

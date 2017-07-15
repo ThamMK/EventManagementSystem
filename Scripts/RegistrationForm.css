@@ -2,16 +2,11 @@
     float:left;
     overflow:hidden;
     background-color:white;
-    margin-top:150px;
-    width:600px;
+    margin-top:200px;
+    margin-right:300px;
+    width:450px;
     margin-left:250px;
-    height:700px;
-    padding-left:30px;
-}
-
-.overall-container{
-    width:100%;
-    height:100%;
+    height:450px;
 }
 
 #username-icon{
@@ -23,7 +18,7 @@
     margin-left:-15px;
 }
 
-.txtFullName{
+#txtFullName{
     margin-top:15px;
     height:35px;
     width:335px;
@@ -34,7 +29,7 @@
     border-style:solid solid solid none;
 }
 
-.txtEmail{
+#txtEmail{
     margin-top:15px;
     height:35px;
     width:335px;
@@ -45,7 +40,7 @@
     border-style:solid solid solid none;
 }
 
-.txtPassword{
+#txtPassword{
     margin-top:15px;
     height:35px;
     width:335px;
@@ -56,7 +51,7 @@
     border-style:solid solid solid none;
 }
 
-.txtComfirmPassword{
+#txtComfirmPassword{
     margin-top:15px;
     height:35px;
     width:335px;
@@ -70,27 +65,7 @@
 .birthdropdownlist{
     clear:both;
     float:left;
-    width: 335px;
-}
 
-.container{
-    margin-top:10px;
-    width:335px;
-}
-
-.ddlYear{
-    float:left;
-    width:100px;
-}
-
-.ddlMonth{
-    float:left;
-    width:100px;
-}
-
-.ddlDay{
-    float:left;
-    width:100px;
 }
 
 .buttonaction{
@@ -98,7 +73,7 @@
     float:left;
 }
 
-.btnCancel{
+#btnCancel{
     background-color:deepskyblue;
     border:none;
     cursor:pointer;
@@ -110,7 +85,7 @@
     width:190px;
 }
 
-.btnRegister{
+#btnRegister{
     background-color:deepskyblue;
     border:none;
     cursor:pointer;
@@ -160,13 +135,4 @@
     height:45px;
     margin-top:10px;
     margin-left:-15px;
-}
-
-.side-content{
-    float:left;
-    margin-top:200px;
-}
-
-.dropdownlist-style{
-
 }

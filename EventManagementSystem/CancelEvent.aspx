@@ -1,6 +1,18 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainPage.Master" AutoEventWireup="true" CodeBehind="CancelEvent.aspx.cs" Inherits="EventManagementSystem.CancelEvent" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
+        a.cancel-event-button:link{
+            text-decoration:none;
+            color:white;
+            text-align:center;
+            vertical-align:middle;
+            display:table-cell;
+            width:160px;
+            height:40px;
+            font-size:15px;
+            padding-top:9px;
+        }
+        
         .cancel-event-button{
             width:160px;
             height:40px;
@@ -16,8 +28,51 @@
             border: 0.5px solid darkred;
         }
     </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+
+    <script type="text/javascript">
+
+        function deletealert(ctl, e) {
+            var defaultAction = $(ctl).prop("href");
+            e.preventDefault();
+            swal({
+                title: "Are you sure yoou want delete?",
+                text: "You will not be able to recover this after delete!",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#DD6B55",
+                confirmButtonText: "Yes, delete it!",
+                cancelButtonText: "No!",
+                closeOnConfirm: false,
+                closeOnCancel: false
+            },
+            function (isConfirm) {
+                if (isConfirm) {
+                    swal({title: "Deleted!", text: "Your registered event has been deleted.", type: "success"},
+                    function () {
+                        // RESUME THE DEFAULT LINK ACTION
+                        window.location.href = defaultAction;
+                        return true;
+                    });
+                } else {
+                    swal("Cancelled", "Your registered event is safe :)", "error");
+                    return false;
+                }
+            });
+        }
+        
+    </script>
 </asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+    <div id="dialog" style="display: none" title="Do you want to delete the event?">
+        This is a simple popup
+    </div>
+
     <div style="margin-top:30px;margin-left:50px;">
         <asp:Label runat="server" Text="My Upcoming Event" style="color:deepskyblue;font-size:35px"></asp:Label>
     </div>
@@ -69,7 +124,7 @@
 
                     </div>
                     <div style="float:right;margin-right:30px;margin-top:35px;">
-                        <asp:Button runat="server" name="btnCancel" Text="Cancel Event" OnClientClick="return confirm('Are you sure you want to delete this event?');" alternatetext="Delete" CommandName="cancelEvent" CommandArgument="<%#((EventManagementSystem.Event)Container.DataItem).eventName.ToString() %>" CssClass="cancel-event-button" />
+                        <asp:LinkButton runat="server" ID="btnCancel" OnClientClick="return deletealert(this, event);" Text="Cancel Event" alternatetext="Delete" CommandName="cancelEvent" CommandArgument="<%#((EventManagementSystem.Event)Container.DataItem).eventName.ToString() %>" CssClass="cancel-event-button"/>
                     </div>
                 </div>
             </ItemTemplate>

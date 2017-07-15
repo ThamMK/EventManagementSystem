@@ -49,6 +49,10 @@
                             <input id="pwd" type="password" placeholder="Password" />
                         </div>
 
+                        <div class="forget-password">
+                            <asp:HyperLink runat="server" Text="Forget Password?"></asp:HyperLink>
+                        </div>
+
 
                         <div class="form-group">
                             <div class="login-button">

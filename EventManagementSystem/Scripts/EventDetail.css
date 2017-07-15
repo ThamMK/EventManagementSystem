@@ -52,7 +52,7 @@ h4 {
 }
 
 .event-price {
-    top: 250px;
+    top: 220px;
     
     position: absolute;
 }
@@ -140,4 +140,12 @@ h4 {
     margin-left : 105px;
     margin-top : 20px;
     position : absolute;
+}
+
+h3 {
+    margin-top: 3px;
+}
+
+h5{
+    margin-top: 35px;
 }

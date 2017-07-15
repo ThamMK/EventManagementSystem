@@ -4,9 +4,9 @@
     font-family:sans-serif;
 }
 
-.container{
-    width:120%;
-    margin:0 auto;
+.master-container{
+    width:100%;
+    margin:0;
 }
 
 .left_ul{
@@ -43,11 +43,11 @@ nav ul li a:hover{
 nav a:before{
     content:'';
     display:block;
-    height:2.5px;
+    height:3.5px;
     width:100%;
     background-color:deepskyblue;
     position: absolute;
-    bottom:-19px;
+    top:0px;
     width:0%;
 
     transition:all ease-in-out 250ms;

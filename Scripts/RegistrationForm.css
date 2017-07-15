@@ -1,0 +1,138 @@
+﻿.container-RegistrationForm {
+    float:left;
+    overflow:hidden;
+    background-color:white;
+    margin-top:200px;
+    margin-right:300px;
+    width:450px;
+    margin-left:250px;
+    height:450px;
+}
+
+#username-icon{
+    background-color:deepskyblue;
+    float:left;
+    width:45px;
+    height:45px;
+    margin-top:10px;
+    margin-left:-15px;
+}
+
+#txtFullName{
+    margin-top:15px;
+    height:35px;
+    width:335px;
+    padding-left:10px;
+    font-size:16px;
+    border-width:0.1px;
+    border-color:dimgrey;
+    border-style:solid solid solid none;
+}
+
+#txtEmail{
+    margin-top:15px;
+    height:35px;
+    width:335px;
+    padding-left:10px;
+    font-size:16px;
+    border-width:0.1px;
+    border-color:dimgrey;
+    border-style:solid solid solid none;
+}
+
+#txtPassword{
+    margin-top:15px;
+    height:35px;
+    width:335px;
+    padding-left:10px;
+    font-size:16px;
+    border-width:0.1px;
+    border-color:dimgrey;
+    border-style:solid solid solid none;
+}
+
+#txtComfirmPassword{
+    margin-top:15px;
+    height:35px;
+    width:335px;
+    padding-left:10px;
+    font-size:16px;
+    border-width:0.1px;
+    border-color:dimgrey;
+    border-style:solid solid solid none;
+}
+
+.birthdropdownlist{
+    clear:both;
+    float:left;
+
+}
+
+.buttonaction{
+    clear: both;
+    float:left;
+}
+
+#btnCancel{
+    background-color:deepskyblue;
+    border:none;
+    cursor:pointer;
+    margin-top:30px;
+    margin-bottom:57px;
+    color:white;
+    font-size:16px;
+    height:50px;
+    width:190px;
+}
+
+#btnRegister{
+    background-color:deepskyblue;
+    border:none;
+    cursor:pointer;
+    margin-top:30px;
+    margin-bottom:57px;
+    color:white;
+    font-size:16px;
+    height:50px;
+    width:190px;
+}
+
+.Email{
+    clear:both;
+    float:left;
+}
+
+.pass-input{
+    clear:both;
+}
+
+.confirmPass{
+    clear:both;
+}
+
+#email-icon{
+    background-color:deepskyblue;
+    float:left;
+    width:45px;
+    height:45px;
+    margin-top:10px;
+    margin-left:-15px;
+}
+
+#pass-icon{
+    background-color:deepskyblue;
+    float:left;
+    width:45px;
+    height:45px;
+    margin-top:10px;
+    margin-left:-15px;
+}
+
+#comfirm-pass-icon{
+    background-color:deepskyblue;
+    float:left;
+    width:45px;
+    height:45px;
+    margin-top:10px;
+    margin-left:-15px;
+}

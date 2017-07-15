@@ -1,0 +1,274 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="TestMaster.master.cs" Inherits="EventManagementSystem.TestMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(document).scrollTop() > 10) {
+                    $('.nav').addClass('shrink');
+                }
+                else {
+                    $('.nav').removeClass('shrink');
+                }
+            });
+
+            $("#search-button").click(function (e) {
+                e.preventDefault();
+                $('.navigation-bar').slideToggle('fast');
+                $('.search-bar').slideToggle('fast');
+            });
+            $("#exit-button").click(function (e) {
+                e.preventDefault();
+                $('.navigation-bar').slideToggle('fast');
+                $('.search-bar').slideToggle('fast');
+            });
+        });
+    </script>
+
+    <style>
+        body {
+            margin:0;
+            background-color:#F7F5F2;
+            font-family:'Montserrat', sans-serif;
+        }
+
+        .nav{
+            height: 80px;
+            background-color: white;
+            display: block;
+            position: fixed;
+            width: 100%;
+            z-index: 99999;
+            transition: all ease .5s;
+        }
+
+        .nav.shrink {
+          height: 60px;
+          transition: all ease .5s;
+        }
+
+        .nav.shrink #logo{
+            margin-top:2.5px;
+            transition: all ease .5s;
+        }
+
+        .nav.shrink .right-side{
+            margin:0;
+            transition: all ease .5s;
+        }
+
+        .nav.shrink .login-button{
+            margin-top:7px;
+            transition: all ease .5s;
+        }
+
+        .nav.shrink .signup-button{
+            margin-top:7px;
+            transition: all ease .5s;
+        }
+
+        .nav.shrink .right-navi li{
+            padding-top:5px;
+            transition: all ease .5s;
+        }
+
+        .nav.shrink #search-button{
+            margin-top:20px;
+            transition: all ease .5s;
+        }
+
+        .right-side{
+            float:right;
+            margin-top:3px;
+        }
+
+        .right-navi{
+            float:left;
+            transition: all ease .5s;
+        }
+
+        .right-navi ul{
+            list-style:none;
+            margin:0;
+            padding:0;
+        }
+
+        .right-navi li{
+            display:inline-block;
+            margin: 0 30px;
+            padding-top:12px;
+            position:relative;
+            transition: all ease .5s;
+        }
+
+        .right-navi a{
+            color:dimgray;
+            text-decoration:none;
+            font-size:15px;
+        }
+
+        .right-navi a:hover{
+            color:deepskyblue;
+        }
+
+        .right-navi a:before{
+            content:'';
+            display:block;
+            height:3.5px;
+            width:100%;
+            background-color:deepskyblue;
+            position: absolute;
+            top:-19px;
+            width:0%;
+            transition:all ease-in-out 250ms;
+        }
+
+        .right-navi a:hover::before{
+            width:100%;
+        }
+
+        .search-bar{
+            clear:both;
+            display:none;
+            height:65px;
+        }
+
+        #search-icon{
+            float:left;
+            margin-top: 23px; 
+            margin-left: 35px;
+            height:18px;
+            width:18px;
+        }
+
+        #exit-button{
+            float:right;
+            margin-top: 23px; 
+            margin-right: 35px;
+            height:18px;
+            width:18px;
+        }
+
+        #exit-button:focus{
+            outline:none !important;
+        }
+
+        #seachTextbox{
+            font-size:18px;
+            margin-left:35px;
+            margin-top:17px;
+            width:88%;
+            height:50%;
+            border:none;
+        }
+
+        #seachTextbox:focus{
+            border:none;
+            outline:none !important;
+        }
+
+        #logo{
+            float:left;
+            margin-left:30px;
+            margin-top:12px;
+            height:55px;
+            width:180px;
+            transition: all ease .5s;
+        }
+
+        .login-button{
+            float:left;
+            margin-top:15px;
+            margin-left:10px;
+            font-size:15px;
+            background-color:deepskyblue;
+            border: none;
+            color:white;
+            transition: all ease .5s;
+        }
+
+        .login-button:hover{
+            background-color:transparent;
+            border: 1px solid deepskyblue;
+            color:deepskyblue;
+            transition: all ease .1s;
+        }
+
+        .signup-button{
+            margin-top:15px;
+            margin-left:40px;
+            margin-right:25px;
+            background-color:deepskyblue;
+            border: none;
+            color:white;
+            transition: all ease .5s;
+        }
+
+        .signup-button:hover{
+            background-color:transparent;
+            border: 1px solid deepskyblue;
+            color:deepskyblue;
+            transition: all ease .1s;
+        }
+
+        #search-button{
+            float:left;
+            margin-top: 26px; 
+            margin-left:7px;
+            margin-right: 28px;
+            height:18px;
+            width:18px;
+            transition: all ease .5s;
+        }
+
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <div class="navigation-whole">
+            <div class="nav ">
+                <div class="search-bar">
+                    <img src="Images/Navigation/search-button.png" id="search-icon" />
+                    <asp:TextBox runat="server" ID="seachTextbox" placeholder="Search"></asp:TextBox>
+                    <input type="image" src="Images/Navigation/cross.png" id="exit-button" onmouseover="this.src='Images/Navigation/cross-blue.png'" onmouseout="this.src='Images/Navigation/cross.png'" />
+                </div>
+                <div class="navigation-bar">
+                    <div class="logo-div">
+                        <a href="Homepage.aspx"><img src="Images/Navigation/logo.png" id="logo" /></a>
+                    </div>
+                    <div class="right-side">
+                        <ul class="right-navi">
+                            <li>
+                                <asp:HyperLink runat="server" NavigateUrl="~/Homepage.aspx">Home</asp:HyperLink></li>
+                            <li>
+                                <asp:HyperLink runat="server" NavigateUrl="~/AboutUs.aspx">About Us</asp:HyperLink></li>
+                            <li>
+                                <asp:HyperLink runat="server" NavigateUrl="~/ContactUs.aspx">Contact Us</asp:HyperLink></li>
+                        </ul>
+
+                        <img src="Images/Navigation/search-button.png" id="search-button" onmouseover="this.src='Images/Navigation/search-button-blue.png'" onmouseout="this.src='Images/Navigation/search-button.png'" />
+                        <asp:Button runat="server" Text="Login" CssClass="login-button" Width="125px" Height="45px"/>
+                        <asp:Button runat="server" Text="Sign Up" CssClass="signup-button" Width="125px" Height="45px"/>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

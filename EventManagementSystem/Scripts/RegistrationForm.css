@@ -1,138 +1,211 @@
-﻿.container-RegistrationForm {
+﻿/*****The outest content container*****/
+.overall-container{
+    margin-left: 24%;
+    width: 100%;
+    height: 1500px;
+    color: #666666;
+}
+
+/*****Registration Form header*****/
+.sign-up-header{
+    border-bottom: 2px dotted #12ABE3;
+    border-style: none none solid none;
+    width: 760px;
+    float: left;
+    clear: left;
+}
+
+.lblRegistrationForm{
+    -webkit-border-top-left-radius: 30px;
+    -moz-border-radius-topleft: 30px;
+    -moz-border-radius-bottomleft: 30px;
+    -webkit-border-bottom-left-radius: 30px;
+    height: 20px;
+    width: 220px;
+    font-size: 35pt;
+}
+
+/*****Personal information content*****/
+.personal-information-label{
+    border-top: 2px dotted #12ABE3;
+    border-bottom: 2px dotted #12ABE3;
+    border-style: none none solid none;
+    width: 60%;
+    float: left;
+    clear: left;
+}
+
+.container-DOB{
     float:left;
-    overflow:hidden;
-    background-color:white;
-    margin-top:200px;
-    margin-right:300px;
-    width:450px;
-    margin-left:250px;
-    height:450px;
+    clear:left;
 }
 
-#username-icon{
-    background-color:deepskyblue;
+.lblDOB{
     float:left;
-    width:45px;
-    height:45px;
-    margin-top:10px;
-    margin-left:-15px;
+    clear:left;
 }
 
-#txtFullName{
-    margin-top:15px;
-    height:35px;
-    width:335px;
-    padding-left:10px;
-    font-size:16px;
-    border-width:0.1px;
-    border-color:dimgrey;
-    border-style:solid solid solid none;
+.container-DOB-ddl{
+    float:left;
+    clear:left;
 }
 
-#txtEmail{
-    margin-top:15px;
-    height:35px;
-    width:335px;
-    padding-left:10px;
-    font-size:16px;
-    border-width:0.1px;
-    border-color:dimgrey;
-    border-style:solid solid solid none;
+.container-DOB-ddlMonth{
+    float:left;
+    width:100px;
 }
 
-#txtPassword{
-    margin-top:15px;
-    height:35px;
-    width:335px;
-    padding-left:10px;
-    font-size:16px;
-    border-width:0.1px;
-    border-color:dimgrey;
-    border-style:solid solid solid none;
+.DropDownListMonth{
+    border: 1px solid #c4c4c4;
+    height: 25px;
+    width: 100%;
+    font-size: 13px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 8px #d9d9d9;
+    -moz-box-shadow: 0px 0px 8px #d9d9d9;
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
+    float: left;
+    clear: left;
+    top: 0px;
+    left: 0px;
+}
+    .DropDownListMonth:focus {
+        outline: none;
+        border: 1px solid #7bc1f7;
+        box-shadow: 0px 0px 8px #7bc1f7;
+        -moz-box-shadow: 0px 0px 8px #7bc1f7;
+        -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+    }
+
+.container-DOB-ddlDay{
+    float:left;
+    width:100px;
 }
 
-#txtComfirmPassword{
-    margin-top:15px;
-    height:35px;
-    width:335px;
-    padding-left:10px;
-    font-size:16px;
-    border-width:0.1px;
-    border-color:dimgrey;
-    border-style:solid solid solid none;
+.DropDownListDay{
+    border: 1px solid #c4c4c4;
+    height: 25px;
+    width: 100%;
+    font-size: 13px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 8px #d9d9d9;
+    -moz-box-shadow: 0px 0px 8px #d9d9d9;
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
+    float: left;
+    clear:left;
+    top: 0px;
+    left: 0px;
+}
+    .DropDownListDay:focus {
+        outline: none;
+        border: 1px solid #7bc1f7;
+        box-shadow: 0px 0px 8px #7bc1f7;
+        -moz-box-shadow: 0px 0px 8px #7bc1f7;
+        -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+    }
+
+.container-DOB-ddlYear{
+    float:left;
+    width:100px;
+}
+    
+.DropDownListYear{
+    border: 1px solid #c4c4c4;
+    height: 25px;
+    width: 100%;
+    font-size: 13px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 8px #d9d9d9;
+    -moz-box-shadow: 0px 0px 8px #d9d9d9;
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
+    float: left;
+    clear:left;
+    top: 0px;
+    left: 0px;
+}
+    .DropDownListYear:focus {
+        outline: none;
+        border: 1px solid #7bc1f7;
+        box-shadow: 0px 0px 8px #7bc1f7;
+        -moz-box-shadow: 0px 0px 8px #7bc1f7;
+        -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+    }
+
+.container-gender{
+    float:left;
+    clear:left;
 }
 
-.birthdropdownlist{
+.eror-message{
+    float:left;
     clear:both;
+}
+
+/*Generalize styles*/
+.header-container{
+    border-top: 2px dotted #12ABE3;
+    border-bottom: 2px dotted #12ABE3;
+    border-style: none none solid none;
+    width: 760px;
+    float: left;
+    clear: left;
+}
+
+.header-image{
+    width: 49px;
+    height: 49px;
+    float: left;
+}
+
+.header-label{
+    -webkit-border-top-left-radius: 30px;
+    -moz-border-radius-topleft: 30px;
+    -moz-border-radius-bottomleft: 30px;
+    -webkit-border-bottom-left-radius: 30px;
+    height: 20px;
+    width: 220px;
+    font-size: 35pt;
+}
+
+.content-section-holder{
     float:left;
-
+    clear:left;
+    width: 970px;
 }
 
-.buttonaction{
-    clear: both;
-    float:left;
+.content-label{
+    margin-top: 5px;
+    float: left;
+    clear: left;
 }
 
-#btnCancel{
-    background-color:deepskyblue;
-    border:none;
-    cursor:pointer;
-    margin-top:30px;
-    margin-bottom:57px;
-    color:white;
-    font-size:16px;
-    height:50px;
-    width:190px;
+.content-input{
+    border: 1px solid #c4c4c4;
+    font-size: 13px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 8px #d9d9d9;
+    -moz-box-shadow: 0px 0px 8px #d9d9d9;
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
+    width:760px;
+    float: left;
+    clear: left;
+    top: 0px;
+    left: 0px;
+    margin-top: 5px;
 }
 
-#btnRegister{
-    background-color:deepskyblue;
-    border:none;
-    cursor:pointer;
-    margin-top:30px;
-    margin-bottom:57px;
-    color:white;
-    font-size:16px;
-    height:50px;
-    width:190px;
-}
+.content-error-message{
 
-.Email{
-    clear:both;
-    float:left;
-}
-
-.pass-input{
-    clear:both;
-}
-
-.confirmPass{
-    clear:both;
-}
-
-#email-icon{
-    background-color:deepskyblue;
-    float:left;
-    width:45px;
-    height:45px;
-    margin-top:10px;
-    margin-left:-15px;
-}
-
-#pass-icon{
-    background-color:deepskyblue;
-    float:left;
-    width:45px;
-    height:45px;
-    margin-top:10px;
-    margin-left:-15px;
-}
-
-#comfirm-pass-icon{
-    background-color:deepskyblue;
-    float:left;
-    width:45px;
-    height:45px;
-    margin-top:10px;
-    margin-left:-15px;
 }

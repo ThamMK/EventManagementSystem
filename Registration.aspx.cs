@@ -9,11 +9,6 @@ namespace EventManagementSystem
 {
     public partial class Registration : System.Web.UI.Page
     {
-        String name;
-        String email;
-        String password;
-        String comfirmPassword;
-        int selectedYear;
         int day_max_value = 31;
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -26,6 +21,8 @@ namespace EventManagementSystem
 
         protected void DropDownListMonth_SelectedIndexChanged(object sender, EventArgs e)
         {
+            String name = Request.Form["txtFullName"];
+            txtFullName.Value = "";
             SetupMaxDate();
             SetupDate();
         }
@@ -98,11 +95,6 @@ namespace EventManagementSystem
         protected void butReset_Click(object sender, EventArgs e)
         {
 
-        }
-
-        public void ReassignValue()
-        {
-            
         }
     }
 

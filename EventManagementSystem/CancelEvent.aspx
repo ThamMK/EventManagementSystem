@@ -16,16 +16,16 @@
         .cancel-event-button{
             width:160px;
             height:40px;
-            background-color:red;
+            background-color:#DD6B55;
             font-size:15px;
             color:white;
             float:right;
-            border: 0.5px solid red;
+            border: 0.5px solid #DD6B55;
         }
 
         .cancel-event-button:hover{
-            background-color:darkred;
-            border: 0.5px solid darkred;
+            background-color:#D46752;
+            border: 0.5px solid #D46752;
         }
     </style>
 

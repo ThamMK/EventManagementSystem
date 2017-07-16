@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/MainPage.Master" CodeBehind="Login.aspx.cs" Inherits="EventManagementSystem.Login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/TestMaster.Master" CodeBehind="Login.aspx.cs" Inherits="EventManagementSystem.Login" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -50,7 +50,7 @@
                         </div>
 
                         <div class="forget-password">
-                            <asp:HyperLink runat="server" Text="Forget Password?"></asp:HyperLink>
+                            <asp:HyperLink runat="server" Text="Forget Password?" CssClass="forget-hyper"></asp:HyperLink>
                         </div>
 
 
@@ -60,7 +60,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="login-div">
+
+                    <div class="login-button-div">
                         <asp:HyperLink runat="server" CssClass="no-account-signup" Text="Don't have an account? Sign up!"></asp:HyperLink>
                     </div>
             </div>

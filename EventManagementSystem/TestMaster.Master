@@ -64,12 +64,12 @@
             transition: all ease .5s;
         }
 
-        .nav.shrink .login-button{
+        .nav.shrink .login-button-main{
             margin-top:7px;
             transition: all ease .5s;
         }
 
-        .nav.shrink .signup-button{
+        .nav.shrink .signup-button-main{
             margin-top:7px;
             transition: all ease .5s;
         }
@@ -82,6 +82,10 @@
         .nav.shrink #search-button{
             margin-top:20px;
             transition: all ease .5s;
+        }
+
+        .nav.shrink .right-navi a:before{
+            top:-16px;
         }
 
         .right-side{
@@ -183,7 +187,7 @@
             transition: all ease .5s;
         }
 
-        .login-button{
+        .login-button-main{
             float:left;
             margin-top:15px;
             margin-left:10px;
@@ -194,14 +198,14 @@
             transition: all ease .5s;
         }
 
-        .login-button:hover{
+        .login-button-main:hover{
             background-color:transparent;
             border: 1px solid deepskyblue;
             color:deepskyblue;
             transition: all ease .1s;
         }
 
-        .signup-button{
+        .signup-button-main{
             margin-top:15px;
             margin-left:40px;
             margin-right:25px;
@@ -211,7 +215,7 @@
             transition: all ease .5s;
         }
 
-        .signup-button:hover{
+        .signup-button-main:hover{
             background-color:transparent;
             border: 1px solid deepskyblue;
             color:deepskyblue;
@@ -254,11 +258,13 @@
                                 <asp:HyperLink runat="server" NavigateUrl="~/AboutUs.aspx">About Us</asp:HyperLink></li>
                             <li>
                                 <asp:HyperLink runat="server" NavigateUrl="~/ContactUs.aspx">Contact Us</asp:HyperLink></li>
+                            <li>
+                                <asp:HyperLink runat="server" NavigateUrl="~/CheckAvailability.aspx">Create Event</asp:HyperLink></li>
                         </ul>
 
                         <img src="Images/Navigation/search-button.png" id="search-button" onmouseover="this.src='Images/Navigation/search-button-blue.png'" onmouseout="this.src='Images/Navigation/search-button.png'" />
-                        <asp:Button runat="server" Text="Login" CssClass="login-button" Width="125px" Height="45px"/>
-                        <asp:Button runat="server" Text="Sign Up" CssClass="signup-button" Width="125px" Height="45px"/>
+                        <asp:Button runat="server" Text="Login" CssClass="login-button-main" Width="125px" Height="45px" PostBackUrl="~/Login.aspx"/>
+                        <asp:Button runat="server" Text="Sign Up" CssClass="signup-button-main" Width="125px" Height="45px" PostBackUrl="~/Registration.aspx"/>
 
                     </div>
                 </div>

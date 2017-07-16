@@ -29,8 +29,33 @@
 
             <div class='container-Date-Location-Time'>
 
+                <div class="container-StartDateTime">
+
+                    <asp:Label ID="lblStartDate" runat="server" Text="Start Date"></asp:Label>
+                    <script type="text/javascript">
+                        $(document).ready(function () {
+                            $("#startDate").focus(function () {
+                                $("#startDate").flatpickr({
+                                    minDate: "today",
+                                    allowInput: "true",
+                                    dateFormat: "d-m-Y"
+                                })
+                            });
+                        });
+
+                    </script>
+                    <asp:TextBox ID="startDate" CssClass="startDate" runat="server" placeholder="dd-mm-yyyy" OnTextChanged="datetimepicker_TextChanged" AutoPostBack="true"></asp:TextBox>
+
+                    <asp:DropDownList ID="ddlStartTime" CssClass="ddlStartTime" runat="server" Enabled="false" AutoPostBack="True">
+
+                        <asp:ListItem Value="" Text="Time"></asp:ListItem>
+
+                    </asp:DropDownList>
+
+                </div>
+
                 <asp:DropDownList ID="ddlVenue" CssClass="ddlVenue" runat="server" Enabled="false" AutoPostBack="True" OnSelectedIndexChanged="ddlVenue_SelectedIndexChanged">
-                    
+
                     <asp:ListItem Value="" Text="Venue"></asp:ListItem>
                     <asp:ListItem Value="1">Yum Yum</asp:ListItem>
                     <asp:ListItem Value="2">Sport Complex</asp:ListItem>
@@ -39,33 +64,6 @@
 
                 </asp:DropDownList>
 
-                <div class="container-StartDateTime">
-
-                    <asp:Label ID="lblStartDate" runat="server" Text="Start Date"></asp:Label>
-
-                    <asp:TextBox ID="startDate" CssClass="startDate" runat="server" placeholder="dd-mm-yyyy" OnTextChanged="datetimepicker_TextChanged" AutoPostBack="true"></asp:TextBox>
-
-                    <asp:DropDownList ID="ddlStartTime" CssClass="ddlStartTime" runat="server" Enabled="false" AutoPostBack="True">
-                        
-                        <asp:ListItem Value="" Text="Time"></asp:ListItem>
-
-                    </asp:DropDownList>
-
-                </div>
-
-                <script type="text/javascript">
-                    $(document).ready(function () {
-                        $("#startDate").focus(function () {
-                            $("#startDate").flatpickr({
-                                minDate: "today",
-                                allowInput: "true",
-                                dateFormat: "d-m-Y"
-                            })
-                        });
-                    });
-
-                </script>
-
                 <asp:Label ID="lblEnd" runat="server" Text="End Date"></asp:Label>
 
                 <div class="container-EndDateTime">
@@ -73,9 +71,9 @@
                     <asp:TextBox ID="endDate" CssClass="endDate" runat="server" placeholder="dd-mm-yyyy" AutoPostBack="true"></asp:TextBox>
 
                     <asp:DropDownList ID="ddlEndTime" CssClass="ddlEndTime" runat="server" Enabled="false" AutoPostBack="True">
-                     
-                           <asp:ListItem Value="" Text="Time"></asp:ListItem>
-                    
+
+                        <asp:ListItem Value="" Text="Time"></asp:ListItem>
+
                     </asp:DropDownList>
 
                 </div>

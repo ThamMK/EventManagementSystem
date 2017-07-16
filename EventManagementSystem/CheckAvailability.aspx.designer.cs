@@ -22,15 +22,6 @@ namespace EventManagementSystem {
         protected global::System.Web.UI.WebControls.Image imgNav;
         
         /// <summary>
-        /// ddlVenue control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlVenue;
-        
-        /// <summary>
         /// lblStartDate control.
         /// </summary>
         /// <remarks>
@@ -56,6 +47,15 @@ namespace EventManagementSystem {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlStartTime;
+        
+        /// <summary>
+        /// ddlVenue control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlVenue;
         
         /// <summary>
         /// lblEnd control.

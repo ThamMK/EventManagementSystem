@@ -32,7 +32,7 @@
 
             <div class="container-Navigation">
 
-                    <asp:Image ID="imgNav2" CssClass="imgNav2" ImageUrl="~/Images/Event/navigation2.png" runat="server"  />
+                    <asp:Image ID="imgNav2" CssClass="imgNav2" ImageUrl="~/Images/Event/Navigation3 .png" runat="server"  />
 
                 </div>
 

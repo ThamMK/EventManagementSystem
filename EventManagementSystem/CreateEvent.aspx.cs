@@ -13,12 +13,7 @@ namespace EventManagementSystem
         {
 
         }
-
-        protected void datetimepicker_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        
         protected void ddlTime_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -30,16 +25,16 @@ namespace EventManagementSystem
         }
 
         
-        /*
-protected void addImage_Click(object sender, ImageClickEventArgs e)
-{
-   if (FUImage.HasFile)
-   {
-       addImage.SaveAs(MapPath("/Images/Event/" + FUImage.FileName));
-       //imgViewFile.ImageUrl = Server.MapPath("~/Event/" + FUImage.FileName);
-       addImage.ImageUrl = "/Images/Event/" + FUImage.FileName;
-   }
-}*/
+        
+        protected void addImage_Click(object sender, ImageClickEventArgs e)
+        {
+           if (FUImage.HasFile)
+           {
+                string path = MapPath("~/Images/Event/" + FUImage.FileName);
+                //imgViewFile.ImageUrl = Server.MapPath("~/Event/" + FUImage.FileName);
+                imgAddImage.ImageUrl = "~/Images/Event/" + FUImage.FileName;
+           }
+        }
 
         /*
         protected void imgAddImage_Click(object sender, ImageClickEventArgs e)

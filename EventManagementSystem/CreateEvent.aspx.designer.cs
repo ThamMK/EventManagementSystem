@@ -103,13 +103,13 @@ namespace EventManagementSystem {
         protected global::System.Web.UI.WebControls.Label lblStart;
         
         /// <summary>
-        /// startdatetimepicker control.
+        /// startDateTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox startdatetimepicker;
+        protected global::System.Web.UI.WebControls.TextBox startDateTextBox;
         
         /// <summary>
         /// ddlStartTime control.
@@ -130,13 +130,13 @@ namespace EventManagementSystem {
         protected global::System.Web.UI.WebControls.Label lblEnd;
         
         /// <summary>
-        /// enddatetimepicker control.
+        /// endDateTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox enddatetimepicker;
+        protected global::System.Web.UI.WebControls.TextBox endDateTextBox;
         
         /// <summary>
         /// ddlEndTime control.

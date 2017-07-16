@@ -7,19 +7,31 @@
     clear: left
   }
 
-.ddlVenue{
-    margin-top: 10px;
+.endDate{
     height:30px; 
-    width: 500px; 
+    width: 200px;  
+    float: left;
+}
+
+.ddlVenue{
+    height:30px; 
+    width: 415px; 
     float: left;
     clear: left;
 }
 
 .ddlStartTime{
-    margin-top: 10px;
     height:30px; 
     width: 200px; 
     float: left;
+    margin-left: 15px;
+}
+
+.ddlEndTime{
+    height:30px; 
+    width: 200px; 
+    float: left;
+    margin-left: 15px;
 }
 
 .container-Title {
@@ -35,19 +47,22 @@
 }
 
 .container-CheckAvailability {
-     width: 100px;
+     width: 100%;
     height: 700px;
 
 }
 
 .container-Navigation{
     width: 100%;
+    height: 200px;
 }
 
 .container-Date-Location-Time {
     margin-left: 560px;
     width: 100%;
     height: 10%;
+    float: left;
+    clear: left;
 }
 
 .container-Button{
@@ -56,7 +71,7 @@
     margin-top: 20px;
     float: left;
     clear: left;
-    margin-left: 630px;
+    margin-left: 110px;
 }
 .btnProceed{
     float: left;
@@ -77,4 +92,27 @@
     border-style: none;
 }
 
+.container-EndDateTime{
+    margin-top: 10px;
+    float: left;
+    clear: left;
+}
+
+.container-Venue{
+    margin-top: 10px;
+    float: left;
+    clear: left;
+}
+
+.container-check{
+    float: left;
+    clear: left;
+    margin-left: 510px;
+}
+
+.lblVenue{
+
+    float: left;
+    clear: left;
+}
 

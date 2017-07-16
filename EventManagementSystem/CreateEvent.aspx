@@ -31,7 +31,7 @@
 
              <div class="container-Navigation">
 
-                    <asp:Image ID="imgNav2" CssClass="imgNav2" ImageUrl="~/Images/Event/navigation2.png" runat="server"  />
+                    <asp:Image ID="imgNav2" CssClass="imgNav2" ImageUrl="~/Images/Event/Navigation2.png" runat="server"  />
 
                 </div>
 
@@ -85,12 +85,12 @@
 
                                 <div class="eventDetail-StartDate-Date">
 
-                                    <asp:TextBox ID="startdatetimepicker" CssClass="startDateTextBox" runat="server" placeholder="dd-mm-yyyy" OnTextChanged="datetimepicker_TextChanged" AutoPostBack="True"></asp:TextBox>
+                                    <asp:TextBox ID="startDateTextBox" CssClass="startDateTextBox" runat="server" placeholder="dd-mm-yyyy"  AutoPostBack="True"></asp:TextBox>
 
                                     <script type="text/javascript">
                                         $(document).ready(function () {
-                                            $(".startdatetimepicker").focus(function () {
-                                                $(".startdatetimepicker").flatpickr({
+                                            $(".startDateTextBox").focus(function () {
+                                                $(".startDateTextBox").flatpickr({
                                                     minDate: "today",
                                                     allowInput: "true",
                                                     dateFormat: "d-m-Y"
@@ -125,12 +125,12 @@
 
                                 <div class="eventDetail-EndDate-Date">
 
-                                    <asp:TextBox ID="enddatetimepicker" CssClass="endDateTextBox" runat="server" placeholder="dd-mm-yyyy" OnTextChanged="datetimepicker_TextChanged" AutoPostBack="True"></asp:TextBox>
+                                    <asp:TextBox ID="endDateTextBox" CssClass="endDateTextBox" runat="server" placeholder="dd-mm-yyyy"  AutoPostBack="True"></asp:TextBox>
 
                                     <script type="text/javascript">
                                         $(document).ready(function () {
-                                            $(".enddatetimepicker").focus(function () {
-                                                $(".enddatetimepicker").flatpickr({
+                                            $(".endDateTextBox").focus(function () {
+                                                $(".endDateTextBox").flatpickr({
                                                     minDate: "today",
                                                     allowInput: "true",
                                                     dateFormat: "d-m-Y"
@@ -183,18 +183,7 @@
 
                         <asp:FileUpload ID="FUImage" runat="server" style="display: none;"/>
 
-                        <asp:ImageButton  ID="imgAddImage" CssClass="imgAddImage" onClientClick="chooseFile();" runat="server" AutoPostBack="False" ImageUrl="~/Images/Event/ADD_IMAGE.png" />
-
-                        <script type="text/javascript">
-                            function chooseFile() {
-                                document.getElementById("FUImage").click();
-                                if (FUImage.HasFile) {
-                                    FUImage.SaveAs(MapPath("/Images/Event/" + FUImage.FileName));
-                                    //imgViewFile.ImageUrl = Server.MapPath("~/Event/" + FUImage.FileName);
-                                    imgAddImage.ImageUrl = "/Images/Event/" + FUImage.FileName;
-                                }
-                            }
-                        </script>
+                        <asp:ImageButton  ID="imgAddImage" CssClass="imgAddImage" OnClick="addImage_Click" runat="server" AutoPostBack="False" ImageUrl="~/Images/Event/ADD_IMAGE.png" />
 
                     </div>
 
@@ -243,7 +232,7 @@
 
             <div class="eventButton">
 
-                <asp:Button ID="btnSubmit" CssClass="btnSubmit" runat="server" Text="Submit" />
+                <asp:Button ID="btnSubmit" CssClass="btnSubmit"  runat="server" Text="Submit" />
 
                 <asp:Button ID="btnCancel" CssClass="btnCancel" runat="server" Text="Cancel" />
 

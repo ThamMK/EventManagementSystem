@@ -30,13 +30,6 @@
                 $('.navigation-bar').slideToggle('fast');
                 $('.search-bar').slideToggle('fast');
             });
-            $("#startDate").focus(function () {
-                $("#startDate").flatpickr({
-                    minDate: "today",
-                    allowInput: "true",
-                    dateFormat: "d-m-Y"
-                })
-            });
         });
 
     </script>

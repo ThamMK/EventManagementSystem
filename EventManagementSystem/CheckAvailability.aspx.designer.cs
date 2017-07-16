@@ -49,6 +49,15 @@ namespace EventManagementSystem {
         protected global::System.Web.UI.WebControls.DropDownList ddlStartTime;
         
         /// <summary>
+        /// lblVenue control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblVenue;
+        
+        /// <summary>
         /// ddlVenue control.
         /// </summary>
         /// <remarks>

@@ -85,6 +85,7 @@
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
     <Content Include="CancelEvent.aspx" />
     <Content Include="CheckAvailability.aspx" />
+    <Content Include="ConfirmationCreateEvent.aspx" />
     <Content Include="ContactUs.aspx" />
     <Content Include="CreateEvent.aspx" />
     <Content Include="Default.aspx" />
@@ -143,6 +144,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Content Include="Scripts\ConfirmationEvent.css" />
     <Content Include="TestMaster.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -188,6 +190,13 @@
     </Compile>
     <Compile Include="CheckAvailability.aspx.designer.cs">
       <DependentUpon>CheckAvailability.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmationCreateEvent.aspx.cs">
+      <DependentUpon>ConfirmationCreateEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfirmationCreateEvent.aspx.designer.cs">
+      <DependentUpon>ConfirmationCreateEvent.aspx</DependentUpon>
     </Compile>
     <Compile Include="ContactUs.aspx.cs">
       <DependentUpon>ContactUs.aspx</DependentUpon>

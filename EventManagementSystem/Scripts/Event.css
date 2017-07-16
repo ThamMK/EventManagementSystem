@@ -1,7 +1,6 @@
 ﻿
 
-.dateTextBox { 
-    border-radius: 20px;
+.startDate { 
     height:50px; 
     width: 300px;   
     float: left;
@@ -9,7 +8,6 @@
   }
 
 .ddlVenue{
-    border-radius: 20px;
     margin-top: 10px;
     height:50px; 
     width: 300px; 
@@ -18,7 +16,6 @@
 }
 
 .ddlTime{
-    border-radius: 20px;
     margin-top: 10px;
     height:50px; 
     width: 300px; 
@@ -60,7 +57,6 @@
 }
 .btnProceed{
     float: left;
-     border-radius: 8px;
     font-family: Arial;
     color: #ffffff;
     background: #34d960;
@@ -71,7 +67,6 @@
 .btnCancel{
     float: left;
     margin-left: 10px;
-    border-radius: 8px;
     font-family: Arial;
     color: #ffffff;
     font-size: 20px;

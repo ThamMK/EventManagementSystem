@@ -14,33 +14,74 @@
 
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
         <link rel="stylesheet" href="https://unpkg.com/flatpickr/dist/flatpickr.min.css" />
         <script src="https://unpkg.com/flatpickr"></script>
 
     </head>
     <body>
         <div class="container-CheckAvailability">
-            
+
             <div class="container-Navigation">
-                <asp:Image ID="imgNav" CssClass="imgNav" ImageUrl="~/Images/Event/Navigation1.png" runat="server"  />
+                <asp:Image ID="imgNav" CssClass="imgNav" ImageUrl="~/Images/Event/Navigation1.png" runat="server" />
 
             </div>
+
             <div class='container-Date-Location-Time'>
 
-                <asp:TextBox ID="datetimepicker" CssClass="dateTextBox" runat="server" placeholder="dd-mm-yyyy" OnTextChanged="datetimepicker_TextChanged"  AutoPostBack="true"></asp:TextBox>
-
                 <asp:DropDownList ID="ddlVenue" CssClass="ddlVenue" runat="server" Enabled="false" AutoPostBack="True" OnSelectedIndexChanged="ddlVenue_SelectedIndexChanged">
+                    
                     <asp:ListItem Value="" Text="Venue"></asp:ListItem>
                     <asp:ListItem Value="1">Yum Yum</asp:ListItem>
                     <asp:ListItem Value="2">Sport Complex</asp:ListItem>
                     <asp:ListItem Value="3">Red Brick</asp:ListItem>
                     <asp:ListItem Value="4">Toilet</asp:ListItem>
+
                 </asp:DropDownList>
-                <asp:DropDownList ID="ddlTime" CssClass="ddlTime" runat="server" Enabled="false" AutoPostBack="True">
-                    <asp:ListItem Value="" Text="Time"></asp:ListItem>
-                </asp:DropDownList>
-                <asp:Label ID="txt" runat="server" Text=""></asp:Label>
+
+                <div class="container-StartDateTime">
+
+                    <asp:Label ID="lblStartDate" runat="server" Text="Start Date"></asp:Label>
+
+                    <asp:TextBox ID="startDate" CssClass="startDate" runat="server" placeholder="dd-mm-yyyy" OnTextChanged="datetimepicker_TextChanged" AutoPostBack="true"></asp:TextBox>
+
+                    <asp:DropDownList ID="ddlStartTime" CssClass="ddlStartTime" runat="server" Enabled="false" AutoPostBack="True">
+                        
+                        <asp:ListItem Value="" Text="Time"></asp:ListItem>
+
+                    </asp:DropDownList>
+
+                </div>
+
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        $("#startDate").focus(function () {
+                            $("#startDate").flatpickr({
+                                minDate: "today",
+                                allowInput: "true",
+                                dateFormat: "d-m-Y"
+                            })
+                        });
+                    });
+
+                </script>
+
+                <asp:Label ID="lblEnd" runat="server" Text="End Date"></asp:Label>
+
+                <div class="container-EndDateTime">
+
+                    <asp:TextBox ID="endDate" CssClass="endDate" runat="server" placeholder="dd-mm-yyyy" AutoPostBack="true"></asp:TextBox>
+
+                    <asp:DropDownList ID="ddlEndTime" CssClass="ddlEndTime" runat="server" Enabled="false" AutoPostBack="True">
+                     
+                           <asp:ListItem Value="" Text="Time"></asp:ListItem>
+                    
+                    </asp:DropDownList>
+
+                </div>
+
             </div>
+
             <div class="container-Button">
 
                 <asp:Button ID="btnProceed" CssClass="btnProceed" runat="server" Text="Proceed" OnClick="btnProceed_Click" />
@@ -49,17 +90,5 @@
             </div>
         </div>
     </body>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#datetimepicker").focus(function () {
-                $("#datetimepicker").flatpickr({
-                    minDate: "today",
-                    allowInput: "true",
-                    dateFormat: "d-m-Y"
-                })
-            });
-        });
-        
-    </script>
     </html>
 </asp:Content>

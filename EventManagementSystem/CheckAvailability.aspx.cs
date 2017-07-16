@@ -13,17 +13,12 @@ namespace EventManagementSystem
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           /* Bitmap bmpOriginal = Bitmap.FromFile("~/Images/Event/Navigation1.png");
-            Bitmap bmpResampled = new Bitmap(200, 50);
-            Graphics g = Graphics.FromImage(bmpResampled);
-            g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.Bilinear;
-            g.DrawImage(bmpOriginal, new Rectangle(0, 0, bmpResampled.Width + 1, bmpResampled.Height + 1));*/
         }
 
         protected void datetimepicker_TextChanged(object sender, EventArgs e)
         {
-            
-            String validation = datetimepicker.Text.ToString();
+           // txt.Text = "1";
+            String validation = startDate.Text.ToString();
             DateTime parsed;
             bool valid = DateTime.TryParseExact(validation, "dd-MM-yyyy",
                                     CultureInfo.InvariantCulture,
@@ -31,58 +26,61 @@ namespace EventManagementSystem
                                     out parsed);
             if (valid == true)
             {
+               // txt2.Text = "2";
                 ddlVenue.Enabled = true;
 
                 if (ddlVenue.SelectedItem.Value.Equals("1"))
                 {
                     ddlVenue.Items.Remove(ddlVenue.Items.FindByText("Venue"));
-                    ddlTime.Enabled = true;
-                    ddlTime.Items.Add("08:00 - 10:00");
-                    ddlTime.Items.Add("10:00 - 12:00");
-                    ddlTime.Items.Add("12:00 - 14:00");
+                    ddlStartTime.Enabled = true;
+                    ddlStartTime.Items.Add("08:00 - 10:00");
+                    ddlStartTime.Items.Add("10:00 - 12:00");
+                    ddlStartTime.Items.Add("12:00 - 14:00");
                 }
                 else if (ddlVenue.SelectedItem.Value.Equals("2"))
                 {
                     ddlVenue.Items.Remove(ddlVenue.Items.FindByText("Venue"));
-                    ddlTime.Enabled = true;
-                    ddlTime.Items.Add("08:30 - 10:30");
-                    ddlTime.Items.Add("10:30 - 12:30");
-                    ddlTime.Items.Add("12:30 - 14:30");
+                    ddlStartTime.Enabled = true;
+                    ddlStartTime.Items.Add("08:30 - 10:30");
+                    ddlStartTime.Items.Add("10:30 - 12:30");
+                    ddlStartTime.Items.Add("12:30 - 14:30");
                 }
                 else if (ddlVenue.SelectedItem.Value.Equals("3"))
                 {
                     ddlVenue.Items.Remove(ddlVenue.Items.FindByText("Venue"));
-                    ddlTime.Enabled = true;
-                    ddlTime.Items.Add("08:15 - 10:15");
-                    ddlTime.Items.Add("10:15 - 12:15");
-                    ddlTime.Items.Add("12:15 - 14:15");
+                    ddlStartTime.Enabled = true;
+                    ddlStartTime.Items.Add("08:15 - 10:15");
+                    ddlStartTime.Items.Add("10:15 - 12:15");
+                    ddlStartTime.Items.Add("12:15 - 14:15");
                 }
                 else if (ddlVenue.SelectedItem.Value.Equals("4"))
                 {
                     ddlVenue.Items.Remove(ddlVenue.Items.FindByText("Venue"));
-                    ddlTime.Enabled = true;
-                    ddlTime.Items.Add("08:00 - 10:00");
-                    ddlTime.Items.Add("11:00 - 13:00");
-                    ddlTime.Items.Add("16:00 - 18:00");
+                    ddlStartTime.Enabled = true;
+                    ddlStartTime.Items.Add("08:00 - 10:00");
+                    ddlStartTime.Items.Add("11:00 - 13:00");
+                    ddlStartTime.Items.Add("16:00 - 18:00");
                 }
                 else
                 {
-                    ddlTime.Enabled = false;
+                    //txt3.Text = "3";
+                    ddlStartTime.Enabled = false;
 
                 }
 
             }
             else
             {
+               // txt4.Text = "4";
                 ddlVenue.Enabled = false;
-                ddlTime.Enabled = false;
+                ddlStartTime.Enabled = false;
             }
                
             }
 
         protected void ddlVenue_SelectedIndexChanged(object sender, EventArgs e)
         {
-            String validation = datetimepicker.Text.ToString();
+            String validation = startDate.Text.ToString();
             DateTime parsed;
             bool valid = DateTime.TryParseExact(validation, "dd-MM-yyyy",
                                     CultureInfo.InvariantCulture,
@@ -90,44 +88,44 @@ namespace EventManagementSystem
                                     out parsed);
             if (valid == true)
             {
-                ddlTime.Items.Clear();
+                ddlStartTime.Items.Clear();
                 ddlVenue.Enabled = true;
 
                 if (ddlVenue.SelectedItem.Value.Equals("1"))
                 {
                     ddlVenue.Items.Remove(ddlVenue.Items.FindByText("Venue"));
-                    ddlTime.Enabled = true;
-                    ddlTime.Items.Add("08:00 - 10:00");
-                    ddlTime.Items.Add("10:00 - 12:00");
-                    ddlTime.Items.Add("12:00 - 14:00");
+                    ddlStartTime.Enabled = true;
+                    ddlStartTime.Items.Add("08:00 - 10:00");
+                    ddlStartTime.Items.Add("10:00 - 12:00");
+                    ddlStartTime.Items.Add("12:00 - 14:00");
                 }
                 else if (ddlVenue.SelectedItem.Value.Equals("2"))
                 {
                     ddlVenue.Items.Remove(ddlVenue.Items.FindByText("Venue"));
-                    ddlTime.Enabled = true;
-                    ddlTime.Items.Add("08:30 - 10:30");
-                    ddlTime.Items.Add("10:30 - 12:30");
-                    ddlTime.Items.Add("12:30 - 14:30");
+                    ddlStartTime.Enabled = true;
+                    ddlStartTime.Items.Add("08:30 - 10:30");
+                    ddlStartTime.Items.Add("10:30 - 12:30");
+                    ddlStartTime.Items.Add("12:30 - 14:30");
                 }
                 else if (ddlVenue.SelectedItem.Value.Equals("3"))
                 {
                     ddlVenue.Items.Remove(ddlVenue.Items.FindByText("Venue"));
-                    ddlTime.Enabled = true;
-                    ddlTime.Items.Add("08:15 - 10:15");
-                    ddlTime.Items.Add("10:15 - 12:15");
-                    ddlTime.Items.Add("12:15 - 14:15");
+                    ddlStartTime.Enabled = true;
+                    ddlStartTime.Items.Add("08:15 - 10:15");
+                    ddlStartTime.Items.Add("10:15 - 12:15");
+                    ddlStartTime.Items.Add("12:15 - 14:15");
                 }
                 else if (ddlVenue.SelectedItem.Value.Equals("4"))
                 {
                     ddlVenue.Items.Remove(ddlVenue.Items.FindByText("Venue"));
-                    ddlTime.Enabled = true;
-                    ddlTime.Items.Add("08:00 - 10:00");
-                    ddlTime.Items.Add("11:00 - 13:00");
-                    ddlTime.Items.Add("16:00 - 18:00");
+                    ddlStartTime.Enabled = true;
+                    ddlStartTime.Items.Add("08:00 - 10:00");
+                    ddlStartTime.Items.Add("11:00 - 13:00");
+                    ddlStartTime.Items.Add("16:00 - 18:00");
                 }
                 else
                 {
-                    ddlTime.Enabled = false;
+                    ddlStartTime.Enabled = false;
 
                 }
 
@@ -135,7 +133,7 @@ namespace EventManagementSystem
             else
             {
                 ddlVenue.Enabled = false;
-                ddlTime.Enabled = false;
+                ddlStartTime.Enabled = false;
             }
         }
 

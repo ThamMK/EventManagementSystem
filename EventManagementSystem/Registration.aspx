@@ -20,7 +20,7 @@
                 </div>
                 <div class="container-perosnal-information">
                     <div class="header-container">
-                        <asp:Image ID="imgeOne" CssClass="header-image" ImageUrl="~/Images/Event/1.png" runat="server"  />
+                        <asp:Image ID="Image1" CssClass="header-image" ImageUrl="~/Images/Registeration/1.png" runat="server" />
                         <asp:Label ID="lblPersonalInformation" CssClass="header-label" Text="Personal Information" runat="server"></asp:Label>
                     </div>
                     <div class="container-section-holder">
@@ -61,15 +61,17 @@
                     <div class="container-gender">
                         <asp:Label ID="Gender" CssClass="lblGender" Text="Gender" runat="server"></asp:Label>
                         <div class="container-gender-selection">
-                            <asp:CheckBox ID="cbMale" CssClass="cbMale" Text="Male" runat="server" />
-                            <asp:CheckBox ID="cbFemale" CssClass="cbFemale" Text="Female" runat="server" />
+                            <asp:RadioButtonList ID="RadioButtonList1"  runat="server" RepeatDirection="Vertical" RepeatColumns="2">
+                                <asp:ListItem Selected ="True" Class="ItemMale">Male</asp:ListItem>
+                                <asp:ListItem Class="ItemFemale">Female</asp:ListItem>
+                            </asp:RadioButtonList>
                         </div>
-                        <asp:Label ID="lblEMGender" CssClass="error-message" runat="server"></asp:Label>
                     </div>
 
                 </div>
                 <div class="container-student-information">
                     <div class="header-container">
+                        <asp:Image ID="Image2" CssClass="header-image" ImageUrl="~/Images/Registeration/2.png" runat="server" />
                         <asp:Label ID="lblStudentInformation" CssClass="header-label" Text="Student Information" runat="server"></asp:Label>
                     </div>
                     <div class="container-section-holder">
@@ -88,8 +90,10 @@
                         <asp:Label ID="lblEMStudentSociety" CssClass="eror-message" runat="server"></asp:Label>
                     </div>
                 </div>
+                <br />
                 <div class="container-account-information">
                     <div class="header-container">
+                        <asp:Image ID="Image3" CssClass="header-image" ImageUrl="~/Images/Registeration/3.png" runat="server" />
                         <asp:Label ID="lblAccountInformation" CssClass="header-label" Text="Account Information" runat="server"></asp:Label>
                     </div>
                     <div class="container-section-holder">
@@ -103,7 +107,7 @@
                         <asp:Label ID="lblEMEmail" CssClass="eror-message" runat="server"></asp:Label>
                     </div>
                     <div class="container-section-holder">
-                        <asp:Label ID="lblPhoneNo" CssClass="content-label" Text="Phone Number <br /> (This is to allow event organizer to contact participants easier.)" runat="server"></asp:Label>
+                        <asp:Label ID="lblPhoneNo" CssClass="content-label" Text="Phone Number <br /> (This is to allow event organizer to contact participants easier. Example: 012-3456789)" runat="server"></asp:Label>
                         <asp:TextBox ID="txtPhoneNo" CssClass="content-input" runat="server"></asp:TextBox>
                         <asp:Label ID="lblEMPhoneNo" CssClass="eror-message" runat="server"></asp:Label>
                     </div>

@@ -125,6 +125,9 @@
     <Content Include="Images\Navigation\logo.png" />
     <Content Include="Images\Navigation\search-button-blue.png" />
     <Content Include="Images\Navigation\search-button.png" />
+    <Content Include="Images\Registeration\2.png" />
+    <Content Include="Images\Registeration\1.png" />
+    <Content Include="Images\Registeration\3.png" />
     <Content Include="Images\Registeration\comfirm-pass-icon.png" />
     <Content Include="Images\Registeration\emailicon.png" />
     <Content Include="Images\Registeration\password-icon.png" />

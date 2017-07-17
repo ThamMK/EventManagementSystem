@@ -7,6 +7,13 @@
         <title></title>
         <link href="Scripts/bootstrap.css" rel="stylesheet" />
         <link href="Scripts/EventDetail2.css" rel="stylesheet" />
+        <link href="Scripts/Navigation.css" rel="stylesheet" />
+    <style>
+        #logo {
+            margin-left : 25px;
+           
+        }
+    </style>
     </head>
     <body>
         <img alt="" class="img-event-detail" src="Images/Event/event1.PNG" />

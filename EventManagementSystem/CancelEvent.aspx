@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainPage.Master" AutoEventWireup="true" CodeBehind="CancelEvent.aspx.cs" Inherits="EventManagementSystem.CancelEvent" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/TestMaster.Master" AutoEventWireup="true" CodeBehind="CancelEvent.aspx.cs" Inherits="EventManagementSystem.CancelEvent" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
         a.cancel-event-button:link{
@@ -7,15 +7,15 @@
             text-align:center;
             vertical-align:middle;
             display:table-cell;
-            width:160px;
-            height:40px;
+            width:130px;
+            height:30px;
             font-size:15px;
-            padding-top:9px;
+            padding-top:12px;
         }
         
         .cancel-event-button{
-            width:160px;
-            height:40px;
+            width:130px;
+            height:30px;
             background-color:#DD6B55;
             font-size:15px;
             color:white;
@@ -27,12 +27,22 @@
             background-color:#D46752;
             border: 0.5px solid #D46752;
         }
+
+        .site__title {
+            position: relative;
+            font-size: 24px;
+            line-height: 24px;
+            color: #435a65;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
     </style>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css" />
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
-
     <script type="text/javascript">
 
         function deletealert(ctl, e) {
@@ -69,65 +79,61 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div id="dialog" style="display: none" title="Do you want to delete the event?">
-        This is a simple popup
-    </div>
-
-    <div style="margin-top:30px;margin-left:50px;">
-        <asp:Label runat="server" Text="My Upcoming Event" style="color:deepskyblue;font-size:35px"></asp:Label>
-    </div>
-    <div>
-        <asp:Repeater ID="Repeater1" runat="server" OnItemCommand="Repeater1_ItemCommand">
-            <ItemTemplate>
-                <div style="clear:both;margin-left:50px;margin-top:30px;border:0.5px solid dimgrey;width:92%;height:151.5px;background-color:white">
-                    <asp:Image runat="server" ImageUrl='<%# ((EventManagementSystem.Event)Container.DataItem).imagePath.ToString() %>' style="height:150px;width:250px;float:left;margin-right:20px" /><br>
-                    <div style="background-color:deepskyblue;width:100%;height:35px;margin-top:-20px;padding-top:5px;">
-                        <asp:Label runat="server" ID="lblItem" style="color:white;font-size:18px;font-weight:bold" Text="<%# ((EventManagementSystem.Event)Container.DataItem).eventName.ToString() %>" /><br />
-                        <div style="float:right;margin-right:30px;margin-top:-25px;color:white">
-                            <span style="margin-right:5px;">Price : </span><asp:Label runat="server" style="font-weight:bold;font-size:18px;" Text="<%#((EventManagementSystem.Event)Container.DataItem).eventPrice.ToString() %>"></asp:Label>
+        <div style="margin-top:130px;margin-left:50px;text-align:center;margin-bottom:40px;">
+            <h2 class="site__title">My Upcoming Event</h2>
+        </div>
+        <div style="font-family:sans-serif">
+            <asp:Repeater ID="Repeater1" runat="server" OnItemCommand="Repeater1_ItemCommand">
+                <ItemTemplate>
+                    <div style="clear:both;margin-left:130px;margin-top:30px;border:0.5px solid dimgrey;width:80%;height:151.5px;background-color:white">
+                        <asp:Image runat="server" ImageUrl='<%# ((EventManagementSystem.Event)Container.DataItem).imagePath.ToString() %>' style="height:150px;width:250px;float:left;margin-right:20px" /><br>
+                        <div style="background-color:deepskyblue;width:100%;height:30px;margin-top:-19px;padding-top:10px;">
+                            <asp:Label runat="server" ID="lblItem" style="color:white;font-size:18px;font-weight:bold" Text="<%# ((EventManagementSystem.Event)Container.DataItem).eventName.ToString() %>" /><br />
+                            <div style="float:right;margin-right:20px;margin-top:-22px;color:white;">
+                                <span style="margin-right:5px;">Price : </span><asp:Label runat="server" style="font-weight:bold;font-size:18px;" Text="<%#((EventManagementSystem.Event)Container.DataItem).eventPrice.ToString() %>"></asp:Label>
+                            </div>
                         </div>
-                    </div>
-                    <div style="margin-top:17px;font-size:16px;width:28%;float:left">
-                        <div style="margin-bottom:5px;">
+                        <div style="margin-top:20px;font-size:16px;width:27%;float:left">
+                            <div style="margin-bottom:5px;">
 
-                            <span>Date : </span>
-                            <asp:Label runat="server" Text='<%# ((EventManagementSystem.Event)Container.DataItem).eventStartDate + " - " + ((EventManagementSystem.Event)Container.DataItem).eventEndDate.ToString() %>'
-                                Visible="<%# !(((EventManagementSystem.Event)Container.DataItem).eventStartDate.Equals(((EventManagementSystem.Event)Container.DataItem).eventEndDate)) %>"></asp:Label>
-                            <asp:Label runat="server" Text='<%# ((EventManagementSystem.Event)Container.DataItem).eventStartDate %>'
-                                Visible="<%# ((EventManagementSystem.Event)Container.DataItem).eventStartDate.Equals(((EventManagementSystem.Event)Container.DataItem).eventEndDate) %>"></asp:Label> 
+                                <span>Date : </span>
+                                <asp:Label runat="server" Text='<%# ((EventManagementSystem.Event)Container.DataItem).eventStartDate + " - " + ((EventManagementSystem.Event)Container.DataItem).eventEndDate.ToString() %>'
+                                    Visible="<%# !(((EventManagementSystem.Event)Container.DataItem).eventStartDate.Equals(((EventManagementSystem.Event)Container.DataItem).eventEndDate)) %>"></asp:Label>
+                                <asp:Label runat="server" Text='<%# ((EventManagementSystem.Event)Container.DataItem).eventStartDate %>'
+                                    Visible="<%# ((EventManagementSystem.Event)Container.DataItem).eventStartDate.Equals(((EventManagementSystem.Event)Container.DataItem).eventEndDate) %>"></asp:Label> 
     
-                        </div>
+                            </div>
 
-                        <div style="margin-bottom:5px;">
+                            <div style="margin-bottom:5px;">
 
-                            <span>Time : </span>
-                            <asp:Label runat="server" Text='<%# ((EventManagementSystem.Event)Container.DataItem).eventStartTime + " - " + ((EventManagementSystem.Event)Container.DataItem).eventEndTime.ToString() %>'
-                                Visible="<%# !(((EventManagementSystem.Event)Container.DataItem).eventStartTime.Equals(((EventManagementSystem.Event)Container.DataItem).eventEndTime)) %>"></asp:Label>
-                            <asp:Label runat="server" Text='<%# ((EventManagementSystem.Event)Container.DataItem).eventStartTime %>'
-                                Visible="<%# ((EventManagementSystem.Event)Container.DataItem).eventStartTime.Equals(((EventManagementSystem.Event)Container.DataItem).eventEndTime) %>"></asp:Label> 
+                                <span ">Time : </span>
+                                <asp:Label runat="server" Text='<%# ((EventManagementSystem.Event)Container.DataItem).eventStartTime + " - " + ((EventManagementSystem.Event)Container.DataItem).eventEndTime.ToString() %>'
+                                    Visible="<%# !(((EventManagementSystem.Event)Container.DataItem).eventStartTime.Equals(((EventManagementSystem.Event)Container.DataItem).eventEndTime)) %>"></asp:Label>
+                                <asp:Label runat="server" Text='<%# ((EventManagementSystem.Event)Container.DataItem).eventStartTime %>'
+                                    Visible="<%# ((EventManagementSystem.Event)Container.DataItem).eventStartTime.Equals(((EventManagementSystem.Event)Container.DataItem).eventEndTime) %>"></asp:Label> 
     
+                            </div>
+
+                            <span >Venue : </span><asp:Label runat="server" Text="<%# ((EventManagementSystem.Event)Container.DataItem).eventVenue.ToString() %>"></asp:Label>
                         </div>
 
-                        <span>Venue : </span><asp:Label runat="server" Text="<%# ((EventManagementSystem.Event)Container.DataItem).eventVenue.ToString() %>"></asp:Label>
-                    </div>
+                        <div style="margin-top:20px;font-size:16px;float:left">
+                            <div style="margin-bottom:5px;">
+                                <span>Category : </span><asp:Label runat="server" Text="<%# ((EventManagementSystem.Event)Container.DataItem).eventCategory.ToString() %>"></asp:Label>
+                            </div>
 
-                    <div style="margin-top:17px;font-size:16px;float:left">
-                        <div style="margin-bottom:5px;">
-                            <span>Category : </span><asp:Label runat="server" Text="<%# ((EventManagementSystem.Event)Container.DataItem).eventCategory.ToString() %>"></asp:Label>
+                            <div style="margin-bottom:5px;">
+                                <span>Organizer : </span><asp:Label runat="server" Text="<%# ((EventManagementSystem.Event)Container.DataItem).eventOrganizer.ToString() %>"></asp:Label>
+                            </div>
+
+                            <span>Email : </span><asp:HyperLink runat="server" Text="<%# ((EventManagementSystem.Event)Container.DataItem).contactPerson.ToString() %>" NavigateUrl='<%# "mailto:" + ((EventManagementSystem.Event)Container.DataItem).contactPerson.ToString() %>'></asp:HyperLink>
+
                         </div>
-
-                        <div style="margin-bottom:5px;">
-                            <span>Organizer : </span><asp:Label runat="server" Text="<%# ((EventManagementSystem.Event)Container.DataItem).eventOrganizer.ToString() %>"></asp:Label>
+                        <div style="float:right;margin-right:20px;margin-top:35px;">
+                            <asp:LinkButton runat="server" ID="btnCancel" OnClientClick="return deletealert(this, event);" Text="Cancel Event" alternatetext="Delete" CommandName="cancelEvent" CommandArgument="<%#((EventManagementSystem.Event)Container.DataItem).eventName.ToString() %>" CssClass="cancel-event-button"/>
                         </div>
-
-                        <span>Email : </span><asp:HyperLink runat="server" Text="<%# ((EventManagementSystem.Event)Container.DataItem).contactPerson.ToString() %>" NavigateUrl='<%# "mailto:" + ((EventManagementSystem.Event)Container.DataItem).contactPerson.ToString() %>'></asp:HyperLink>
-
                     </div>
-                    <div style="float:right;margin-right:30px;margin-top:35px;">
-                        <asp:LinkButton runat="server" ID="btnCancel" OnClientClick="return deletealert(this, event);" Text="Cancel Event" alternatetext="Delete" CommandName="cancelEvent" CommandArgument="<%#((EventManagementSystem.Event)Container.DataItem).eventName.ToString() %>" CssClass="cancel-event-button"/>
-                    </div>
-                </div>
-            </ItemTemplate>
-        </asp:Repeater>
-    </div>
+                </ItemTemplate>
+            </asp:Repeater>
+        </div>
 </asp:Content>

@@ -8,11 +8,9 @@
 
 /*****Registration Form header*****/
 .sign-up-header{
-    border-bottom: 2px dotted #12ABE3;
-    border-style: none none solid none;
-    width: 760px;
-    float: left;
-    clear: left;
+    margin-top:130px;
+    margin-left:200px;
+    margin-bottom:40px;
 }
 
 .lblRegistrationForm{
@@ -48,6 +46,7 @@
 .container-DOB-ddl{
     float:left;
     clear:left;
+    margin-bottom:10px;
 }
 
 .container-DOB-ddlMonth{
@@ -143,7 +142,10 @@
 .container-gender{
     float:left;
     clear:left;
+    margin-bottom:10px;
 }
+
+
 
 .eror-message{
     float:left;
@@ -152,7 +154,7 @@
 
 /*Generalize styles*/
 .header-container{
-    border-top: 2px dotted #12ABE3;
+    
     border-bottom: 2px dotted #12ABE3;
     border-style: none none solid none;
     width: 760px;
@@ -173,7 +175,7 @@
     -webkit-border-bottom-left-radius: 30px;
     height: 20px;
     width: 220px;
-    font-size: 35pt;
+    font-size: 25pt;
 }
 
 .content-section-holder{
@@ -190,6 +192,8 @@
 
 .content-input{
     border: 1px solid #c4c4c4;
+    height: 25px;
+    width: 100%;
     font-size: 13px;
     padding: 4px 4px 4px 4px;
     border-radius: 4px;
@@ -204,8 +208,71 @@
     top: 0px;
     left: 0px;
     margin-top: 5px;
+    margin-bottom: 10px;
 }
 
-.content-error-message{
 
+.container-button{
+    float:left;
+    clear:left;
+}
+
+.container-button-submit{
+    float:left;
+}
+
+.container-button-cancel{
+    float:left;
+}
+
+.ItemMale{
+    float:left;
+    margin-right:20px;
+}
+.ItemFemale{
+    float:left;
+
+}
+
+.btnSubmit{
+    background-color:#A5DC86;
+    border:none;
+    cursor:pointer;
+    margin-top:22px;
+    margin-bottom:75px;
+    clear:both;
+    margin-left:-10px;
+    color:white;
+    font-size:16px;
+    height:50px;
+    width:380px;
+    margin-right:20px;
+}
+
+.btnSubmit:hover{
+    background-color:white;
+    border:1px solid deepskyblue;
+    color:deepskyblue;
+}
+
+.btnCancel{
+    background-color:#DD6B55;
+    border:none;
+    cursor:pointer;
+    margin-top:22px;
+    margin-bottom:75px;
+    clear:both;
+    margin-left:-10px;
+    color:white;
+    font-size:16px;
+    height:50px;
+    width:380px;
+    float:left;
+    
+}
+
+.btnCancel:hover{
+    background-color:white;
+    border:1px solid deepskyblue;
+    color:deepskyblue;
 }

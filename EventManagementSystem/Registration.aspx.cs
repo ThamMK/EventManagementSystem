@@ -9,11 +9,7 @@ namespace EventManagementSystem
 {
     public partial class Registration : System.Web.UI.Page
     {
-        String name;
-        String email;
-        String password;
-        String comfirmPassword;
-        int selectedYear;
+        
         int day_max_value = 31;
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -104,6 +100,7 @@ namespace EventManagementSystem
         {
             
         }
+        
     }
 
 }

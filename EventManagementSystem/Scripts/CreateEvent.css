@@ -1,5 +1,5 @@
 ﻿.container-CreateEvent {    
-    margin-left: 24%;
+    margin-left: 19%;
     width: 100%;
     height: 1500px;
     color: #666666;
@@ -9,11 +9,10 @@
     float: left;
     clear: left;
     width: 800px;
-    height: 870px; 
 }
 
 .eventDetail-Header {
-    border-bottom: 2px dotted #12ABE3;
+    border-bottom: 1px dotted #12ABE3;
     border-style: none none solid none;
     width: 100%;
     float: left;
@@ -22,26 +21,24 @@
 }
 
 .lblEventDetail {
-    -webkit-border-top-left-radius: 30px;
-    -moz-border-radius-topleft: 30px;
-    -moz-border-radius-bottomleft: 30px;
-    -webkit-border-bottom-left-radius: 30px;
-    height: 20px;
+    margin-left: 10px;
     width: 220px;
     font-size: 25pt;
 }
 
 .lblEventTitle {
-    margin-top: 5px;
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 17px;
     float: left;
     clear: left;
 }
 
 .txtEventTitle {
     border: 1px solid #c4c4c4;
-    height: 25px;
+    height: 35px;
     width: 100%;
-    font-size: 13px;
+    font-size: 15px;
     padding: 4px 4px 4px 4px;
     border-radius: 4px;
     -moz-border-radius: 4px;
@@ -50,10 +47,7 @@
     -moz-box-shadow: 0px 0px 8px #d9d9d9;
     -webkit-box-shadow: 0px 0px 8px #d9d9d9;
     float: left;
-    clear: left;
-    top: 0px;
-    left: 0px;
-    margin-top: 5px;
+    clear: left
 }
 
     .txtEventTitle:focus {
@@ -65,28 +59,23 @@
     }
 
 .lblLocation {
-    margin-top: 5px;
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 17px;
     float: left;
     clear: left;
 }
 
 .txtLocation {
-    margin-top: 5px;
     float: left;
     clear: left;
     width: 100%;
-    height: 25px;
+    height: 35px;
     border: 1px solid #c4c4c4;
-    height: 25px;
-    width: 100%;
     font-size: 13px;
     padding: 4px 4px 4px 4px;
     border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
     box-shadow: 0px 0px 8px #d9d9d9;
-    -moz-box-shadow: 0px 0px 8px #d9d9d9;
-    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
 }
 
     .txtLocation:focus {
@@ -98,31 +87,39 @@
     }
 
 .eventDetail-Date {
-    margin-top: 5px;
+    margin-top: 8px;
     width: 100%;
+    float: left;
+    clear: left;
 }
 
 .eventDetail-StartDate {
-    margin-top: 5px;
     float: left;
     width: 45%;
+}
+
+.lblStart{
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.lblEnd{
+    font-weight: bold;
+    font-size: 17px;
 }
 
 .eventDetail-StartDate-Date {
     float: left;
     width: 40%;
-    margin-top: 5px;
 }
 
 .eventDetail-StartDate-Time {
     margin-left: 4%;
-    margin-top: 5px;
     float: left;
     width: 40%;
 }
 
 .eventDetail-EndDate {
-    margin-top: 5px;
     margin-left: 1%;
     float: left;
     width: 45%;
@@ -130,33 +127,24 @@
 
 .eventDetail-EndDate-Date {
     float: left;
-    margin-top: 5px;
     width: 40%;
 }
 
 .eventDetail-EndDate-Time {
     margin-left: 4%;
-    margin-top: 5px;
     float: left;
     width: 40%;
 }
 
 .startDateTextBox {
     border: 1px solid #c4c4c4;
-    height: 25px;
+    height: 35px;
     width: 100%;
     font-size: 13px;
     padding: 4px 4px 4px 4px;
     border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    box-shadow: 0px 0px 8px #d9d9d9;
-    -moz-box-shadow: 0px 0px 8px #d9d9d9;
-    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
     float: left;
     clear: left;
-    top: 0px;
-    left: 0px;
 }
 
     .startDateTextBox:focus {
@@ -169,20 +157,13 @@
 
 .ddlStartTime {
     border: 1px solid #c4c4c4;
-    height: 25px;
+    height: 35px;
     width: 100%;
     font-size: 13px;
     padding: 4px 4px 4px 4px;
     border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    box-shadow: 0px 0px 8px #d9d9d9;
-    -moz-box-shadow: 0px 0px 8px #d9d9d9;
-    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
     float: left;
     clear: left;
-    top: 0px;
-    left: 0px;
 }
 
     .ddlStartTime:focus {
@@ -201,20 +182,13 @@
 
 .endDateTextBox {
     border: 1px solid #c4c4c4;
-    height: 25px;
+    height: 35px;
     width: 100%;
     font-size: 13px;
     padding: 4px 4px 4px 4px;
     border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    box-shadow: 0px 0px 8px #d9d9d9;
-    -moz-box-shadow: 0px 0px 8px #d9d9d9;
-    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
     float: left;
     clear: left;
-    top: 0px;
-    left: 0px;
 }
 
     .endDateTextBox:focus {
@@ -225,7 +199,19 @@
         -webkit-box-shadow: 0px 0px 8px #7bc1f7;
     }
 
-.ddlEndTime:focus {
+
+
+.ddlEndTime {
+    border: 1px solid #c4c4c4;
+    height: 35px;
+    width: 100%;
+    font-size: 13px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 4px;
+    float: left;
+    clear: left;
+}
+    .ddlEndTime:focus {
     outline: none;
     border: 1px solid #7bc1f7;
     box-shadow: 0px 0px 8px #7bc1f7;
@@ -233,32 +219,15 @@
     -webkit-box-shadow: 0px 0px 8px #7bc1f7;
 }
 
-.ddlEndTime {
-    border: 1px solid #c4c4c4;
-    height: 25px;
-    width: 100%;
-    font-size: 13px;
-    padding: 4px 4px 4px 4px;
-    border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    box-shadow: 0px 0px 8px #d9d9d9;
-    -moz-box-shadow: 0px 0px 8px #d9d9d9;
-    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
-    float: left;
-    clear: left;
-    top: 0px;
-    left: 0px;
-}
-
 .lblEventImage {
-    margin-top: 5px;
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 17px;
     float: left;
     clear: left;
 }
 
 .imgAddImage {
-    margin-top: 5px;
     border: 1px solid #0800FF;
     float: left;
     clear: left;
@@ -273,18 +242,19 @@
     }
 
 .eventDetail-EventDescription {
-    margin-top: 5px;
+    margin-top: 8px;
     height: 100px;
 }
 
 .lblEventDescription {
-    margin-top: 5px;
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 17px;
     float: left;
     clear: left;
 }
 
 .eventDetail-CKEditor {
-    margin-top: 5px;
     width: 100%;
     float: left;
     clear: left;
@@ -298,7 +268,7 @@
 }
 
 .lblOrganizerDetail {
-    height: 20px;
+    margin-left: 10px;
     width: 220px;
     font-size: 25pt;
 }
@@ -318,29 +288,23 @@
 }
 
 .lblOrganizerName {
-    margin-top: 5px;
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 17px;
     float: left;
     clear: left;
 }
 
 .txtOrganizerName {
-    margin-top: 5px;
     float: left;
     border: 1px solid #c4c4c4;
-    height: 25px;
+    height: 35px;
     width: 100%;
     font-size: 13px;
     padding: 4px 4px 4px 4px;
     border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    box-shadow: 0px 0px 8px #d9d9d9;
-    -moz-box-shadow: 0px 0px 8px #d9d9d9;
-    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
     float: left;
     clear: left;
-    top: 0px;
-    left: 0px;
 }
 
     .txtOrganizerName:focus {
@@ -352,35 +316,28 @@
     }
 
 .organizationDetail-OrganizerContactNumber {
-    margin-top: 5px;
     width: 100%;
     float: left;
     clear: left;
 }
 
 .lblOrganizerContactNumber {
-    margin-top: 5px;
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 17px;
     float: left;
     clear: left;
 }
 
 .txtOrganizerContactNumber {
     border: 1px solid #c4c4c4;
-    height: 25px;
+    height: 35px;
     width: 100%;
     font-size: 13px;
     padding: 4px 4px 4px 4px;
     border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    box-shadow: 0px 0px 8px #d9d9d9;
-    -moz-box-shadow: 0px 0px 8px #d9d9d9;
-    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
     float: left;
     clear: left;
-    top: 0px;
-    left: 0px;
-    margin-top: 5px;
 }
 
     .txtOrganizerContactNumber:focus {
@@ -392,35 +349,28 @@
     }
 
 .organizationDetail-OrganizerEmail {
-    margin-top: 5px;
     width: 100%;
     float: left;
     clear: left;
 }
 
 .lblOrganizerEmail {
-    margin-top: 5px;
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 17px;
     float: left;
     clear: left;
 }
 
 .txtOrganizerEmail {
     border: 1px solid #c4c4c4;
-    height: 25px;
+    height: 35px;
     width: 100%;
     font-size: 13px;
     padding: 4px 4px 4px 4px;
     border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    box-shadow: 0px 0px 8px #d9d9d9;
-    -moz-box-shadow: 0px 0px 8px #d9d9d9;
-    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
     float: left;
     clear: left;
-    top: 0px;
-    left: 0px;
-    margin-top: 5px;
 }
 
     .txtOrganizerEmail:focus {
@@ -480,16 +430,17 @@
 
 
 .lblCategory {
-    margin-top: 5px;
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 17px;
     float: left;
     clear: left;
 }
 
 .ddlCategory {
     width: 350px;
-    margin-top: 5px;
     border: 1px solid #c4c4c4;
-    height: 25px;
+    height: 35px;
     font-size: 13px;
     padding: 4px 4px 4px 4px;
     border-radius: 4px;
@@ -527,9 +478,8 @@
 }
 
 .imgNav2{
-    width: 650px;
+    width: 850px;
     height: 200px;
-    margin-left: 30px
 }
 .imgOne{
     width: 49px;
@@ -544,7 +494,5 @@
 }
 
 .container-Navigation {
-    width: 650px;
-    height: 200px;
     float: left;
 }

@@ -26,7 +26,7 @@
             </div>
             <div class="container-check">
                 <div class="container-StartDateTime">
-                    <asp:Label ID="lblStartDate" runat="server" Text="Start Date"></asp:Label>
+                    <asp:Label ID="lblStartDate" CssClass="lblStartDate" runat="server" Text="Start Date"></asp:Label>
                     <div class="container-StartDateTime2">
 
                         <asp:TextBox ID="startDate" CssClass="startDate" runat="server" placeholder="dd-mm-yyyy" OnTextChanged="datetimepicker_TextChanged" AutoPostBack="true"></asp:TextBox>
@@ -68,7 +68,7 @@
                 </div>
                 <div class="container-EndDateTime">
 
-                    <asp:Label ID="lblEnd" runat="server" Text="End Date"></asp:Label>
+                    <asp:Label ID="lblEnd" CssClass="lblEnd" runat="server" Text="End Date"></asp:Label>
 
                     <div class="container-EndDateTime2">
 

@@ -1,34 +1,34 @@
 ﻿
 
 .startDate { 
-    height:30px; 
+    height:35px; 
     width: 200px;   
     float: left;
     clear: left
   }
 
 .endDate{
-    height:30px; 
+    height:35px; 
     width: 200px;  
     float: left;
 }
 
 .ddlVenue{
-    height:30px; 
+    height:35px; 
     width: 415px; 
     float: left;
     clear: left;
 }
 
 .ddlStartTime{
-    height:30px; 
+    height:35px; 
     width: 200px; 
     float: left;
     margin-left: 15px;
 }
 
 .ddlEndTime{
-    height:30px; 
+    height:35px; 
     width: 200px; 
     float: left;
     margin-left: 15px;
@@ -41,9 +41,8 @@
 
 
 .imgNav{
-    width: 650px;
+    width: 850px;
     height: 200px;
-    margin-left: 364px
 }
 
 .container-CheckAvailability {
@@ -53,8 +52,7 @@
 }
 
 .container-Navigation{
-    width: 100%;
-    height: 200px;
+    margin-left: 270px;
 }
 
 .container-Date-Location-Time {
@@ -77,8 +75,9 @@
     float: left;
     font-family: Arial;
     color: #ffffff;
-    background: #34d960;
+    background: #A5DC86;
     font-size: 20px;
+    width: 120px;
     text-decoration: none;
     border-style: none;
 }
@@ -93,13 +92,13 @@
 }
 
 .container-EndDateTime{
-    margin-top: 10px;
+    margin-top: 8px;
     float: left;
     clear: left;
 }
 
 .container-Venue{
-    margin-top: 10px;
+    margin-top: 8px;
     float: left;
     clear: left;
 }
@@ -107,12 +106,27 @@
 .container-check{
     float: left;
     clear: left;
-    margin-left: 510px;
+    margin-left: 200px;
 }
 
 .lblVenue{
 
     float: left;
     clear: left;
+}
+
+.lblStartDate{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.lblEnd{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.lblVenue{
+    font-size: 17px;
+    font-weight: bold;
 }
 

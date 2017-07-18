@@ -91,6 +91,7 @@
     <Content Include="Default.aspx" />
     <Content Include="Default2.aspx" />
     <Content Include="Event.aspx" />
+    <Content Include="EventApproval.aspx" />
     <Content Include="EventDetail.aspx" />
     <Content Include="Homepage.aspx" />
     <Content Include="Images\Categories\Background\business.jpg" />
@@ -107,6 +108,7 @@
     <Content Include="Images\Categories\seminar.png" />
     <Content Include="Images\Categories\social.png" />
     <Content Include="Images\Categories\technology.png" />
+    <Content Include="Images\Event\eventGaming.jpg" />
     <Content Include="Images\Event\ADD_IMAGE.png" />
     <Content Include="Images\Event\event1.PNG" />
     <Content Include="Images\Event\event2.PNG" />
@@ -238,6 +240,13 @@
     </Compile>
     <Compile Include="Event.cs">
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventApproval.aspx.cs">
+      <DependentUpon>EventApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventApproval.aspx.designer.cs">
+      <DependentUpon>EventApproval.aspx</DependentUpon>
     </Compile>
     <Compile Include="EventDetail.aspx.cs">
       <DependentUpon>EventDetail.aspx</DependentUpon>

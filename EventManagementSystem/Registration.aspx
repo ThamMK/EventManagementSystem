@@ -21,7 +21,9 @@
                 <div class="container-perosnal-information">
                     <div class="header-container">
                         <asp:Image ID="Image1" CssClass="header-image" ImageUrl="~/Images/Registeration/1.png" runat="server" />
-                        <asp:Label ID="lblPersonalInformation" CssClass="header-label" Text="Personal Information" runat="server"></asp:Label>
+                        <div class="header-label-container">
+                            <asp:Label ID="lblPersonalInformation" CssClass="header-label" Text="Personal Information" runat="server"></asp:Label>
+                        </div>
                     </div>
                     <div class="container-section-holder">
                         <asp:Label ID="lblFullName" CssClass="content-label" Text="FullName" runat="server"></asp:Label>
@@ -31,7 +33,7 @@
                         <asp:Label ID="lblEMFullName" CssClass="error-message" runat="server"></asp:Label>
                     </div>
                     <div class="container-DOB">
-                        <asp:Label ID="lblDOB" CssClass="lblDOB" Text="Date Of Birth" runat="server"></asp:Label>
+                        <asp:Label ID="lblDOB" CssClass="content-label" Text="Date Of Birth" runat="server"></asp:Label>
                         <div class="container-DOB-ddl">
                             <div class="container-DOB-ddlMonth">
                                 <asp:DropDownList ID="DropDownListMonth" CssClass="DropDownListMonth" runat="server">
@@ -59,7 +61,7 @@
                         </div>
                     </div>
                     <div class="container-gender">
-                        <asp:Label ID="Gender" CssClass="lblGender" Text="Gender" runat="server"></asp:Label>
+                        <asp:Label ID="Gender" CssClass="content-label" Text="Gender" runat="server"></asp:Label>
                         <div class="container-gender-selection">
                             <asp:RadioButtonList ID="RadioButtonList1"  runat="server" RepeatDirection="Vertical" RepeatColumns="2">
                                 <asp:ListItem Selected ="True" Class="ItemMale">Male</asp:ListItem>
@@ -72,7 +74,10 @@
                 <div class="container-student-information">
                     <div class="header-container">
                         <asp:Image ID="Image2" CssClass="header-image" ImageUrl="~/Images/Registeration/2.png" runat="server" />
-                        <asp:Label ID="lblStudentInformation" CssClass="header-label" Text="Student Information" runat="server"></asp:Label>
+                        <div class="header-label-container">
+                            <asp:Label ID="lblStudentInformation" CssClass="header-label" Text="Student Information" runat="server"></asp:Label>
+                        </div>
+                        
                     </div>
                     <div class="container-section-holder">
                         <asp:Label ID="lblStudentID" CssClass="content-label" Text="Student ID" runat="server"></asp:Label>
@@ -85,7 +90,8 @@
                         <asp:Label ID="lblEMStudentCourse" CssClass="eror-message" runat="server"></asp:Label>
                     </div>
                     <div class="container-section-holder">
-                        <asp:Label ID="lblStudentSociety" CssClass="content-label" Text="Are you in any society? <br />(Answer Yes or No. If Yes, please write your society's name after yes. Example: Yes, Chinese scociety.)" runat="server"></asp:Label>
+                        <asp:Label ID="lblStudentSociety" CssClass="content-label" Text="Are you in any society?" runat="server"></asp:Label>
+                        <asp:Label ID="lblHelpStudentSociety" CssClass="help-note" Text="(Answer Yes or No. If Yes, please write your society's name after yes. Example: Yes, Chinese scociety.)" runat="server"></asp:Label>
                         <asp:TextBox ID="txtStudentSociety" CssClass="content-input" runat="server"></asp:TextBox>
                         <asp:Label ID="lblEMStudentSociety" CssClass="eror-message" runat="server"></asp:Label>
                     </div>
@@ -94,10 +100,13 @@
                 <div class="container-account-information">
                     <div class="header-container">
                         <asp:Image ID="Image3" CssClass="header-image" ImageUrl="~/Images/Registeration/3.png" runat="server" />
-                        <asp:Label ID="lblAccountInformation" CssClass="header-label" Text="Account Information" runat="server"></asp:Label>
+                        <div class="header-label-container">
+                            <asp:Label ID="lblAccountInformation" CssClass="header-label" Text="Account Information" runat="server"></asp:Label>
+                        </div>
                     </div>
                     <div class="container-section-holder">
-                        <asp:Label ID="lblUsername" CssClass="content-label" Text="Username <br /> (You will be using this username to login.)" runat="server"></asp:Label>
+                        <asp:Label ID="lblUsername" CssClass="content-label" Text="Username" runat="server"></asp:Label>
+                        <asp:Label ID="lblHelpUsername" CssClass="help-note" Text="(You will be using this username to login.)" runat="server"></asp:Label>
                         <asp:TextBox ID="txtUsername" CssClass="content-input" runat="server"></asp:TextBox>
                         <asp:Label ID="lblEMUsername" CssClass="eror-message" runat="server"></asp:Label>
                     </div>
@@ -107,7 +116,8 @@
                         <asp:Label ID="lblEMEmail" CssClass="eror-message" runat="server"></asp:Label>
                     </div>
                     <div class="container-section-holder">
-                        <asp:Label ID="lblPhoneNo" CssClass="content-label" Text="Phone Number <br /> (This is to allow event organizer to contact participants easier. Example: 012-3456789)" runat="server"></asp:Label>
+                        <asp:Label ID="lblPhoneNo" CssClass="content-label" Text="Phone Number" runat="server"></asp:Label>
+                        <asp:Label ID="lblHelpPhoneNo" CssClass="help-note" Text="(This is to allow event organizer to contact participants easier. Example: 012-3456789)" runat="server"></asp:Label>
                         <asp:TextBox ID="txtPhoneNo" CssClass="content-input" runat="server"></asp:TextBox>
                         <asp:Label ID="lblEMPhoneNo" CssClass="eror-message" runat="server"></asp:Label>
                     </div>

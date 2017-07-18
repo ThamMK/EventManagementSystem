@@ -72,7 +72,8 @@ namespace EventManagementSystem
         {
             int currYear = DateTime.Now.Year;
             DropDownListYear.Items.Clear();
-            for (int x = currYear - 100; x <= currYear; x++)
+            int bottomLimit = currYear - 100;
+            for (int x = currYear; x > bottomLimit; x--)
             {
                 DropDownListYear.Items.Add(x.ToString());
             }

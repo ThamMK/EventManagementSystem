@@ -30,8 +30,8 @@
 
         .site__title {
             position: relative;
-            font-size: 24px;
-            line-height: 24px;
+            font-size: 26px;
+            line-height: 26px;
             color: #435a65;
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
@@ -79,7 +79,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-        <div style="margin-top:130px;margin-left:50px;text-align:center;margin-bottom:40px;">
+        <div style="margin-top:130px;text-align:center;margin-bottom:40px;">
             <h2 class="site__title">My Upcoming Event</h2>
         </div>
         <div style="font-family:sans-serif">
@@ -87,7 +87,7 @@
                 <ItemTemplate>
                     <div style="clear:both;margin-left:130px;margin-top:30px;border:0.5px solid dimgrey;width:80%;height:151.5px;background-color:white">
                         <asp:Image runat="server" ImageUrl='<%# ((EventManagementSystem.Event)Container.DataItem).imagePath.ToString() %>' style="height:150px;width:250px;float:left;margin-right:20px" /><br>
-                        <div style="background-color:deepskyblue;width:100%;height:30px;margin-top:-19px;padding-top:10px;">
+                        <div style="background-color:deepskyblue;width:100%;height:30px;margin-top:-18px;padding-top:10px;">
                             <asp:Label runat="server" ID="lblItem" style="color:white;font-size:18px;font-weight:bold" Text="<%# ((EventManagementSystem.Event)Container.DataItem).eventName.ToString() %>" /><br />
                             <div style="float:right;margin-right:20px;margin-top:-22px;color:white;">
                                 <span style="margin-right:5px;">Price : </span><asp:Label runat="server" style="font-weight:bold;font-size:18px;" Text="<%#((EventManagementSystem.Event)Container.DataItem).eventPrice.ToString() %>"></asp:Label>

@@ -13,8 +13,14 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
+    <link href="Scripts/Navigation.css" rel="stylesheet" />
+    <style>
+        #logo {
+            margin-left : 25px;
+           
+        }
+    </style>
+        
 </head>
 <body>
     <img alt="" class="img-main-top" src="Images/klccbackground.png" />

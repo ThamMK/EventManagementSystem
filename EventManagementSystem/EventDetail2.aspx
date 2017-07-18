@@ -23,12 +23,14 @@
             </div>
             <div class="img-event-detail-overlay-register">
                 <input id="registerBtn" type="button" value="Register" />
+                
+                <input id="watchBtn" type="button" value="Watch Video" />
             </div>
             <div class="img-event-detail-overlay-details">
                 <div class="row">
                     <div class="col-sm-3">
                         <div class="event-detail-icon">
-                            <img src="Images/Event/ic_event_white_24dp_2x.png" />
+                            <img class="event-icon" src="Images/Event/ic_event_white_24dp_1x.png" />
                         </div>
                         <div class="event-detail-date-label event-label">
                             Date
@@ -40,7 +42,7 @@
                     </div>
                     <div class="col-sm-3">
                        <div class="event-detail-icon">
-                            <img src="Images/Event/ic_alarm_white_24dp_2x.png" />
+                            <img class="event-icon" src="Images/Event/ic_alarm_white_24dp_1x.png" />
                         </div>
                         <div class="event-detail-time-label event-label">
                             Time
@@ -51,7 +53,7 @@
                     </div>
                     <div class="col-sm-3">
                        <div class="event-detail-icon">
-                            <img src="Images/Event/ic_location_on_white_24dp_2x.png" />
+                            <img class="event-icon" src="Images/Event/ic_location_on_white_24dp_1x.png" />
                         </div>
                         <div class="event-detail-venue-label event-label">
                             Venue
@@ -62,7 +64,7 @@
                     </div>
                     <div class="col-sm-3">
                        <div class="event-detail-icon">
-                            <img src="Images/Event/ic_check_circle_white_24dp_2x.png" />
+                            <img class="event-icon" src="Images/Event/ic_check_circle_white_24dp_1x.png" />
                         </div>
                         <div class="event-detail-category-label event-label">
                             Category
@@ -99,6 +101,7 @@ Oh he decisively impression attachment friendship so if everything. Whose her en
                 emial@gmail.com
 
                 <input id="registerBtn2" type="button" value="Register" />
+                <input id="watchBtn2" type="button" value="Watch Video" />
             </div>
 
         </div>

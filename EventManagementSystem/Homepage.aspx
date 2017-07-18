@@ -23,6 +23,15 @@
         
 </head>
 <body>
+    <div class="img-overlay-text">
+    <h1>Discover new experiences</h1>
+    </div>
+    <div class="img-overlay-text-detailed">
+    <h1 style="margin-top:220px; margin-left: 27%; font-size:35px;">Join, Create and Manage Events</h1>
+
+
+
+    </div>
     <img alt="" class="img-main-top" src="Images/klccbackground.png" />
     
     <div class="container-homepage">
@@ -43,13 +52,13 @@
                             Date : Saturday, 24th July 2017
                         </div>
 
-                        <div class="event-desc-location">
-                            Venue : Block ABC
+                        <div class="event-desc-time">
                             
+                           Time : 8.00am - 10.00am
                         </div>
                         
-                        <div class="event-desc-category"> 
-                            Category : Event
+                        <div class="event-desc-location"> 
+                            Venue : Block ABC
                         </div>
                     </div>
                  </div>
@@ -262,7 +271,9 @@
             </div>
             
             <h2 class="event-category-header" style="margin-top:100px;">Explore Event By Categories</h2>
-
+            
+                <div class="event-category-background">
+                    <h4>Browse for events based on different categories </h4>
                 <div class="row category-row">
                 
 
@@ -324,11 +335,19 @@
                     </figure>
                 </div>
                 <div class="col-sm-3">
+                    <asp:Image runat="server" CssClass="event-image-category-logo" ImageUrl="\Images\Categories\art.png" />
+                    <h6>Art</h6>
+                    <figure class="tint">
+                            
+                        <asp:Image runat="server" CssClass="event-image-category" ImageUrl="\Images\Categories\Background\art.jpg" />
+                    
 
+                    </figure>
                 </div>
                 </div>
 
 
+        </div>
         </div>
     </div>
 </body>

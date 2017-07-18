@@ -91,8 +91,8 @@
     <Content Include="Default.aspx" />
     <Content Include="Default2.aspx" />
     <Content Include="Event.aspx" />
-    <Content Include="EventApproval.aspx" />
     <Content Include="EventDetail.aspx" />
+    <Content Include="EventDetail2.aspx" />
     <Content Include="Homepage.aspx" />
     <Content Include="Images\Categories\Background\business.jpg" />
     <Content Include="Images\Categories\Background\food.jpg" />
@@ -108,16 +108,25 @@
     <Content Include="Images\Categories\seminar.png" />
     <Content Include="Images\Categories\social.png" />
     <Content Include="Images\Categories\technology.png" />
-    <Content Include="Images\Event\eventGaming.jpg" />
+    <Content Include="Images\Eventasd.jpg" />
+    <Content Include="Images\EventEventClosure_1.png" />
+    <Content Include="Images\Eventlogin.jpg" />
+    <Content Include="Images\Eventlogo.png" />
     <Content Include="Images\Event\ADD_IMAGE.png" />
     <Content Include="Images\Event\event1.PNG" />
     <Content Include="Images\Event\event2.PNG" />
     <Content Include="Images\Event\event3.PNG" />
     <Content Include="Images\Event\event4.PNG" />
     <Content Include="Images\Event\event5.PNG" />
+    <Content Include="Images\Event\ic_alarm_white_24dp_2x.png" />
+    <Content Include="Images\Event\ic_check_circle_white_24dp_2x.png" />
+    <Content Include="Images\Event\ic_event_white_24dp_2x.png" />
+    <Content Include="Images\Event\ic_location_on_white_24dp_2x.png" />
     <Content Include="Images\Event\promo 1.png" />
     <Content Include="Images\Event\promo 2.png" />
     <Content Include="Images\Event\promo 3.png" />
+    <Content Include="Images\klcc.jpg" />
+    <Content Include="Images\klccbackground.png" />
     <Content Include="Images\Login\email-icon.png" />
     <Content Include="Images\Login\login.jpg" />
     <Content Include="Images\Login\login.png" />
@@ -150,6 +159,7 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <Content Include="Scripts\ConfirmationEvent.css" />
+    <Content Include="Scripts\EventDetail2.css" />
     <Content Include="TestMaster.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -241,19 +251,19 @@
     <Compile Include="Event.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="EventApproval.aspx.cs">
-      <DependentUpon>EventApproval.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="EventApproval.aspx.designer.cs">
-      <DependentUpon>EventApproval.aspx</DependentUpon>
-    </Compile>
     <Compile Include="EventDetail.aspx.cs">
       <DependentUpon>EventDetail.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="EventDetail.aspx.designer.cs">
       <DependentUpon>EventDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EventDetail2.aspx.cs">
+      <DependentUpon>EventDetail2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventDetail2.aspx.designer.cs">
+      <DependentUpon>EventDetail2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Homepage.aspx.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>

@@ -22,13 +22,13 @@ namespace EventManagementSystem {
         protected global::System.Web.UI.WebControls.Label lblRegistrationForm;
         
         /// <summary>
-        /// imgeOne control.
+        /// Image1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgeOne;
+        protected global::System.Web.UI.WebControls.Image Image1;
         
         /// <summary>
         /// lblPersonalInformation control.
@@ -121,31 +121,22 @@ namespace EventManagementSystem {
         protected global::System.Web.UI.WebControls.Label Gender;
         
         /// <summary>
-        /// cbMale control.
+        /// RadioButtonList1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox cbMale;
+        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList1;
         
         /// <summary>
-        /// cbFemale control.
+        /// Image2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox cbFemale;
-        
-        /// <summary>
-        /// lblEMGender control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblEMGender;
+        protected global::System.Web.UI.WebControls.Image Image2;
         
         /// <summary>
         /// lblStudentInformation control.
@@ -236,6 +227,15 @@ namespace EventManagementSystem {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblEMStudentSociety;
+        
+        /// <summary>
+        /// Image3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image3;
         
         /// <summary>
         /// lblAccountInformation control.

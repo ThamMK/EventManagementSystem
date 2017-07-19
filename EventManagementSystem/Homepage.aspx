@@ -23,33 +23,36 @@
         
 </head>
 <body>
-    <div class="img-overlay-text">
+<%--    <div class="img-overlay-text">
     <h1>Discover new experiences</h1>
     </div>
     <div class="img-overlay-text-detailed">
     <h1 style="margin-top:220px; margin-left: 27%; font-size:35px;">Join, Create and Manage Events</h1>
 
+    </div>--%>
 
-
+    <div class="img-main">
+        <h1>Discover new experiences</h1>
+        <h1 style="margin-top:100px; font-size:40px;">Join, Create and Manage Events</h1>
+        <img alt="" class="img-main-top" src="Images/klccbackground.png" />
     </div>
-    <img alt="" class="img-main-top" src="Images/klccbackground.png" />
-    
     <div class="container-homepage">
     <div class="container">
         <h2>Latest Events</h2>
+        <h4>Browse new events around you</h4>
         <div class="row">
             <div class="col-sm-4">
                 <a href="EventDetail2.aspx">
                 <div class="event-container">
                     <div class="event-desc-title">
-                            TARUC Final Exam
+                            Techniques to Relax Your Body & Mind
                     </div>
                     <div class="event-image-div">
                         <asp:Image runat="server" CssClass="event-image" ImageUrl="\Images\Event\event1.png" />
                     </div>
                     <div class="event-desc-div">
                         <div class="event-desc-date">
-                            Date : Saturday, 24th July 2017
+                            Date : 24th July 2017
                         </div>
 
                         <div class="event-desc-time">
@@ -66,53 +69,57 @@
             </div>
             
             <div class="col-sm-4">
+                <a href="EventDetail2-1.aspx">
                 <div class="event-container">
                     <div class="event-desc-title">
-                        TARUC Final Exam
+                        TARUC Open Day
                     </div>
                     <div class="event-image-div">
                         <asp:Image runat="server" CssClass="event-image" ImageUrl="\Images\Event\event2.png" />
                     </div>
                     <div class="event-desc-div">
                         <div class="event-desc-date">
-                            Date : Saturday, 24th July 2017
+                            Date : 24 Feb to 19 Mar 2017
                         </div>
 
                         <div class="event-desc-time">
-                            Time : 8.00am - 10.00 am
+                            Time : 9.00am - 5.00 pm
                             
                         </div>
                         
                         <div class="event-desc-location"> 
-                            Venue : Block ABC
+                            Venue : Sport Complex
                         </div>
                     </div>
                     </div>
-                </div>
+                    </a>
+            </div>
             
             <div class="col-sm-4">
+                <a href="EventDetail2-2.aspx">
                 <div class="event-container">
                     <div class="event-desc-title">
-                        TARUC Final Exam
+                        TARUC Education Fair 
                     </div>
                      <div class="event-image-div">
                         <asp:Image runat="server" CssClass="event-image" ImageUrl="\Images\Event\event3.png" />
                     </div>
                   <div class="event-desc-div">
                         <div class="event-desc-date">
-                            Date : Saturday, 24th July 2017
+                            Date : 21-23rd July 2017
                         </div>
 
                         <div class="event-desc-time">
-                            Time : 8.00am - 10.00 am
+                            Time : 10.00am - 7.00 pm
                             
                         </div>
                         
                         <div class="event-desc-location"> 
-                            Venue : Block ABC
+                            Venue : College Hall
                         </div>
                     </div>
                 </div>
+                </a>
             </div>
             </div>
 
@@ -120,23 +127,23 @@
             <div class="col-sm-4">
                 <div class="event-container">
                     <div class="event-desc-title">
-                        TARUC Final Exam
+                        CFA Prepatory Course
                     </div>
                     <div class="event-image-div">
-                        <asp:Image runat="server" CssClass="event-image" ImageUrl="\Images\Event\event1.png" />
+                        <asp:Image runat="server" CssClass="event-image" ImageUrl="\Images\Event\event4.png" />
                     </div>
                    <div class="event-desc-div">
                         <div class="event-desc-date">
-                            Date : Saturday, 24th July 2017
+                            Date : 1 August 2017
                         </div>
 
                         <div class="event-desc-time">
-                            Time : 8.00am - 10.00 am
+                            Time : 9.00am - 3.00 pm
                             
                         </div>
                         
                         <div class="event-desc-location"> 
-                            Venue : Block ABC
+                            Venue : Block D101
                         </div>
                     </div>
                  </div>
@@ -145,23 +152,23 @@
             <div class="col-sm-4">
                 <div class="event-container">
                     <div class="event-desc-title">
-                        TARUC Final Exam
+                        MUET Seminar
                     </div>
                     <div class="event-image-div">
-                        <asp:Image runat="server" CssClass="event-image" ImageUrl="\Images\Event\event2.png" />
+                        <asp:Image runat="server" CssClass="event-image" ImageUrl="\Images\Event\event5.png" />
                     </div>
                     <div class="event-desc-div">
                         <div class="event-desc-date">
-                            Date : Saturday, 24th July 2017
+                            Date : 5 August 2017
                         </div>
 
                         <div class="event-desc-time">
-                            Time : 8.00am - 10.00 am
+                            Time : 2.00pm - 4.00 pm
                             
                         </div>
                         
                         <div class="event-desc-location"> 
-                            Venue : Block ABC
+                            Venue : Block DK5
                         </div>
                     </div>
                     </div>
@@ -170,23 +177,23 @@
             <div class="col-sm-4">
                 <div class="event-container">
                     <div class="event-desc-title">
-                        TARUC Final Exam
+                        Body Fit Programme
                     </div>
                      <div class="event-image-div">
-                        <asp:Image runat="server" CssClass="event-image" ImageUrl="\Images\Event\event3.png" />
+                        <asp:Image runat="server" CssClass="event-image" ImageUrl="\Images\Event\event6.png" />
                     </div>
                     <div class="event-desc-div">
                         <div class="event-desc-date">
-                            Date : Saturday, 24th July 2017
+                            Date : 29 July 2017
                         </div>
 
                         <div class="event-desc-time">
-                            Time : 8.00am - 10.00 am
+                            Time : 10.00am - 2.00pm
                             
                         </div>
                         
                         <div class="event-desc-location"> 
-                            Venue : Block ABC
+                            Venue : Gym Room
                         </div>
                     </div>
                 </div>
@@ -197,23 +204,23 @@
             <div class="col-sm-4">
                 <div class="event-container">
                     <div class="event-desc-title">
-                        TARUC Final Exam
+                        TARCIAN RUN 2017
                     </div>
                     <div class="event-image-div">
-                        <asp:Image runat="server" CssClass="event-image" ImageUrl="\Images\Event\event1.png" />
+                        <asp:Image runat="server" CssClass="event-image" ImageUrl="\Images\Event\event7.png" />
                     </div>
                     <div class="event-desc-div">
                         <div class="event-desc-date">
-                            Date : Saturday, 24th July 2017
+                            Date : 13 August 2017
                         </div>
 
                         <div class="event-desc-time">
-                            Time : 8.00am - 10.00 am
+                            Time : 7.00am - 11.00 am
                             
                         </div>
                         
                         <div class="event-desc-location"> 
-                            Venue : Block ABC
+                            Venue : Football Field
                         </div>
                     </div>
                  </div>
@@ -222,23 +229,23 @@
             <div class="col-sm-4">
                 <div class="event-container">
                     <div class="event-desc-title">
-                        TARUC Final Exam
+                        Violin For Beginners
                     </div>
                     <div class="event-image-div">
-                        <asp:Image runat="server" CssClass="event-image" ImageUrl="\Images\Event\event2.png" />
+                        <asp:Image runat="server" CssClass="event-image" ImageUrl="\Images\Event\event8.png" />
                     </div>
                     <div class="event-desc-div">
                         <div class="event-desc-date">
-                            Date : Saturday, 24th July 2017
+                            Date : 24th July 2017
                         </div>
 
                         <div class="event-desc-time">
-                            Time : 8.00am - 10.00 am
+                            Time : 9.00am - 11.00 am
                             
                         </div>
                         
                         <div class="event-desc-location"> 
-                            Venue : Block ABC
+                            Venue : Block L3
                         </div>
                     </div>
                     </div>
@@ -247,23 +254,23 @@
             <div class="col-sm-4">
                 <div class="event-container">
                     <div class="event-desc-title">
-                        TARUC Final Exam
+                        Hair for Hope
                     </div>
                      <div class="event-image-div">
-                        <asp:Image runat="server" CssClass="event-image" ImageUrl="\Images\Event\event3.png" />
+                        <asp:Image runat="server" CssClass="event-image" ImageUrl="\Images\Event\event9.png" />
                     </div>
                     <div class="event-desc-div">
                         <div class="event-desc-date">
-                            Date : Saturday, 24th July 2017
+                            Date : 1 August 2017
                         </div>
 
                         <div class="event-desc-time">
-                            Time : 8.00am - 10.00 am
+                            Time : 9.00am - 5.00pm
                             
                         </div>
                         
                         <div class="event-desc-location"> 
-                            Venue : Block ABC
+                            Venue : College Hall
                         </div>
                     </div>
                 </div>

@@ -91,7 +91,10 @@
     <Content Include="Default.aspx" />
     <Content Include="Default2.aspx" />
     <Content Include="Event.aspx" />
+    <Content Include="EventApproval.aspx" />
     <Content Include="EventDetail.aspx" />
+    <Content Include="EventDetail2-1.aspx" />
+    <Content Include="EventDetail2-2.aspx" />
     <Content Include="EventDetail2.aspx" />
     <Content Include="Homepage.aspx" />
     <Content Include="Images\Categories\Background\art.jpg" />
@@ -120,6 +123,8 @@
     <Content Include="Images\Event\event3.PNG" />
     <Content Include="Images\Event\event4.PNG" />
     <Content Include="Images\Event\event5.PNG" />
+    <Content Include="Images\Event\event6.PNG" />
+    <Content Include="Images\Event\event7.png" />
     <Content Include="Images\Event\ic_alarm_white_24dp_1x.png" />
     <Content Include="Images\Event\ic_alarm_white_24dp_2x.png" />
     <Content Include="Images\Event\ic_check_circle_white_24dp_1x.png" />
@@ -257,12 +262,33 @@
     <Compile Include="Event.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="EventApproval.aspx.cs">
+      <DependentUpon>EventApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventApproval.aspx.designer.cs">
+      <DependentUpon>EventApproval.aspx</DependentUpon>
+    </Compile>
     <Compile Include="EventDetail.aspx.cs">
       <DependentUpon>EventDetail.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="EventDetail.aspx.designer.cs">
       <DependentUpon>EventDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EventDetail2-1.aspx.cs">
+      <DependentUpon>EventDetail2-1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventDetail2-1.aspx.designer.cs">
+      <DependentUpon>EventDetail2-1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EventDetail2-2.aspx.cs">
+      <DependentUpon>EventDetail2-2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventDetail2-2.aspx.designer.cs">
+      <DependentUpon>EventDetail2-2.aspx</DependentUpon>
     </Compile>
     <Compile Include="EventDetail2.aspx.cs">
       <DependentUpon>EventDetail2.aspx</DependentUpon>

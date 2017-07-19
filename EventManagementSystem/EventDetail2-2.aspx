@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/TestMaster.Master"  CodeBehind="EventDetail2.aspx.cs" Inherits="EventManagementSystem.EventDetail2" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EventDetail2-2.aspx.cs" MasterPageFile="~/TestMaster.Master" Inherits="EventManagementSystem.EventDetail2_2" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!DOCTYPE html>
 
@@ -16,10 +17,10 @@
     </style>
     </head>
     <body>
-        <img alt="" class="img-event-detail" src="Images/Event/event1.PNG" />
+        <img alt="" class="img-event-detail" src="Images/Event/event2.PNG" />
         <div class="img-event-detail-overlay">
             <div class="img-event-detail-overlay-title">
-                TECHNIQUES TO RELAX YOUR BODY & MIND
+                TARUC Education Fairs & Roadshows 2017
             </div>
             <div class="img-event-detail-overlay-register">
                 <input id="registerBtn" type="button" value="Register" />
@@ -36,7 +37,7 @@
                             Date
                         </div>
                         <div class="event-detail-date">
-                            24th July, 2017
+                            21 - 23 July 2017
                         </div>
                         
                     </div>
@@ -48,7 +49,7 @@
                             Time
                         </div>
                         <div class="event-detail-time">
-                            8.00am - 10.00am
+                            10.00am - 7.00pm
                         </div>
                     </div>
                     <div class="col-sm-3">
@@ -59,7 +60,7 @@
                             Venue
                         </div>
                         <div class="event-detail-venue">
-                            DK ABC
+                            College Hall
                         </div>
                     </div>
                     <div class="col-sm-3">
@@ -70,7 +71,7 @@
                             Category
                         </div>
                         <div class="event-detail-category">
-                            Seminar
+                            Business, Social
                         </div>
                     </div>
                 </div>
@@ -79,21 +80,15 @@
             </div>
             <div class="event-detail-long">
                 <h3>Description</h3>
-
-                summer of though narrow marked at. Spring formal no county ye waited. My whether cheered at regular it of promise blushes perhaps. Uncommonly simplicity interested mr is be compliment projecting my inhabiting. Gentleman he september in oh excellent. 
+To sorry world an at do spoil along. Incommode he depending do frankness remainder to. Edward day almost active him friend thirty piqued. People as period twenty my extent as. Set was better abroad ham plenty secure had horses. Admiration has sir decisively excellence say everything inhabiting acceptance. Sooner settle add put you sudden him. 
                 <br /><br />
-She exposed painted fifteen are noisier mistake led waiting. Surprise not wandered speedily husbands although yet end. Are court tiled cease young built fat one man taken. We highest ye friends is exposed equally in. Ignorant had too strictly followed. Astonished as travelling assistance or unreserved oh pianoforte ye. Five with seen put need tore add neat. Bringing it is he returned received raptures. 
+Old education him departure any arranging one prevailed. Their end whole might began her. Behaved the comfort another fifteen eat. Partiality had his themselves ask pianoforte increasing discovered. So mr delay at since place whole above miles. He to observe conduct at detract because. Way ham unwilling not breakfast furniture explained perpetual. Or mr surrounded conviction so astonished literature. Songs to an blush woman be sorry young. We certain as removal attempt. 
                 <br /><br />
-Gave read use way make spot how nor. In daughter goodness an likewise oh consider at procured wandered. Songs words wrong by me hills heard timed. Happy eat may doors songs. Be ignorant so of suitable dissuade weddings together. Least whole timed we is. An smallness deficient discourse do newspaper be an eagerness continued. Mr my ready guest ye after short at. 
-                <br /><br />
-Now indulgence dissimilar for his thoroughly has terminated. Agreement offending commanded my an. Change wholly say why eldest period. Are projection put celebrated particular unreserved joy unsatiable its. In then dare good am rose bred or. On am in nearer square wanted. 
-                <br /><br />
-Oh he decisively impression attachment friendship so if everything. Whose her enjoy chief new young. Felicity if ye required likewise so doubtful. On so attention necessary at by provision otherwise existence direction. Unpleasing up announcing unpleasant themselves oh do on. Way advantage age led listening belonging supposing. 
-
+Not far stuff she think the jokes. Going as by do known noise he wrote round leave. Warmly put branch people narrow see. Winding its waiting yet parlors married own feeling. Marry fruit do spite jokes an times. Whether at it unknown warrant herself winding if. Him same none name sake had post love. An busy feel form hand am up help. Parties it brother amongst an fortune of. Twenty behind wicket why age now itself ten. 
             </div>
             <div class="event-detail-contact">
                 <h3>Organizer</h3>
-                Psychology Society
+                Department of Student Affairs
 
                 <br />
 
@@ -103,7 +98,7 @@ Oh he decisively impression attachment friendship so if everything. Whose her en
                 <br />
 
                 <h3>Email</h3>
-                psychology-taruc@gmail.com
+                dsa@tarc.edu.my
 
                 <input id="registerBtn2" type="button" value="Register" />
                 <input id="watchBtn2" type="button" value="Watch Video" />

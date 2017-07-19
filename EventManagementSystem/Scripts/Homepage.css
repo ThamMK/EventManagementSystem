@@ -1,6 +1,6 @@
 ﻿
 .row {
-    margin-top : 30px;
+    margin-top : 50px;
 
 }
 
@@ -14,8 +14,8 @@
 }
 
 .event-container {
-    width:300px;
-    border: 0.5px solid black;
+    width:350px;
+    border: 0.5px solid darkgray;
     background-color: white;
 }
 
@@ -26,17 +26,15 @@
 }
 
 h1 {
-    text-align:center;
     position:absolute;
-    align-content:center;
-    margin-left: 23%;
-    margin-top: 10%;
-    
+    width:100%;
+    text-align:center;
     color: white;
     font-size: 50px;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;  
     font-weight: 700;
+    top: 40%;
     
 }
 
@@ -60,7 +58,7 @@ h4 {
 }
 
 .event-image-div {
-    width: 300px;
+    width: 350px;
     height: 180px;
 }
 
@@ -84,7 +82,7 @@ h4 {
     padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 20px;
+    font-size: 18px;
     color: white;
     background-color: deepskyblue;
 }
@@ -93,12 +91,12 @@ h4 {
     padding-left: 5px;
     font-size: 16px;
     color: gray;
-    border-bottom: 0.3px solid lightgray;
+    
 }
 
 .event-desc-location {
     padding-left: 5px;
-    font-size: 14px;
+    font-size: 16px;
     color: gray;
 }
 
@@ -168,6 +166,7 @@ h6 {
 
 }
 
+
 .tint:hover:before {
   background: rgba(0,0,0,0.95);
 
@@ -194,7 +193,7 @@ a:link {
 }
 .row{
     max-width: 100%;
-    margin-left: 8%;
+    margin-left: 4%;
     margin-right: 0%;
 }
 
@@ -222,5 +221,5 @@ a:link {
 
 .event-category-background {
     background-color: #CDEAEE;
-    height: 400px;
+    height: 450px;
 }

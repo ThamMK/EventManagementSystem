@@ -78,8 +78,9 @@
 }
 
 .event-label {
-    color: white;
+    color: deepskyblue;
     font-size: 20px;
+    margin-top: 5px;
 }
 
 
@@ -93,12 +94,15 @@
   font-size: 20px;
   padding: 1% 10% 1% 10%;
   text-decoration: none;
-  border-style:none;
-
+border: 1px solid #A5DC86;
+transition: all ease .5s;
 }
 
 #registerBtn:hover{
-
+    color: #A5DC86;
+    background-color: white;
+    border: 1px solid #A5DC86;
+    transition: all ease .1s;
 }
 
 #registerBtn2 {
@@ -112,25 +116,41 @@
     bottom: 0;
     margin-top: 30%;
     float:left;
+    border: 1px solid #A5DC86;
+    transition: all ease .5s;
+}
+
+#registerBtn2:hover {
+    color: #A5DC86;
+    background-color: white;
+    border: 1px solid #A5DC86;
+    transition: all ease .1s;
 }
 
 #watchBtn {
-    background : #D84141;
+    background : deepskyblue;
     font-family : Arial;
     color : #ffffff;
     font-size: 20px;
     padding: 1% 8.7% 1% 8.7%;
     
     text-decoration: none;
-    border-style: none;
     bottom: 0;
     margin-top: 2%;
     margin-left: 5%;
-    
+    border : 1px solid deepskyblue;
+    transition: all ease .5s;
+}
+
+#watchBtn:hover {
+    color : deepskyblue;
+    background-color: white;
+    border : 1px solid deepskyblue;
+    transition: all ease .1s;
 }
 
 #watchBtn2 {
-    background : #D84141;
+    background : deepskyblue;
     font-family : Arial;
     color : #ffffff;
     font-size: 20px;
@@ -140,6 +160,14 @@
     bottom: 0;
     margin-top: 5%;
     float:left;
+    transition: all ease .5s;
+}
+
+#watchBtn2:hover {
+    color : deepskyblue;
+    background-color: white;
+    border : 1px solid deepskyblue;
+    transition: all ease .1s;
 }
 
 
@@ -175,6 +203,7 @@
 .event-icon {
     width:30px;
     height: auto;
+    margin-top: 50%;
 }
 
 h1, h3 {

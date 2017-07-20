@@ -38,10 +38,12 @@
                     
                 }
                 else {
-                    if(pwd.value)
-                    if (!(regularExpression.test(pwd.value))) {
-
+                    if (pwd.value.length < 6) {
                         msg += 'Password must contain at least 6 characters.\n'
+                    }
+                    else if (!(regularExpression.test(pwd.value))) {
+
+                        msg += 'The password is incorrect.\n'
 
                         pwd.style.borderColor = "red";
                         pwd.style.backgroundColor = "#FDE1DF";

@@ -30,9 +30,9 @@
 
         .site__title {
             position: relative;
-            font-size: 28px;
+            font-size: 30px;
             line-height: 26px;
-            color: #435a65;
+                
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
             text-transform: uppercase;
@@ -80,7 +80,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
         <div style="margin-top:130px;text-align:center;margin-bottom:40px;">
-            <h2 class="site__title">My Upcoming Event</h2>
+            <h2 class="site__title" style="color: #435a65;">My Upcoming Event</h2>
+            <p style="font-size:18px;font-family:sans-serif;color: #435a65;margin-top:-10px">View your registered events</p>
         </div>
         <div style="font-family:sans-serif">
             <asp:Repeater ID="Repeater1" runat="server" OnItemCommand="Repeater1_ItemCommand">

@@ -1,6 +1,6 @@
 ﻿
 .row {
-    margin-top : 30px;
+    margin-top : 50px;
 
 }
 
@@ -9,14 +9,13 @@
     width: 100%;
     height: 100%;
     padding: 0px;
-    margin-bottom: 50px;
-    margin-top:50px;
+    margin-top:10px;
 
 }
 
 .event-container {
-    width:300px;
-    border: 0.5px solid black;
+    width:350px;
+    border: 0.5px solid darkgray;
     background-color: white;
 }
 
@@ -26,13 +25,40 @@
     box-shadow: 3px 3px 16px cadetblue;
 }
 
-h2 {
-    color: #3DBCEC;
+h1 {
+    position:absolute;
+    width:100%;
     text-align:center;
+    color: white;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;  
+    font-weight: 700;
+    top: 40%;
+    
+}
+
+.img-overlay-text-detailed {
+    margin-top:25px;
+}
+
+h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align:center;
+    color: #435a65;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h4 {
+    text-align:center;
+    color: #435a65;
+    font-family: 'Montserrat', sans-serif;
+    margin:0px;
 }
 
 .event-image-div {
-    width: 300px;
+    width: 350px;
     height: 180px;
 }
 
@@ -54,7 +80,9 @@ h2 {
 
 .event-desc-title {
     padding-left: 10px;
-    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
     color: white;
     background-color: deepskyblue;
 }
@@ -63,12 +91,12 @@ h2 {
     padding-left: 5px;
     font-size: 16px;
     color: gray;
-    border-bottom: 0.3px solid lightgray;
+    
 }
 
 .event-desc-location {
     padding-left: 5px;
-    font-size: 14px;
+    font-size: 16px;
     color: gray;
 }
 
@@ -138,6 +166,7 @@ h6 {
 
 }
 
+
 .tint:hover:before {
   background: rgba(0,0,0,0.95);
 
@@ -158,10 +187,12 @@ a:link {
 .img-main-top {
     align-content:center;
     width: 100%;
+    height: 100%;
+    
 }
 .row{
     max-width: 100%;
-    margin-left: 8%;
+    margin-left: 4%;
     margin-right: 0%;
 }
 
@@ -174,12 +205,20 @@ a:link {
     height: 150px;
     margin-top: 0px;
     margin-bottom: 20px;
+    
 }
 
 .event-category-header {
     background-color: #CDEAEE;
     color : #425A65;
-    height: 180px;
+    height: 120px;
     text-align: center;
     line-height: 130px;
+    margin-bottom: 0px;
+    padding-top:25px;
+}
+
+.event-category-background {
+    background-color: #CDEAEE;
+    height: 450px;
 }

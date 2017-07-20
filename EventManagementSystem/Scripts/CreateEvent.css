@@ -1,20 +1,22 @@
-﻿.container-CreateEvent {    
-    margin-left: 19%;
+﻿.container-CreateEvent {   
     width: 100%;
     height: 1500px;
-    color: #666666;
 }
 
 .eventDetail {
     float: left;
     clear: left;
-    width: 800px;
+    width: 100%;
+    padding-bottom: 35px;
+    background-color: #CDEAEE; 
+    
 }
 
 .eventDetail-Header {
     border-bottom: 1px dotted #12ABE3;
     border-style: none none solid none;
-    width: 100%;
+    margin-top: 40px;
+    width: 750px;
     float: left;
     clear: left;
 
@@ -23,11 +25,14 @@
 .lblEventDetail {
     margin-left: 10px;
     width: 220px;
-    font-size: 25pt;
+    font-size: 20pt;
+    padding-top: 10px;
 }
 
+
+
 .lblEventTitle {
-    margin-top: 8px;
+    margin-top: 10px;
     font-weight: bold;
     font-size: 17px;
     float: left;
@@ -59,7 +64,7 @@
     }
 
 .lblLocation {
-    margin-top: 8px;
+    margin-top: 10px;
     font-weight: bold;
     font-size: 17px;
     float: left;
@@ -87,7 +92,7 @@
     }
 
 .eventDetail-Date {
-    margin-top: 8px;
+    margin-top: 10px;
     width: 100%;
     float: left;
     clear: left;
@@ -95,7 +100,7 @@
 
 .eventDetail-StartDate {
     float: left;
-    width: 45%;
+    width: 50%;
 }
 
 .lblStart{
@@ -108,21 +113,21 @@
     font-size: 17px;
 }
 
+
 .eventDetail-StartDate-Date {
     float: left;
-    width: 40%;
+    width: 48%;
 }
 
 .eventDetail-StartDate-Time {
-    margin-left: 4%;
+    margin-left: 1%;
     float: left;
-    width: 40%;
+    width: 48%;
 }
 
 .eventDetail-EndDate {
-    margin-left: 1%;
     float: left;
-    width: 45%;
+    width: 49%;
 }
 
 .eventDetail-EndDate-Date {
@@ -131,7 +136,7 @@
 }
 
 .eventDetail-EndDate-Time {
-    margin-left: 4%;
+    margin-left: 10px;
     float: left;
     width: 40%;
 }
@@ -139,7 +144,7 @@
 .startDateTextBox {
     border: 1px solid #c4c4c4;
     height: 35px;
-    width: 100%;
+    width: 130px;
     font-size: 13px;
     padding: 4px 4px 4px 4px;
     border-radius: 4px;
@@ -157,13 +162,13 @@
 
 .ddlStartTime {
     border: 1px solid #c4c4c4;
-    height: 35px;
-    width: 100%;
+    height: 45px;
+    width: 140px;
+    margin-left: 1px;
     font-size: 13px;
     padding: 4px 4px 4px 4px;
     border-radius: 4px;
     float: left;
-    clear: left;
 }
 
     .ddlStartTime:focus {
@@ -174,21 +179,15 @@
         -webkit-box-shadow: 0px 0px 8px #7bc1f7;
     }
 
-.eventDetail-EndDate {
-    float: left;
-}
-
-
 
 .endDateTextBox {
     border: 1px solid #c4c4c4;
     height: 35px;
-    width: 100%;
+    width: 130px;
     font-size: 13px;
     padding: 4px 4px 4px 4px;
     border-radius: 4px;
     float: left;
-    clear: left;
 }
 
     .endDateTextBox:focus {
@@ -203,13 +202,13 @@
 
 .ddlEndTime {
     border: 1px solid #c4c4c4;
-    height: 35px;
-    width: 100%;
+    height: 45px;
+    width: 140px;
     font-size: 13px;
+    margin-left: 19px;
     padding: 4px 4px 4px 4px;
     border-radius: 4px;
     float: left;
-    clear: left;
 }
     .ddlEndTime:focus {
     outline: none;
@@ -220,29 +219,15 @@
 }
 
 .lblEventImage {
-    margin-top: 8px;
+    margin-top: 10px;
     font-weight: bold;
     font-size: 17px;
     float: left;
     clear: left;
 }
 
-.imgAddImage {
-    border: 1px solid #0800FF;
-    float: left;
-    clear: left;
-}
-
-    .imgAddImage:focus {
-        outline: none;
-        border: 1px solid #7bc1f7;
-        box-shadow: 0px 0px 8px #7bc1f7;
-        -moz-box-shadow: 0px 0px 8px #7bc1f7;
-        -webkit-box-shadow: 0px 0px 8px #7bc1f7;
-    }
-
 .eventDetail-EventDescription {
-    margin-top: 8px;
+    margin-top: 10px;
     height: 100px;
 }
 
@@ -263,20 +248,22 @@
 .organizationDetail {
     float: left;
     clear: left;
-    width: 800px;
+    width: 100%;   
     margin-top: 15px;
+
 }
+
 
 .lblOrganizerDetail {
     margin-left: 10px;
     width: 220px;
-    font-size: 25pt;
+    font-size: 20pt;
 }
 
 .organizerDetail-Header {
-    border-bottom: 2px dotted #12ABE3;
+    border-bottom: 1px dotted #12ABE3;
     border-style: none none solid none;
-    width: 100%;
+    width: 750px;
     float: left;
     clear: left;
 }
@@ -288,7 +275,7 @@
 }
 
 .lblOrganizerName {
-    margin-top: 8px;
+    margin-top: 10px;
     font-weight: bold;
     font-size: 17px;
     float: left;
@@ -296,7 +283,6 @@
 }
 
 .txtOrganizerName {
-    float: left;
     border: 1px solid #c4c4c4;
     height: 35px;
     width: 100%;
@@ -322,7 +308,7 @@
 }
 
 .lblOrganizerContactNumber {
-    margin-top: 8px;
+    margin-top: 10px;
     font-weight: bold;
     font-size: 17px;
     float: left;
@@ -355,7 +341,7 @@
 }
 
 .lblOrganizerEmail {
-    margin-top: 8px;
+    margin-top: 10px;
     font-weight: bold;
     font-size: 17px;
     float: left;
@@ -383,7 +369,9 @@
 
 .eventButton {
     width: 800px;
+    margin-left:260px;
     margin-top: 2%;
+    padding-bottom: 150px;
     float: left;
     clear: left;
 }
@@ -391,11 +379,9 @@
 .btnSubmit {
     float: left;
     margin-left: 20%;
-    background: #34d960;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
+    background: #A5DC86;
     font-family: Arial;
+    padding: 10px 40px 10px 40px;
     color: #ffffff;
     font-size: 20px;
     text-decoration: none;
@@ -405,10 +391,8 @@
 .btnReset {
     float: left;
     margin-left: 7%;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
     font-family: Arial;
+    padding: 10px 40px 10px 40px;
     color: #ffffff;
     font-size: 20px;
     text-decoration: none;
@@ -418,10 +402,8 @@
 .btnCancel {
     float: left;
     margin-left: 7%;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
     font-family: Arial;
+    padding: 10px 40px 10px 40px;
     color: #ffffff;
     font-size: 20px;
     text-decoration: none;
@@ -430,7 +412,7 @@
 
 
 .lblCategory {
-    margin-top: 8px;
+    margin-top: 10px;
     font-weight: bold;
     font-size: 17px;
     float: left;
@@ -438,7 +420,7 @@
 }
 
 .ddlCategory {
-    width: 350px;
+    width: 100%;
     border: 1px solid #c4c4c4;
     height: 35px;
     font-size: 13px;
@@ -466,20 +448,20 @@
 .eventDetail-2 {
     float: left;
     clear: left;
-    width: 100%;
-    padding-right: 80px;
 }
 
 .organizationDetail-Detail {
-    padding-right: 80px;
     width: 100%;
     float: left;
     clear: left;
 }
 
 .imgNav2{
-    width: 850px;
-    height: 200px;
+    width: 1150px;
+    height: 270px;
+    float: left;
+    clear: left;
+    margin-left: 190px;
 }
 .imgOne{
     width: 49px;
@@ -493,6 +475,72 @@
     float: left;
 }
 
-.container-Navigation {
+.container-topSection {
+    width: 100%;
     float: left;
 }
+
+.title{
+    margin-top: 80px;
+    font-size: 28px;
+    position: relative;
+    line-height: 24px;
+    color: #435a65;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+.state{
+    margin-left: 500px;
+    font-size: 24px;
+    float: left;
+    clear: left;
+}
+
+.container-form{
+    width: 100%;
+    float: left;
+    clear: left;
+    margin-top: 25px;
+    
+}
+
+.container-labelEvent{
+    margin-top: 10px;
+}
+
+.eventDetail-EventImage {
+    float: left;
+    clear: left;
+}
+
+.organizationDetail-2 {
+    float: left;
+    clear: left;
+    width: 590px;
+}
+
+.imgButton {
+    background-color:white;
+    width: 590px;
+    height: 255px;
+    float: left;
+    clear: left;
+}
+
+.imgAddImage {
+    border: 2px dashed deepskyblue;
+    margin: 5px 5px 5px 5px;
+    width: 575px;
+    height: 240px;
+}
+ .imgAddImage-2:focus {
+        outline: none;
+        border: 2px dashed #7bc1f7;
+        box-shadow: 0px 0px 8px #7bc1f7;
+        -moz-box-shadow: 0px 0px 8px #7bc1f7;
+        -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+    }
+
+    

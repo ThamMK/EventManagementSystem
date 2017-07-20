@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/TestMaster.Master" CodeBehind="CreateEvent.aspx.cs" Inherits="EventManagementSystem.CreateEvent" %>
+﻿    <%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/TestMaster.Master" CodeBehind="CreateEvent.aspx.cs" Inherits="EventManagementSystem.CreateEvent" %>
 
 <%@ Register Assembly="CKEditor.NET" Namespace="CKEditor.NET" TagPrefix="CKEditor" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -160,7 +160,6 @@
                                         </div>
 
                                     </div>
-
                                 </div>
 
                             </div>

@@ -16,7 +16,7 @@
     border-bottom: 1px dotted #12ABE3;
     border-style: none none solid none;
     margin-top: 40px;
-    width: 750px;
+    width: 640px;
     float: left;
     clear: left;
 
@@ -29,10 +29,12 @@
     padding-top: 10px;
 }
 
-
+.container-labelEvent{
+    padding-top: 8px;
+}
 
 .lblEventTitle {
-    margin-top: 10px;
+    margin-top: 13px;
     font-weight: bold;
     font-size: 17px;
     float: left;
@@ -42,15 +44,13 @@
 .txtEventTitle {
     border: 1px solid #c4c4c4;
     height: 35px;
+    font-size: 17px;
+    margin-top: 3px;
     width: 100%;
     font-size: 15px;
     padding: 4px 4px 4px 4px;
     border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
     box-shadow: 0px 0px 8px #d9d9d9;
-    -moz-box-shadow: 0px 0px 8px #d9d9d9;
-    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
     float: left;
     clear: left
 }
@@ -64,7 +64,7 @@
     }
 
 .lblLocation {
-    margin-top: 10px;
+    margin-top: 13px;
     font-weight: bold;
     font-size: 17px;
     float: left;
@@ -75,6 +75,7 @@
     float: left;
     clear: left;
     width: 100%;
+    margin-top: 3px;
     height: 35px;
     border: 1px solid #c4c4c4;
     font-size: 13px;
@@ -106,11 +107,27 @@
 .lblStart{
     font-weight: bold;
     font-size: 17px;
+    float:left;
 }
 
 .lblEnd{
     font-weight: bold;
     font-size: 17px;
+}
+
+.eventDetail-StartDateTime {
+    margin-top: 3px;
+    height:100%;
+    float: left;
+    clear: left;
+}
+
+.eventDetail-EndDateTime {
+    height:100%;
+    margin-top: 3px;
+    margin-right: -16px;
+    float: left;
+    clear: left;
 }
 
 
@@ -127,7 +144,7 @@
 
 .eventDetail-EndDate {
     float: left;
-    width: 49%;
+    width: 50%;
 }
 
 .eventDetail-EndDate-Date {
@@ -164,7 +181,7 @@
     border: 1px solid #c4c4c4;
     height: 45px;
     width: 140px;
-    margin-left: 1px;
+    margin-left: 4px;
     font-size: 13px;
     padding: 4px 4px 4px 4px;
     border-radius: 4px;
@@ -188,6 +205,7 @@
     padding: 4px 4px 4px 4px;
     border-radius: 4px;
     float: left;
+    clear: left;
 }
 
     .endDateTextBox:focus {
@@ -204,8 +222,8 @@
     border: 1px solid #c4c4c4;
     height: 45px;
     width: 140px;
+    margin-left: 13px;
     font-size: 13px;
-    margin-left: 19px;
     padding: 4px 4px 4px 4px;
     border-radius: 4px;
     float: left;
@@ -219,7 +237,7 @@
 }
 
 .lblEventImage {
-    margin-top: 10px;
+    margin-top: 13px;
     font-weight: bold;
     font-size: 17px;
     float: left;
@@ -227,12 +245,11 @@
 }
 
 .eventDetail-EventDescription {
-    margin-top: 10px;
     height: 100px;
 }
 
 .lblEventDescription {
-    margin-top: 8px;
+    margin-top: 13px;
     font-weight: bold;
     font-size: 17px;
     float: left;
@@ -240,7 +257,8 @@
 }
 
 .eventDetail-CKEditor {
-    width: 100%;
+    margin-top:2px;
+    width: 101.5%;
     float: left;
     clear: left;
 }
@@ -253,7 +271,6 @@
 
 }
 
-
 .lblOrganizerDetail {
     margin-left: 10px;
     width: 220px;
@@ -263,7 +280,7 @@
 .organizerDetail-Header {
     border-bottom: 1px dotted #12ABE3;
     border-style: none none solid none;
-    width: 750px;
+    width: 640px;
     float: left;
     clear: left;
 }
@@ -275,7 +292,7 @@
 }
 
 .lblOrganizerName {
-    margin-top: 10px;
+    margin-top: 13px;
     font-weight: bold;
     font-size: 17px;
     float: left;
@@ -286,6 +303,7 @@
     border: 1px solid #c4c4c4;
     height: 35px;
     width: 100%;
+    margin-top: 3px;
     font-size: 13px;
     padding: 4px 4px 4px 4px;
     border-radius: 4px;
@@ -308,7 +326,7 @@
 }
 
 .lblOrganizerContactNumber {
-    margin-top: 10px;
+    margin-top: 13px;
     font-weight: bold;
     font-size: 17px;
     float: left;
@@ -318,6 +336,7 @@
 .txtOrganizerContactNumber {
     border: 1px solid #c4c4c4;
     height: 35px;
+    margin-top: 3px;
     width: 100%;
     font-size: 13px;
     padding: 4px 4px 4px 4px;
@@ -341,7 +360,7 @@
 }
 
 .lblOrganizerEmail {
-    margin-top: 10px;
+    margin-top: 13px;
     font-weight: bold;
     font-size: 17px;
     float: left;
@@ -352,6 +371,7 @@
     border: 1px solid #c4c4c4;
     height: 35px;
     width: 100%;
+    margin-top: 3px;
     font-size: 13px;
     padding: 4px 4px 4px 4px;
     border-radius: 4px;
@@ -369,9 +389,9 @@
 
 .eventButton {
     width: 800px;
-    margin-left:260px;
+    margin-left: 260px;
     margin-top: 2%;
-    padding-bottom: 150px;
+    padding-bottom: 50px;
     float: left;
     clear: left;
 }
@@ -381,7 +401,7 @@
     margin-left: 20%;
     background: #A5DC86;
     font-family: Arial;
-    padding: 10px 40px 10px 40px;
+    padding: 10px 60px 10px 60px;
     color: #ffffff;
     font-size: 20px;
     text-decoration: none;
@@ -390,9 +410,9 @@
 
 .btnReset {
     float: left;
-    margin-left: 7%;
+    margin-left: 3%;
     font-family: Arial;
-    padding: 10px 40px 10px 40px;
+    padding: 10px 60px 10px 60px;
     color: #ffffff;
     font-size: 20px;
     text-decoration: none;
@@ -401,9 +421,9 @@
 
 .btnCancel {
     float: left;
-    margin-left: 7%;
+    margin-left: 3%;
     font-family: Arial;
-    padding: 10px 40px 10px 40px;
+    padding: 10px 60px 10px 60px;
     color: #ffffff;
     font-size: 20px;
     text-decoration: none;
@@ -412,7 +432,7 @@
 
 
 .lblCategory {
-    margin-top: 10px;
+    margin-top: 13px;
     font-weight: bold;
     font-size: 17px;
     float: left;
@@ -423,14 +443,10 @@
     width: 100%;
     border: 1px solid #c4c4c4;
     height: 35px;
+    margin-top: 3px;
     font-size: 13px;
     padding: 4px 4px 4px 4px;
     border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    box-shadow: 0px 0px 8px #d9d9d9;
-    -moz-box-shadow: 0px 0px 8px #d9d9d9;
-    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
     float: left;
     clear: left;
     top: 0px;
@@ -506,9 +522,7 @@
     
 }
 
-.container-labelEvent{
-    margin-top: 10px;
-}
+
 
 .eventDetail-EventImage {
     float: left;
@@ -522,6 +536,7 @@
 }
 
 .imgButton {
+    margin-top: 3px;
     background-color:white;
     width: 590px;
     height: 255px;

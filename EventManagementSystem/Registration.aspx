@@ -129,12 +129,12 @@
                         </div>
                         <div class="container-section-holder">
                             <asp:Label ID="lblPassword" CssClass="content-label" Text="Password" runat="server"></asp:Label>
-                            <asp:TextBox ID="txtPassword" CssClass="content-input" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtPassword" TextMode="Password" CssClass="content-input" runat="server"></asp:TextBox>
                             <asp:Label ID="lblEMPassword" CssClass="error-message" runat="server"></asp:Label>
                         </div>
                         <div class="container-section-holder">
                             <asp:Label ID="lblPasswordConfirmation" CssClass="content-label" Text="Confirm Password" runat="server"></asp:Label>
-                            <asp:TextBox ID="txtPasswordConfirmation" CssClass="content-input" placeholder="Please re-enter your password here." runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtPasswordConfirmation" TextMode="Password" CssClass="content-input" placeholder="Please re-enter your password here." runat="server"></asp:TextBox>
                             <asp:Label ID="lblEMPasswordConfirmation" CssClass="error-message" runat="server"></asp:Label>
                         </div>
                     </div>

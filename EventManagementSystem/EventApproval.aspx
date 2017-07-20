@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/TestMaster.Master" AutoEventWireup="true" CodeBehind="CancelEvent.aspx.cs" Inherits="EventManagementSystem.CancelEvent" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/TestMaster.Master" AutoEventWireup="true" CodeBehind="EventApproval.aspx.cs" Inherits="EventManagementSystem.EventApproval" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
         a.cancel-event-button:link{
@@ -22,22 +22,22 @@
             float:right;
             border: 0.5px solid #DD6B55;
         }
-
         .cancel-event-button:hover{
-            background-color:#D46752;
-            border: 0.5px solid #D46752;
+            cursor:default;
         }
+        
 
         .site__title {
             position: relative;
-            font-size: 26px;
-            line-height: 26px;
+            font-size: 24px;
+            line-height: 24px;
             color: #435a65;
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
             text-transform: uppercase;
             text-align: center;
         }
+        
 
     </style>
 
@@ -76,18 +76,16 @@
         
     </script>
 </asp:Content>
-
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
-        <div style="margin-top:130px;text-align:center;margin-bottom:40px;">
+    <div style="margin-top:130px;margin-left:50px;text-align:center;margin-bottom:40px;">
             <h2 class="site__title">My Upcoming Event</h2>
         </div>
         <div style="font-family:sans-serif">
-            <asp:Repeater ID="Repeater1" runat="server" OnItemCommand="Repeater1_ItemCommand">
+            <asp:Repeater ID="Repeater1" runat="server" OnItemCommand="Repeater1_ItemCommand" OnItemCreated="Edit_ItemCreated">
                 <ItemTemplate>
                     <div style="clear:both;margin-left:130px;margin-top:30px;border:0.5px solid dimgrey;width:80%;height:151.5px;background-color:white">
                         <asp:Image runat="server" ImageUrl='<%# ((EventManagementSystem.Event)Container.DataItem).imagePath.ToString() %>' style="height:150px;width:250px;float:left;margin-right:20px" /><br>
-                        <div style="background-color:deepskyblue;width:100%;height:30px;margin-top:-18px;padding-top:10px;">
+                        <div style="background-color:deepskyblue;width:100%;height:30px;margin-top:-19px;padding-top:10px;">
                             <asp:Label runat="server" ID="lblItem" style="color:white;font-size:18px;font-weight:bold" Text="<%# ((EventManagementSystem.Event)Container.DataItem).eventName.ToString() %>" /><br />
                             <div style="float:right;margin-right:20px;margin-top:-22px;color:white;">
                                 <span style="margin-right:5px;">Price : </span><asp:Label runat="server" style="font-weight:bold;font-size:18px;" Text="<%#((EventManagementSystem.Event)Container.DataItem).eventPrice.ToString() %>"></asp:Label>
@@ -130,7 +128,7 @@
 
                         </div>
                         <div style="float:right;margin-right:20px;margin-top:35px;">
-                            <asp:LinkButton runat="server" ID="btnCancel" OnClientClick="return deletealert(this, event);" Text="Cancel Event" alternatetext="Delete" CommandName="cancelEvent" CommandArgument="<%#((EventManagementSystem.Event)Container.DataItem).eventName.ToString() %>" CssClass="cancel-event-button"/>
+                            <asp:LinkButton runat="server" ID="lblStatus" Text="<%# ((EventManagementSystem.Event)Container.DataItem).eventStatus.ToString() %>" alternatetext="Status" CssClass="cancel-event-button" Color="<%# ((EventManagementSystem.Event)Container.DataItem).color.ToString() %>"/>
                         </div>
                     </div>
                 </ItemTemplate>

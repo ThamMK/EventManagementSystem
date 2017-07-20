@@ -211,6 +211,15 @@ namespace EventManagementSystem {
         protected global::System.Web.UI.WebControls.Label lblStudentSociety;
         
         /// <summary>
+        /// lblHelpStudentSociety control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblHelpStudentSociety;
+        
+        /// <summary>
         /// txtStudentSociety control.
         /// </summary>
         /// <remarks>
@@ -254,6 +263,15 @@ namespace EventManagementSystem {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblUsername;
+        
+        /// <summary>
+        /// lblHelpUsername control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblHelpUsername;
         
         /// <summary>
         /// txtUsername control.
@@ -308,6 +326,15 @@ namespace EventManagementSystem {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblPhoneNo;
+        
+        /// <summary>
+        /// lblHelpPhoneNo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblHelpPhoneNo;
         
         /// <summary>
         /// txtPhoneNo control.

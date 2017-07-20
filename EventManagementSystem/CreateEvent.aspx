@@ -32,7 +32,8 @@
             <div class="container-topSection">
 
                 <div class="title">Create Event</div>
-                <asp:Image ID="imgNav2" CssClass="imgNav2" ImageUrl="~/Images/Event/Navigation2.png" runat="server" />
+                <div class="desc">Create And Organize Your Event.</div>
+                <asp:Image ID="imgNav2" CssClass="imgNav2" ImageUrl="~/Images/Event/navigation2.png" runat="server" />
                 <div class="state">
                     Your current state is <span style="font-weight: bold; color: #12ABE3">fill in the event details.</span>
                 </div>

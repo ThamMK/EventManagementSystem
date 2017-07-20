@@ -32,7 +32,8 @@
             <div class="container-topSection">
 
                 <div class="title">Create Event</div>
-                <asp:Image ID="imgNav2" CssClass="imgNav2" ImageUrl="~/Images/Event/Navigation2.png" runat="server" />
+                <div class="desc">Create And Organize Your Event.</div>
+                <asp:Image ID="imgNav2" CssClass="imgNav2" ImageUrl="~/Images/Event/navigation2.png" runat="server" />
                 <div class="state">
                     Your current state is <span style="font-weight: bold; color: #12ABE3">fill in the event details.</span>
                 </div>
@@ -65,7 +66,7 @@
 
                                 <asp:Label ID="lblLocation" CssClass="lblLocation" runat="server" Text="Location"></asp:Label>
 
-                                <asp:TextBox ID="txtLocation" CssClass="txtLocation" runat="server"></asp:TextBox>
+                                <asp:TextBox ID="txtLocation" CssClass="txtLocation" Enabled="false" runat="server"></asp:TextBox>
 
                             </div>
 
@@ -109,7 +110,7 @@
 
                                         <div class="eventDetail-StartDate-Time">
 
-                                            <asp:DropDownList ID="ddlStartTime" CssClass="ddlStartTime" runat="server" Enabled="true" AutoPostBack="True" OnSelectedIndexChanged="ddlTime_SelectedIndexChanged" placeholder="Please select a time.">
+                                            <asp:DropDownList ID="ddlStartTime" CssClass="ddlStartTime" placeholder="Time" runat="server" Enabled="true" AutoPostBack="True" OnSelectedIndexChanged="ddlTime_SelectedIndexChanged">
 
                                                 <asp:ListItem>8:30</asp:ListItem>
                                                 <asp:ListItem>9:00</asp:ListItem>
@@ -149,7 +150,7 @@
 
                                         <div class="eventDetail-EndDate-Time">
 
-                                            <asp:DropDownList ID="ddlEndTime" CssClass="ddlEndTime" runat="server" Enabled="true" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" placeholder="Please select a time.">
+                                            <asp:DropDownList ID="ddlEndTime" CssClass="ddlEndTime" placeholder="Time" runat="server" Enabled="true" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" >
 
                                                 <asp:ListItem>10:30</asp:ListItem>
                                                 <asp:ListItem>11:00</asp:ListItem>
@@ -223,7 +224,7 @@
 
                                 <asp:Label ID="lblOrganizerName" CssClass="lblOrganizerName" runat="server" Text="Organizer Name"></asp:Label>
 
-                                <asp:TextBox ID="txtOrganizerName" CssClass="txtOrganizerName" runat="server"></asp:TextBox>
+                                <asp:TextBox ID="txtOrganizerName" CssClass="txtOrganizerName" placeholder="Example: Computer Science Society" runat="server"></asp:TextBox>
 
                             </div>
 
@@ -231,7 +232,7 @@
 
                                 <asp:Label ID="lblOrganizationContactNumber" CssClass="lblOrganizerContactNumber" runat="server" Text="Organizer Contact Number"></asp:Label>
 
-                                <asp:TextBox ID="txtOrganizationContactNumber" CssClass="txtOrganizerContactNumber" placeholder="e.g. 016-1234567" runat="server"></asp:TextBox>
+                                <asp:TextBox ID="txtOrganizationContactNumber" CssClass="txtOrganizerContactNumber" placeholder="Example: 016-1234567" runat="server"></asp:TextBox>
 
                             </div>
 
@@ -239,7 +240,7 @@
 
                                 <asp:Label ID="lblOrganizationEmail" CssClass="lblOrganizerEmail" runat="server" Text="Organizer Email Address"></asp:Label>
 
-                                <asp:TextBox ID="txtOrganizationEmail" CssClass="txtOrganizerEmail" placeholder="e.g. xxx_xx@gmail.com" runat="server"></asp:TextBox>
+                                <asp:TextBox ID="txtOrganizationEmail" CssClass="txtOrganizerEmail" placeholder="Example: xxx_xx@gmail.com" runat="server"></asp:TextBox>
 
                             </div>
 

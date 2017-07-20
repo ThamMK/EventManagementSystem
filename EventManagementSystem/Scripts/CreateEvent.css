@@ -7,7 +7,6 @@
     float: left;
     clear: left;
     width: 100%;
-    padding-bottom: 35px;
     background-color: #CDEAEE; 
     
 }
@@ -15,7 +14,7 @@
 .eventDetail-Header {
     border-bottom: 1px dotted #12ABE3;
     border-style: none none solid none;
-    margin-top: 40px;
+    margin-top: 80px;
     width: 640px;
     float: left;
     clear: left;
@@ -44,11 +43,10 @@
 .txtEventTitle {
     border: 1px solid #c4c4c4;
     height: 35px;
-    font-size: 17px;
+    font-size: 16px;
     margin-top: 3px;
     width: 100%;
-    font-size: 15px;
-    padding: 4px 4px 4px 4px;
+    padding: 4px 4px 4px 10px;
     border-radius: 4px;
     box-shadow: 0px 0px 8px #d9d9d9;
     float: left;
@@ -78,8 +76,8 @@
     margin-top: 3px;
     height: 35px;
     border: 1px solid #c4c4c4;
-    font-size: 13px;
-    padding: 4px 4px 4px 4px;
+    font-size: 16px;
+    padding: 4px 4px 4px 10px;
     border-radius: 4px;
     box-shadow: 0px 0px 8px #d9d9d9;
 }
@@ -162,8 +160,8 @@
     border: 1px solid #c4c4c4;
     height: 35px;
     width: 130px;
-    font-size: 13px;
-    padding: 4px 4px 4px 4px;
+    font-size: 16px;
+    padding: 4px 4px 4px 10px;
     border-radius: 4px;
     float: left;
     clear: left;
@@ -181,9 +179,9 @@
     border: 1px solid #c4c4c4;
     height: 45px;
     width: 140px;
-    margin-left: 4px;
-    font-size: 13px;
-    padding: 4px 4px 4px 4px;
+    margin-left: 6px;
+    font-size: 16px;
+    padding: 4px 4px 4px 10px;
     border-radius: 4px;
     float: left;
 }
@@ -201,8 +199,8 @@
     border: 1px solid #c4c4c4;
     height: 35px;
     width: 130px;
-    font-size: 13px;
-    padding: 4px 4px 4px 4px;
+    font-size: 16px;
+    padding: 4px 4px 4px 10px;
     border-radius: 4px;
     float: left;
     clear: left;
@@ -222,10 +220,10 @@
     border: 1px solid #c4c4c4;
     height: 45px;
     width: 140px;
-    margin-left: 13px;
-    font-size: 13px;
-    padding: 4px 4px 4px 4px;
-    border-radius: 4px;
+    margin-left: 15.5px;
+    font-size: 16px;
+    padding: 4px 4px 4px 10px;
+    border-radius: 6px;
     float: left;
 }
     .ddlEndTime:focus {
@@ -267,7 +265,7 @@
     float: left;
     clear: left;
     width: 100%;   
-    margin-top: 15px;
+    margin-top: 80px;
 
 }
 
@@ -304,8 +302,8 @@
     height: 35px;
     width: 100%;
     margin-top: 3px;
-    font-size: 13px;
-    padding: 4px 4px 4px 4px;
+    font-size: 16px;
+    padding: 4px 4px 4px 10px;
     border-radius: 4px;
     float: left;
     clear: left;
@@ -338,8 +336,8 @@
     height: 35px;
     margin-top: 3px;
     width: 100%;
-    font-size: 13px;
-    padding: 4px 4px 4px 4px;
+    font-size: 16px;
+    padding: 4px 4px 4px 10px;
     border-radius: 4px;
     float: left;
     clear: left;
@@ -372,8 +370,8 @@
     height: 35px;
     width: 100%;
     margin-top: 3px;
-    font-size: 13px;
-    padding: 4px 4px 4px 4px;
+    font-size: 16px;
+    padding: 4px 4px 4px 10px;
     border-radius: 4px;
     float: left;
     clear: left;
@@ -390,7 +388,7 @@
 .eventButton {
     width: 800px;
     margin-left: 260px;
-    margin-top: 2%;
+    margin-top: 3%;
     padding-bottom: 50px;
     float: left;
     clear: left;
@@ -398,7 +396,7 @@
 
 .btnSubmit {
     float: left;
-    margin-left: 20%;
+    margin-left: 154px;
     background: #A5DC86;
     font-family: Arial;
     padding: 10px 60px 10px 60px;
@@ -410,21 +408,24 @@
 
 .btnReset {
     float: left;
-    margin-left: 3%;
+    margin-left: 4%;
     font-family: Arial;
     padding: 10px 60px 10px 60px;
     color: #ffffff;
     font-size: 20px;
     text-decoration: none;
     border-style: none;
+    background-color:#696969;
+    
 }
 
 .btnCancel {
     float: left;
-    margin-left: 3%;
+    margin-left: 4%;
     font-family: Arial;
     padding: 10px 60px 10px 60px;
     color: #ffffff;
+    background-color:#D46752;
     font-size: 20px;
     text-decoration: none;
     border-style: none;
@@ -442,10 +443,10 @@
 .ddlCategory {
     width: 100%;
     border: 1px solid #c4c4c4;
-    height: 35px;
+    height: 45px;
     margin-top: 3px;
-    font-size: 13px;
-    padding: 4px 4px 4px 4px;
+    font-size: 16px;
+    padding: 4px 4px 4px 10px;
     border-radius: 4px;
     float: left;
     clear: left;
@@ -474,20 +475,20 @@
 
 .imgNav2{
     width: 1150px;
-    height: 270px;
+    height: 240px;
     float: left;
     clear: left;
-    margin-left: 190px;
+    margin-left: 125px;
 }
 .imgOne{
-    width: 49px;
-    height: 49px;
+    width: 50px;
+    height: 50px;
     float: left;
 }
 
 .imgTwo{
-    width: 49px;
-    height: 49px;
+    width: 50px;
+    height: 50px;
     float: left;
 }
 
@@ -498,7 +499,8 @@
 
 .title{
     margin-top: 80px;
-    font-size: 28px;
+    margin-bottom: 10px;
+    font-size: 30px;
     position: relative;
     line-height: 24px;
     color: #435a65;
@@ -508,8 +510,16 @@
     text-align: center;
 }
 .state{
-    margin-left: 500px;
-    font-size: 24px;
+    margin-left: 375px;
+    margin-bottom: 80px;
+    font-size: 30px;
+    float: left;
+    clear: left;
+}
+
+.desc {
+    margin-left: 550px;
+    font-size: 18px;
     float: left;
     clear: left;
 }
@@ -517,14 +527,11 @@
 .container-form{
     width: 100%;
     float: left;
-    clear: left;
-    margin-top: 25px;
-    
+    clear: left
 }
 
-
-
 .eventDetail-EventImage {
+    margin-bottom: 80px;
     float: left;
     clear: left;
 }

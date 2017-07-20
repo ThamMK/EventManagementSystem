@@ -41,7 +41,7 @@
 
             <div class="container-form">
                 <div class="eventDetail">
-                    <div style="padding-left: 30%;">
+                    <div style="padding-left: 28%;">
                         <div class="eventDetail-Header">
 
                             <asp:Image ID="imgeOne" CssClass="imgOne" ImageUrl="~/Images/Event/1.png" runat="server" />
@@ -203,7 +203,7 @@
 
                 <div class="organizationDetail-Detail">
 
-                    <div style="padding-left: 30%;">
+                    <div style="padding-left: 28%;">
 
                         <div class="organizerDetail-Header">
 

@@ -149,7 +149,6 @@ a:link {
 }
 
 .image-category-container {
-
     position: relative;
     top: 0;
     left: 0;
@@ -159,7 +158,6 @@ a:link {
 .img-main-top {
     align-content:center;
     width: 100%;
-    
 }
 .row{
     max-width: 100%;

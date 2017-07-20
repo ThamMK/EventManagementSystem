@@ -4,9 +4,9 @@
     background-color: #12ABE3;
     background-image:url("../Images/Login/login.png");
     background-size:100%;
-    margin-top:80px;
     position:fixed;
     background-repeat:repeat-x;
+    font-family:sans-serif;
 }
 
 #left-login-panel{
@@ -49,11 +49,11 @@
     background-color:white;
 }
 
-.login-div{
+#login-div{
     margin-top:35px;
 }
 
-.login-div label{
+#login-div label{
     margin-top:30px;
     margin-left:170px;
     font-size:40px;
@@ -159,6 +159,22 @@
 .forget-hyper:hover{
     color:deepskyblue;
     text-decoration:underline;
+}
+
+.errorInput ::-webkit-input-placeholder {
+   color: red;
+}
+
+.errorInput :-moz-placeholder { /* Firefox 18- */
+   color: red;  
+}
+
+.errorInput ::-moz-placeholder {  /* Firefox 19+ */
+   color: red;  
+}
+
+.errorInput :-ms-input-placeholder {  
+   color: red;  
 }
 
 

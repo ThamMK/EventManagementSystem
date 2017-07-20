@@ -45,7 +45,7 @@
     height: 35px;
     font-size: 16px;
     margin-top: 3px;
-    width: 100%;
+    width: 600px;
     padding: 4px 4px 4px 10px;
     border-radius: 4px;
     box-shadow: 0px 0px 8px #d9d9d9;
@@ -72,7 +72,7 @@
 .txtLocation {
     float: left;
     clear: left;
-    width: 100%;
+    width: 600px;
     margin-top: 3px;
     height: 35px;
     border: 1px solid #c4c4c4;
@@ -92,7 +92,7 @@
 
 .eventDetail-Date {
     margin-top: 10px;
-    width: 100%;
+    width: 616px;
     float: left;
     clear: left;
 }
@@ -111,10 +111,12 @@
 .lblEnd{
     font-weight: bold;
     font-size: 17px;
+    margin-left: 8px;
 }
 
 .eventDetail-StartDateTime {
     margin-top: 3px;
+    width: 306px;
     height:100%;
     float: left;
     clear: left;
@@ -123,7 +125,7 @@
 .eventDetail-EndDateTime {
     height:100%;
     margin-top: 3px;
-    margin-right: -16px;
+    width: 306px;
     float: left;
     clear: left;
 }
@@ -178,8 +180,8 @@
 .ddlStartTime {
     border: 1px solid #c4c4c4;
     height: 45px;
-    width: 140px;
-    margin-left: 6px;
+    width: 146px;
+    margin-left: 2px;
     font-size: 16px;
     padding: 4px 4px 4px 10px;
     border-radius: 4px;
@@ -199,6 +201,7 @@
     border: 1px solid #c4c4c4;
     height: 35px;
     width: 130px;
+    margin-left: 8px;
     font-size: 16px;
     padding: 4px 4px 4px 10px;
     border-radius: 4px;
@@ -219,8 +222,8 @@
 .ddlEndTime {
     border: 1px solid #c4c4c4;
     height: 45px;
-    width: 140px;
-    margin-left: 15.5px;
+    width: 146px;
+    margin-left: 28px;
     font-size: 16px;
     padding: 4px 4px 4px 10px;
     border-radius: 6px;
@@ -256,7 +259,7 @@
 
 .eventDetail-CKEditor {
     margin-top:2px;
-    width: 101.5%;
+    width: 616px;
     float: left;
     clear: left;
 }
@@ -300,7 +303,7 @@
 .txtOrganizerName {
     border: 1px solid #c4c4c4;
     height: 35px;
-    width: 100%;
+    width: 600px;
     margin-top: 3px;
     font-size: 16px;
     padding: 4px 4px 4px 10px;
@@ -335,7 +338,7 @@
     border: 1px solid #c4c4c4;
     height: 35px;
     margin-top: 3px;
-    width: 100%;
+    width: 600px;
     font-size: 16px;
     padding: 4px 4px 4px 10px;
     border-radius: 4px;
@@ -368,7 +371,7 @@
 .txtOrganizerEmail {
     border: 1px solid #c4c4c4;
     height: 35px;
-    width: 100%;
+    width: 600px;
     margin-top: 3px;
     font-size: 16px;
     padding: 4px 4px 4px 10px;
@@ -387,7 +390,7 @@
 
 .eventButton {
     width: 800px;
-    margin-left: 260px;
+    margin-left: 234px;
     margin-top: 3%;
     padding-bottom: 50px;
     float: left;
@@ -408,7 +411,7 @@
 
 .btnReset {
     float: left;
-    margin-left: 4%;
+    margin-left: 37px;
     font-family: Arial;
     padding: 10px 60px 10px 60px;
     color: #ffffff;
@@ -421,7 +424,7 @@
 
 .btnCancel {
     float: left;
-    margin-left: 4%;
+    margin-left: 37px;
     font-family: Arial;
     padding: 10px 60px 10px 60px;
     color: #ffffff;
@@ -441,7 +444,7 @@
 }
 
 .ddlCategory {
-    width: 100%;
+    width: 616px;
     border: 1px solid #c4c4c4;
     height: 45px;
     margin-top: 3px;
@@ -545,7 +548,7 @@
 .imgButton {
     margin-top: 3px;
     background-color:white;
-    width: 590px;
+    width: 616px;
     height: 255px;
     float: left;
     clear: left;
@@ -554,7 +557,7 @@
 .imgAddImage {
     border: 2px dashed deepskyblue;
     margin: 5px 5px 5px 5px;
-    width: 575px;
+    width: 602px;
     height: 240px;
 }
  .imgAddImage-2:focus {

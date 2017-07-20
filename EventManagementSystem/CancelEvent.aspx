@@ -30,7 +30,7 @@
 
         .site__title {
             position: relative;
-            font-size: 26px;
+            font-size: 28px;
             line-height: 26px;
             color: #435a65;
             font-family: 'Montserrat', sans-serif;
@@ -49,7 +49,7 @@
             var defaultAction = $(ctl).prop("href");
             e.preventDefault();
             swal({
-                title: "Are you sure yoou want delete?",
+                title: "Are you sure you want delete?",
                 text: "You will not be able to recover this after delete!",
                 type: "warning",
                 showCancelButton: true,
@@ -87,7 +87,7 @@
                 <ItemTemplate>
                     <div style="clear:both;margin-left:130px;margin-top:30px;border:0.5px solid dimgrey;width:80%;height:151.5px;background-color:white">
                         <asp:Image runat="server" ImageUrl='<%# ((EventManagementSystem.Event)Container.DataItem).imagePath.ToString() %>' style="height:150px;width:250px;float:left;margin-right:20px" /><br>
-                        <div style="background-color:deepskyblue;width:100%;height:30px;margin-top:-18px;padding-top:10px;">
+                        <div style="background-color:deepskyblue;width:100%;height:30px;margin-top:-19px;padding-top:10px;">
                             <asp:Label runat="server" ID="lblItem" style="color:white;font-size:18px;font-weight:bold" Text="<%# ((EventManagementSystem.Event)Container.DataItem).eventName.ToString() %>" /><br />
                             <div style="float:right;margin-right:20px;margin-top:-22px;color:white;">
                                 <span style="margin-right:5px;">Price : </span><asp:Label runat="server" style="font-weight:bold;font-size:18px;" Text="<%#((EventManagementSystem.Event)Container.DataItem).eventPrice.ToString() %>"></asp:Label>

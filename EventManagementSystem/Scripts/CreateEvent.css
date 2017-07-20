@@ -1,59 +1,58 @@
-﻿.container-CreateEvent {    
-    margin-left: 24%;
+﻿.container-CreateEvent {   
     width: 100%;
     height: 1500px;
-    color: #666666;
 }
 
 .eventDetail {
     float: left;
     clear: left;
-    width: 800px;
-    height: 870px; 
+    width: 100%;
+    padding-bottom: 35px;
+    background-color: #CDEAEE; 
+    
 }
 
 .eventDetail-Header {
-    border-bottom: 2px dotted #12ABE3;
+    border-bottom: 1px dotted #12ABE3;
     border-style: none none solid none;
-    width: 100%;
+    margin-top: 40px;
+    width: 640px;
     float: left;
     clear: left;
 
 }
 
 .lblEventDetail {
-    -webkit-border-top-left-radius: 30px;
-    -moz-border-radius-topleft: 30px;
-    -moz-border-radius-bottomleft: 30px;
-    -webkit-border-bottom-left-radius: 30px;
-    height: 20px;
+    margin-left: 10px;
     width: 220px;
-    font-size: 25pt;
+    font-size: 20pt;
+    padding-top: 10px;
+}
+
+.container-labelEvent{
+    padding-top: 8px;
 }
 
 .lblEventTitle {
-    margin-top: 5px;
+    margin-top: 13px;
+    font-weight: bold;
+    font-size: 17px;
     float: left;
     clear: left;
 }
 
 .txtEventTitle {
     border: 1px solid #c4c4c4;
-    height: 25px;
+    height: 35px;
+    font-size: 17px;
+    margin-top: 3px;
     width: 100%;
-    font-size: 13px;
+    font-size: 15px;
     padding: 4px 4px 4px 4px;
     border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
     box-shadow: 0px 0px 8px #d9d9d9;
-    -moz-box-shadow: 0px 0px 8px #d9d9d9;
-    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
     float: left;
-    clear: left;
-    top: 0px;
-    left: 0px;
-    margin-top: 5px;
+    clear: left
 }
 
     .txtEventTitle:focus {
@@ -65,28 +64,24 @@
     }
 
 .lblLocation {
-    margin-top: 5px;
+    margin-top: 13px;
+    font-weight: bold;
+    font-size: 17px;
     float: left;
     clear: left;
 }
 
 .txtLocation {
-    margin-top: 5px;
     float: left;
     clear: left;
     width: 100%;
-    height: 25px;
+    margin-top: 3px;
+    height: 35px;
     border: 1px solid #c4c4c4;
-    height: 25px;
-    width: 100%;
     font-size: 13px;
     padding: 4px 4px 4px 4px;
     border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
     box-shadow: 0px 0px 8px #d9d9d9;
-    -moz-box-shadow: 0px 0px 8px #d9d9d9;
-    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
 }
 
     .txtLocation:focus {
@@ -98,65 +93,80 @@
     }
 
 .eventDetail-Date {
-    margin-top: 5px;
+    margin-top: 10px;
     width: 100%;
+    float: left;
+    clear: left;
 }
 
 .eventDetail-StartDate {
-    margin-top: 5px;
     float: left;
-    width: 45%;
+    width: 50%;
 }
+
+.lblStart{
+    font-weight: bold;
+    font-size: 17px;
+    float:left;
+}
+
+.lblEnd{
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.eventDetail-StartDateTime {
+    margin-top: 3px;
+    height:100%;
+    float: left;
+    clear: left;
+}
+
+.eventDetail-EndDateTime {
+    height:100%;
+    margin-top: 3px;
+    margin-right: -16px;
+    float: left;
+    clear: left;
+}
+
 
 .eventDetail-StartDate-Date {
     float: left;
-    width: 40%;
-    margin-top: 5px;
+    width: 48%;
 }
 
 .eventDetail-StartDate-Time {
-    margin-left: 4%;
-    margin-top: 5px;
+    margin-left: 1%;
     float: left;
-    width: 40%;
+    width: 48%;
 }
 
 .eventDetail-EndDate {
-    margin-top: 5px;
-    margin-left: 1%;
     float: left;
-    width: 45%;
+    width: 50%;
 }
 
 .eventDetail-EndDate-Date {
     float: left;
-    margin-top: 5px;
     width: 40%;
 }
 
 .eventDetail-EndDate-Time {
-    margin-left: 4%;
-    margin-top: 5px;
+    margin-left: 10px;
     float: left;
     width: 40%;
 }
 
 .startDateTextBox {
     border: 1px solid #c4c4c4;
-    height: 25px;
-    width: 100%;
+    height: 35px;
+    width: 130px;
     font-size: 13px;
     padding: 4px 4px 4px 4px;
     border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    box-shadow: 0px 0px 8px #d9d9d9;
-    -moz-box-shadow: 0px 0px 8px #d9d9d9;
-    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
     float: left;
     clear: left;
-    top: 0px;
-    left: 0px;
 }
 
     .startDateTextBox:focus {
@@ -169,20 +179,13 @@
 
 .ddlStartTime {
     border: 1px solid #c4c4c4;
-    height: 25px;
-    width: 100%;
+    height: 45px;
+    width: 140px;
+    margin-left: 4px;
     font-size: 13px;
     padding: 4px 4px 4px 4px;
     border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    box-shadow: 0px 0px 8px #d9d9d9;
-    -moz-box-shadow: 0px 0px 8px #d9d9d9;
-    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
     float: left;
-    clear: left;
-    top: 0px;
-    left: 0px;
 }
 
     .ddlStartTime:focus {
@@ -193,28 +196,16 @@
         -webkit-box-shadow: 0px 0px 8px #7bc1f7;
     }
 
-.eventDetail-EndDate {
-    float: left;
-}
-
-
 
 .endDateTextBox {
     border: 1px solid #c4c4c4;
-    height: 25px;
-    width: 100%;
+    height: 35px;
+    width: 130px;
     font-size: 13px;
     padding: 4px 4px 4px 4px;
     border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    box-shadow: 0px 0px 8px #d9d9d9;
-    -moz-box-shadow: 0px 0px 8px #d9d9d9;
-    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
     float: left;
     clear: left;
-    top: 0px;
-    left: 0px;
 }
 
     .endDateTextBox:focus {
@@ -225,7 +216,19 @@
         -webkit-box-shadow: 0px 0px 8px #7bc1f7;
     }
 
-.ddlEndTime:focus {
+
+
+.ddlEndTime {
+    border: 1px solid #c4c4c4;
+    height: 45px;
+    width: 140px;
+    margin-left: 13px;
+    font-size: 13px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 4px;
+    float: left;
+}
+    .ddlEndTime:focus {
     outline: none;
     border: 1px solid #7bc1f7;
     box-shadow: 0px 0px 8px #7bc1f7;
@@ -233,59 +236,29 @@
     -webkit-box-shadow: 0px 0px 8px #7bc1f7;
 }
 
-.ddlEndTime {
-    border: 1px solid #c4c4c4;
-    height: 25px;
-    width: 100%;
-    font-size: 13px;
-    padding: 4px 4px 4px 4px;
-    border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    box-shadow: 0px 0px 8px #d9d9d9;
-    -moz-box-shadow: 0px 0px 8px #d9d9d9;
-    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
-    float: left;
-    clear: left;
-    top: 0px;
-    left: 0px;
-}
-
 .lblEventImage {
-    margin-top: 5px;
+    margin-top: 13px;
+    font-weight: bold;
+    font-size: 17px;
     float: left;
     clear: left;
 }
-
-.imgAddImage {
-    margin-top: 5px;
-    border: 1px solid #0800FF;
-    float: left;
-    clear: left;
-}
-
-    .imgAddImage:focus {
-        outline: none;
-        border: 1px solid #7bc1f7;
-        box-shadow: 0px 0px 8px #7bc1f7;
-        -moz-box-shadow: 0px 0px 8px #7bc1f7;
-        -webkit-box-shadow: 0px 0px 8px #7bc1f7;
-    }
 
 .eventDetail-EventDescription {
-    margin-top: 5px;
     height: 100px;
 }
 
 .lblEventDescription {
-    margin-top: 5px;
+    margin-top: 13px;
+    font-weight: bold;
+    font-size: 17px;
     float: left;
     clear: left;
 }
 
 .eventDetail-CKEditor {
-    margin-top: 5px;
-    width: 100%;
+    margin-top:2px;
+    width: 101.5%;
     float: left;
     clear: left;
 }
@@ -293,20 +266,21 @@
 .organizationDetail {
     float: left;
     clear: left;
-    width: 800px;
+    width: 100%;   
     margin-top: 15px;
+
 }
 
 .lblOrganizerDetail {
-    height: 20px;
+    margin-left: 10px;
     width: 220px;
-    font-size: 25pt;
+    font-size: 20pt;
 }
 
 .organizerDetail-Header {
-    border-bottom: 2px dotted #12ABE3;
+    border-bottom: 1px dotted #12ABE3;
     border-style: none none solid none;
-    width: 100%;
+    width: 640px;
     float: left;
     clear: left;
 }
@@ -318,29 +292,23 @@
 }
 
 .lblOrganizerName {
-    margin-top: 5px;
+    margin-top: 13px;
+    font-weight: bold;
+    font-size: 17px;
     float: left;
     clear: left;
 }
 
 .txtOrganizerName {
-    margin-top: 5px;
-    float: left;
     border: 1px solid #c4c4c4;
-    height: 25px;
+    height: 35px;
     width: 100%;
+    margin-top: 3px;
     font-size: 13px;
     padding: 4px 4px 4px 4px;
     border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    box-shadow: 0px 0px 8px #d9d9d9;
-    -moz-box-shadow: 0px 0px 8px #d9d9d9;
-    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
     float: left;
     clear: left;
-    top: 0px;
-    left: 0px;
 }
 
     .txtOrganizerName:focus {
@@ -352,35 +320,29 @@
     }
 
 .organizationDetail-OrganizerContactNumber {
-    margin-top: 5px;
     width: 100%;
     float: left;
     clear: left;
 }
 
 .lblOrganizerContactNumber {
-    margin-top: 5px;
+    margin-top: 13px;
+    font-weight: bold;
+    font-size: 17px;
     float: left;
     clear: left;
 }
 
 .txtOrganizerContactNumber {
     border: 1px solid #c4c4c4;
-    height: 25px;
+    height: 35px;
+    margin-top: 3px;
     width: 100%;
     font-size: 13px;
     padding: 4px 4px 4px 4px;
     border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    box-shadow: 0px 0px 8px #d9d9d9;
-    -moz-box-shadow: 0px 0px 8px #d9d9d9;
-    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
     float: left;
     clear: left;
-    top: 0px;
-    left: 0px;
-    margin-top: 5px;
 }
 
     .txtOrganizerContactNumber:focus {
@@ -392,35 +354,29 @@
     }
 
 .organizationDetail-OrganizerEmail {
-    margin-top: 5px;
     width: 100%;
     float: left;
     clear: left;
 }
 
 .lblOrganizerEmail {
-    margin-top: 5px;
+    margin-top: 13px;
+    font-weight: bold;
+    font-size: 17px;
     float: left;
     clear: left;
 }
 
 .txtOrganizerEmail {
     border: 1px solid #c4c4c4;
-    height: 25px;
+    height: 35px;
     width: 100%;
+    margin-top: 3px;
     font-size: 13px;
     padding: 4px 4px 4px 4px;
     border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    box-shadow: 0px 0px 8px #d9d9d9;
-    -moz-box-shadow: 0px 0px 8px #d9d9d9;
-    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
     float: left;
     clear: left;
-    top: 0px;
-    left: 0px;
-    margin-top: 5px;
 }
 
     .txtOrganizerEmail:focus {
@@ -433,7 +389,9 @@
 
 .eventButton {
     width: 800px;
+    margin-left: 260px;
     margin-top: 2%;
+    padding-bottom: 50px;
     float: left;
     clear: left;
 }
@@ -441,11 +399,9 @@
 .btnSubmit {
     float: left;
     margin-left: 20%;
-    background: #34d960;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
+    background: #A5DC86;
     font-family: Arial;
+    padding: 10px 60px 10px 60px;
     color: #ffffff;
     font-size: 20px;
     text-decoration: none;
@@ -454,11 +410,9 @@
 
 .btnReset {
     float: left;
-    margin-left: 7%;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
+    margin-left: 3%;
     font-family: Arial;
+    padding: 10px 60px 10px 60px;
     color: #ffffff;
     font-size: 20px;
     text-decoration: none;
@@ -467,11 +421,9 @@
 
 .btnCancel {
     float: left;
-    margin-left: 7%;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
+    margin-left: 3%;
     font-family: Arial;
+    padding: 10px 60px 10px 60px;
     color: #ffffff;
     font-size: 20px;
     text-decoration: none;
@@ -480,24 +432,21 @@
 
 
 .lblCategory {
-    margin-top: 5px;
+    margin-top: 13px;
+    font-weight: bold;
+    font-size: 17px;
     float: left;
     clear: left;
 }
 
 .ddlCategory {
-    width: 350px;
-    margin-top: 5px;
+    width: 100%;
     border: 1px solid #c4c4c4;
-    height: 25px;
+    height: 35px;
+    margin-top: 3px;
     font-size: 13px;
     padding: 4px 4px 4px 4px;
     border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    box-shadow: 0px 0px 8px #d9d9d9;
-    -moz-box-shadow: 0px 0px 8px #d9d9d9;
-    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
     float: left;
     clear: left;
     top: 0px;
@@ -515,21 +464,20 @@
 .eventDetail-2 {
     float: left;
     clear: left;
-    width: 100%;
-    padding-right: 80px;
 }
 
 .organizationDetail-Detail {
-    padding-right: 80px;
     width: 100%;
     float: left;
     clear: left;
 }
 
 .imgNav2{
-    width: 650px;
-    height: 200px;
-    margin-left: 30px
+    width: 1150px;
+    height: 270px;
+    float: left;
+    clear: left;
+    margin-left: 190px;
 }
 .imgOne{
     width: 49px;
@@ -543,8 +491,71 @@
     float: left;
 }
 
-.container-Navigation {
-    width: 650px;
-    height: 200px;
+.container-topSection {
+    width: 100%;
     float: left;
 }
+
+.title{
+    margin-top: 80px;
+    font-size: 28px;
+    position: relative;
+    line-height: 24px;
+    color: #435a65;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+.state{
+    margin-left: 500px;
+    font-size: 24px;
+    float: left;
+    clear: left;
+}
+
+.container-form{
+    width: 100%;
+    float: left;
+    clear: left;
+    margin-top: 25px;
+    
+}
+
+
+
+.eventDetail-EventImage {
+    float: left;
+    clear: left;
+}
+
+.organizationDetail-2 {
+    float: left;
+    clear: left;
+    width: 590px;
+}
+
+.imgButton {
+    margin-top: 3px;
+    background-color:white;
+    width: 590px;
+    height: 255px;
+    float: left;
+    clear: left;
+}
+
+.imgAddImage {
+    border: 2px dashed deepskyblue;
+    margin: 5px 5px 5px 5px;
+    width: 575px;
+    height: 240px;
+}
+ .imgAddImage-2:focus {
+        outline: none;
+        border: 2px dashed #7bc1f7;
+        box-shadow: 0px 0px 8px #7bc1f7;
+        -moz-box-shadow: 0px 0px 8px #7bc1f7;
+        -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+    }
+
+    

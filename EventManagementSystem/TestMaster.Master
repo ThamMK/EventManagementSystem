@@ -235,6 +235,7 @@
         
         .navigation-whole{
             overflow:hidden;
+            font-family:sans-serif;
         }
 
     </style>

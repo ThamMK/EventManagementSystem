@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainPage.Master" AutoEventWireup="true" CodeBehind="Registration.aspx.cs" Inherits="EventManagementSystem.Registration" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/TestMaster.Master" AutoEventWireup="true" CodeBehind="Registration.aspx.cs" Inherits="EventManagementSystem.Registration" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server"> 
     
         <title></title>
@@ -18,6 +18,9 @@
                 <div class="sign-up-header">
                     <asp:Label ID="lblRegistrationForm" CssClass="lblRegistrationForm" Text="Sign up" runat="server"></asp:Label>
                 </div>
+                <div class="header-tag">
+                    <asp:Label ID="lblRegistrationNote" CssClass="lblRegistrationNote" Text="Come and join us to discover new experiences." runat="server"></asp:Label>
+                </div>
                 <div class="container-perosnal-information">
                     <div class="header-container">
                         <asp:Image ID="Image1" CssClass="header-image" ImageUrl="~/Images/Registeration/1.png" runat="server" />
@@ -26,7 +29,7 @@
                         </div>
                     </div>
                     <div class="container-section-holder">
-                        <asp:Label ID="lblFullName" CssClass="content-label" Text="FullName" runat="server"></asp:Label>
+                        <asp:Label ID="lblFullName" CssClass="content-label" Text="Full Name" runat="server"></asp:Label>
                         
                         <asp:TextBox ID="txtName" CssClass="content-input" runat="server"></asp:TextBox>
                         
@@ -36,7 +39,7 @@
                         <asp:Label ID="lblDOB" CssClass="content-label" Text="Date Of Birth" runat="server"></asp:Label>
                         <div class="container-DOB-ddl">
                             <div class="container-DOB-ddlMonth">
-                                <asp:DropDownList ID="DropDownListMonth" CssClass="DropDownListMonth" runat="server">
+                                <asp:DropDownList ID="DropDownListMonth" CssClass="DropDownListMonth" runat="server" OnSelectedIndexChanged="DropDownListMonth_SelectedIndexChanged1" AutoPostBack="True">
                                     <asp:ListItem>January</asp:ListItem>
                                     <asp:ListItem>February</asp:ListItem>
                                     <asp:ListItem>March</asp:ListItem>
@@ -52,10 +55,10 @@
                                 </asp:DropDownList>
                             </div>
                             <div class="container-DOB-ddlDay">
-                                <asp:DropDownList ID="DropDownListDay" CssClass="DropDownListDay" runat="server"></asp:DropDownList>
+                                <asp:DropDownList ID="DropDownListDay" CssClass="DropDownListDay" runat="server" OnSelectedIndexChanged="DropDownListDay_SelectedIndexChanged" AutoPostBack="True"></asp:DropDownList>
                             </div>
                             <div class="container-DOB-ddlYear">
-                                <asp:DropDownList ID="DropDownListYear" CssClass="DropDownListYear" runat="server"></asp:DropDownList>
+                                <asp:DropDownList ID="DropDownListYear" CssClass="DropDownListYear" runat="server" OnSelectedIndexChanged="DropDownListYear_SelectedIndexChanged1" AutoPostBack="True"></asp:DropDownList>
                             </div>
                             <asp:Label ID="lblEMDOB" CssClass="error-message" runat="server"></asp:Label>
                         </div>
@@ -81,19 +84,20 @@
                     </div>
                     <div class="container-section-holder">
                         <asp:Label ID="lblStudentID" CssClass="content-label" Text="Student ID" runat="server"></asp:Label>
+                        <asp:Label ID="lblHelpStudentID" CssClass="help-note" Text="(Please enter your student id without any alphabet. Example: 1620345 )" runat="server"></asp:Label>
                         <asp:TextBox ID="txtStudentID" CssClass="content-input" runat="server"></asp:TextBox>
-                        <asp:Label ID="lblEMStudentID" CssClass="eror-message" runat="server"></asp:Label>
+                        <asp:Label ID="lblEMStudentID" CssClass="error-message" runat="server"></asp:Label>
                     </div>
                     <div class="container-section-holder">
                         <asp:Label ID="lblStudentCourse" CssClass="content-label" Text="Student Course" runat="server"></asp:Label>
                         <asp:TextBox ID="txtStudentCourse" CssClass="content-input" runat="server"></asp:TextBox>
-                        <asp:Label ID="lblEMStudentCourse" CssClass="eror-message" runat="server"></asp:Label>
+                        <asp:Label ID="lblEMStudentCourse" CssClass="error-message" runat="server"></asp:Label>
                     </div>
                     <div class="container-section-holder">
                         <asp:Label ID="lblStudentSociety" CssClass="content-label" Text="Are you in any society?" runat="server"></asp:Label>
                         <asp:Label ID="lblHelpStudentSociety" CssClass="help-note" Text="(Answer Yes or No. If Yes, please write your society's name after yes. Example: Yes, Chinese scociety.)" runat="server"></asp:Label>
                         <asp:TextBox ID="txtStudentSociety" CssClass="content-input" runat="server"></asp:TextBox>
-                        <asp:Label ID="lblEMStudentSociety" CssClass="eror-message" runat="server"></asp:Label>
+                        <asp:Label ID="lblEMStudentSociety" CssClass="error-message" runat="server"></asp:Label>
                     </div>
                 </div>
                 <br />
@@ -108,12 +112,12 @@
                         <asp:Label ID="lblUsername" CssClass="content-label" Text="Username" runat="server"></asp:Label>
                         <asp:Label ID="lblHelpUsername" CssClass="help-note" Text="(You will be using this username to login.)" runat="server"></asp:Label>
                         <asp:TextBox ID="txtUsername" CssClass="content-input" runat="server"></asp:TextBox>
-                        <asp:Label ID="lblEMUsername" CssClass="eror-message" runat="server"></asp:Label>
+                        <asp:Label ID="lblEMUsername" CssClass="error-message" runat="server"></asp:Label>
                     </div>
                     <div class="container-section-holder">
                         <asp:Label ID="lblEmail" CssClass="content-label" Text="Email" runat="server"></asp:Label>
                         <asp:TextBox ID="txtEmail" CssClass="content-input" runat="server"></asp:TextBox>
-                        <asp:Label ID="lblEMEmail" CssClass="eror-message" runat="server"></asp:Label>
+                        <asp:Label ID="lblEMEmail" CssClass="error-message" runat="server"></asp:Label>
                     </div>
                     <div class="container-section-holder">
                         <asp:Label ID="lblPhoneNo" CssClass="content-label" Text="Phone Number" runat="server"></asp:Label>
@@ -124,20 +128,20 @@
                     <div class="container-section-holder">
                         <asp:Label ID="lblPassword" CssClass="content-label" Text="Password" runat="server"></asp:Label>
                         <asp:TextBox ID="txtPassword" CssClass="content-input" runat="server"></asp:TextBox>
-                        <asp:Label ID="lblEMPassword" CssClass="eror-message" runat="server"></asp:Label>
+                        <asp:Label ID="lblEMPassword" CssClass="error-message" runat="server"></asp:Label>
                     </div>
                     <div class="container-section-holder">
                         <asp:Label ID="lblPasswordConfirmation" CssClass="content-label" Text="Confirm Password" runat="server"></asp:Label>
                         <asp:TextBox ID="txtPasswordConfirmation" CssClass="content-input" runat="server"></asp:TextBox>
-                        <asp:Label ID="lblEMPasswordConfirmation" CssClass="eror-message" runat="server"></asp:Label>
+                        <asp:Label ID="lblEMPasswordConfirmation" CssClass="error-message" runat="server"></asp:Label>
                     </div>
                 </div>
                 <div class="container-button">
                     <div class="container-button-submit">
-                        <asp:Button ID="btnSubmit" CssClass="btnSubmit" runat="server" Text="Submit" />
+                        <asp:Button ID="btnSubmit" CssClass="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
                     </div>
                     <div class="container-button-cancel">
-                        <asp:Button ID="btnCancel" CssClass="btnCancel" runat="server" Text="Cancel" />
+                        <asp:Button ID="btnCancel" CssClass="btnCancel" runat="server" Text="Cancel" PostBackUrl="~/Homepage.aspx" />
                     </div>
                 </div>
             </div>

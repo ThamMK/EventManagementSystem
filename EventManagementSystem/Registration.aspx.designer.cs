@@ -22,6 +22,15 @@ namespace EventManagementSystem {
         protected global::System.Web.UI.WebControls.Label lblRegistrationForm;
         
         /// <summary>
+        /// lblRegistrationNote control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblRegistrationNote;
+        
+        /// <summary>
         /// Image1 control.
         /// </summary>
         /// <remarks>
@@ -155,6 +164,15 @@ namespace EventManagementSystem {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblStudentID;
+        
+        /// <summary>
+        /// lblHelpStudentID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblHelpStudentID;
         
         /// <summary>
         /// txtStudentID control.

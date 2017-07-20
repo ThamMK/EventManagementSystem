@@ -40,7 +40,6 @@
             </div>
 
             <div class="container-form">
-
                 <div class="eventDetail">
                     <div style="padding-left: 30%;">
                         <div class="eventDetail-Header">

@@ -69,7 +69,7 @@
     height: 35px;
     font-size: 16px;
     margin-top: 3px;
-    width: 622px;
+    width: 600px;
     padding: 4px 4px 4px 10px;
     border-radius: 4px;
     box-shadow: 0px 0px 8px #d9d9d9;
@@ -134,7 +134,7 @@
 .container-DOB-ddlMonth{
     float:left;
     height:35px;
-    width:200px;
+    width:192px;
     margin-right:20px;
 }
 
@@ -157,7 +157,7 @@
 
 .container-DOB-ddlDay{
     float:left;
-    width:200px;
+    width:192px;
     margin-right:20px;
 }
 
@@ -181,7 +181,7 @@
 .container-DOB-ddlYear{
     float:left;
     height:35px;
-    width:200px;
+    width:192px;
 }
     
 .DropDownListYear{
@@ -249,7 +249,7 @@
     color:white;
     font-size:16px;
     height:50px;
-    width:300px;
+    width:288px;
     margin-left:10px;
     margin-right:10px;
 }
@@ -271,7 +271,7 @@
     color:white;
     font-size:16px;
     height:50px;
-    width:300px;
+    width:288px;
     float:left;
     margin-left:10px;
     margin-right:10px;

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/TestMaster.Master" CodeBehind="Login.aspx.cs" Inherits="EventManagementSystem.Login" %>
+﻿    <%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/TestMaster.Master" CodeBehind="Login.aspx.cs" Inherits="EventManagementSystem.Login" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">
     <script>

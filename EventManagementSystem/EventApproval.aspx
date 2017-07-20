@@ -29,8 +29,8 @@
 
         .site__title {
             position: relative;
-            font-size: 24px;
-            line-height: 24px;
+            font-size: 28px;
+            line-height: 28px;
             color: #435a65;
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
@@ -77,8 +77,8 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div style="margin-top:130px;margin-left:50px;text-align:center;margin-bottom:40px;">
-            <h2 class="site__title">My Upcoming Event</h2>
+    <div style="margin-top:130px;text-align:center;margin-bottom:40px;">
+            <h2 class="site__title">Check Event Status</h2>
         </div>
         <div style="font-family:sans-serif">
             <asp:Repeater ID="Repeater1" runat="server" OnItemCommand="Repeater1_ItemCommand" OnItemCreated="Edit_ItemCreated">

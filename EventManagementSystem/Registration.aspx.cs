@@ -20,24 +20,6 @@ namespace EventManagementSystem
             }
         }
 
-        protected void DropDownListMonth_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            SetupMaxDate();
-            SetupDate();
-        }
-
-
-
-        protected void DropDownListYear_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            SetupMaxDate();
-            SetupDate();
-        }
-
-        protected void DropDownList2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-        }
-
         public void SetupMaxDate()
         {
             if (DropDownListMonth.SelectedValue == "February" && (int.Parse(DropDownListYear.SelectedValue.ToString()) % 4 == 0))
@@ -79,29 +61,67 @@ namespace EventManagementSystem
             }
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         protected void butCancel_Click(object sender, EventArgs e)
         {
-            DropDownListMonth.SelectedIndex = 0;
-            SetupYear();
+            
+        }
+
+        public void GettingValue()
+        {
+            String name = txtName.Text;
+            String id = txtStudentID.Text;
+            String course = txtStudentCourse.Text;
+        }
+        
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+            GettingValue();
+            if ((txtName.Text).Length == 0)
+            {
+                lblEMFullName.Text = "Please fill in your full name.";
+            }else
+            {
+                lblEMFullName.Text = "";
+            }
+            if(txtStudentID.Text == "")
+            {
+                lblEMStudentID.Text = "Please fill in your student id.";
+            }else if(txtStudentID.Text != "1620701")
+            {
+                lblEMStudentID.Text = "Sorry, but this student id did not exist.";
+            }else
+            {
+                lblEMStudentID.Text = "";
+            }
+            if(txtStudentCourse.Text == "")
+            {
+                lblEMStudentCourse.Text = "Please fill in your course.";
+            }else if(txtStudentCourse.Text != "Software Engineering")
+            {
+                lblEMStudentCourse.Text = "Sorry, but this course name did not exist.";
+            }
+            else
+            {
+                lblEMStudentCourse.Text = "";
+            }
+        }
+
+        protected void DropDownListMonth_SelectedIndexChanged1(object sender, EventArgs e)
+        {
             SetupMaxDate();
             SetupDate();
         }
 
-        protected void butReset_Click(object sender, EventArgs e)
+        protected void DropDownListDay_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
 
-        public void ReassignValue()
+        protected void DropDownListYear_SelectedIndexChanged1(object sender, EventArgs e)
         {
-            
+            SetupMaxDate();
+            SetupDate();
         }
-        
     }
 
 }

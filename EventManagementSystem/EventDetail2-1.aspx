@@ -37,7 +37,7 @@
                             Date
                         </div>
                         <div class="event-detail-date">
-                            24 Feb - 19 March, 2017
+                            24 Feb - 19 Mar 2017
                         </div>
                         
                     </div>

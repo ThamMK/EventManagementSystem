@@ -53,7 +53,7 @@ namespace EventManagementSystem
             this.contactPerson = contactPerson;
             this.imagePath = imagePath;
             this.eventStatus = eventStatus;
-            if(eventStatus == "Disapproved")
+            if(eventStatus == "Rejected")
             {
                 this.color = "#DD6B55";
             } else if(eventStatus == "Approved")

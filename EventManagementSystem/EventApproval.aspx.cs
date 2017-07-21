@@ -57,7 +57,7 @@ namespace EventManagementSystem
                     case 0:
                         lblStatus.Attributes.CssStyle.Add("background-color", "transparent");
                         lblStatus.Attributes.CssStyle.Add("border", "None");
-                        lblStatus.Attributes.CssStyle.Add("color", "#DD6B55");
+                        lblStatus.Attributes.CssStyle.Add("color", "deepskyblue");
                         break;
                     case 1:
                         lblStatus.Attributes.CssStyle.Add("background-color", "transparent");
@@ -67,7 +67,7 @@ namespace EventManagementSystem
                     case 2:
                         lblStatus.Attributes.CssStyle.Add("background-color", "transparent");
                         lblStatus.Attributes.CssStyle.Add("border", "None");
-                        lblStatus.Attributes.CssStyle.Add("color", "deepskyblue");
+                        lblStatus.Attributes.CssStyle.Add("color", "#DD6B55");
                         break;
                     }
                 }catch

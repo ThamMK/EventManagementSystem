@@ -17,9 +17,9 @@ namespace EventManagementSystem
                 Event event2 = new Event("TARUC Education Fair", "12/05/2017", "15/05/2017", "10.00am", "5.00pm", "Sport Complex", "RM 100", "Seminar", "", "Yew Wen Bin", "yewwenbin96@gmail.com", "~/Images/Event/event2.PNG", "Approved");
                 Event event3 = new Event("TARUC Gaming Season", "08/07/2017", "08/07/2017", "9.30am", "9.00pm", "DK ABA", "Free", "Entertainment", "", "Tan Shiang Young", "shiangyoung96@gmail.com", "~/Images/Event/eventGaming.jpg","Pending");
                 List<Event> eventList = new List<Event>();
-                eventList.Add(event1);
-                eventList.Add(event2);
                 eventList.Add(event3);
+                eventList.Add(event2);
+                eventList.Add(event1);
                 Repeater1.DataSource = eventList;
                 Repeater1.DataBind();
             }

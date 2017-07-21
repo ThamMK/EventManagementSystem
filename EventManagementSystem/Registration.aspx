@@ -21,65 +21,13 @@
                     <div class="header-tag">
                         <asp:Label ID="lblRegistrationNote" CssClass="lblRegistrationNote" Text="Come and join us to discover new experiences." runat="server"></asp:Label>
                     </div>
-                    <div class="container-perosnal-information">
-                        <div class="header-container">
-                            <asp:Image ID="Image1" CssClass="header-image" ImageUrl="~/Images/Registeration/1.png" runat="server" />
-                            <div class="header-label-container">
-                                <asp:Label ID="lblPersonalInformation" CssClass="header-label" Text="Personal Information" runat="server"></asp:Label>
-                            </div>
-                        </div>
-                        <div class="container-section-holder">
-                            <asp:Label ID="lblFullName" CssClass="content-label" Text="Full Name" runat="server"></asp:Label>
-                        
-                            <asp:TextBox ID="txtName" CssClass="content-input" runat="server"></asp:TextBox>
-                        
-                            <asp:Label ID="lblEMFullName" CssClass="error-message" runat="server"></asp:Label>
-                        </div>
-                        <div class="container-DOB">
-                            <asp:Label ID="lblDOB" CssClass="content-label" Text="Date Of Birth" runat="server"></asp:Label>
-                            <div class="container-DOB-ddl">
-                                <div class="container-DOB-ddlMonth">
-                                    <asp:DropDownList ID="DropDownListMonth" CssClass="DropDownListMonth" runat="server" OnSelectedIndexChanged="DropDownListMonth_SelectedIndexChanged1" AutoPostBack="True">
-                                        <asp:ListItem>January</asp:ListItem>
-                                        <asp:ListItem>February</asp:ListItem>
-                                        <asp:ListItem>March</asp:ListItem>
-                                        <asp:ListItem>April</asp:ListItem>
-                                        <asp:ListItem>May</asp:ListItem>
-                                        <asp:ListItem>June</asp:ListItem>
-                                        <asp:ListItem>July</asp:ListItem>
-                                        <asp:ListItem>August</asp:ListItem>
-                                        <asp:ListItem>September</asp:ListItem>
-                                        <asp:ListItem>October</asp:ListItem>
-                                        <asp:ListItem>November</asp:ListItem>
-                                        <asp:ListItem>December</asp:ListItem>
-                                    </asp:DropDownList>
-                                </div>
-                                <div class="container-DOB-ddlDay">
-                                    <asp:DropDownList ID="DropDownListDay" CssClass="DropDownListDay" runat="server" OnSelectedIndexChanged="DropDownListDay_SelectedIndexChanged" AutoPostBack="True"></asp:DropDownList>
-                                </div>
-                                <div class="container-DOB-ddlYear">
-                                    <asp:DropDownList ID="DropDownListYear" CssClass="DropDownListYear" runat="server" OnSelectedIndexChanged="DropDownListYear_SelectedIndexChanged1" AutoPostBack="True"></asp:DropDownList>
-                                </div>
-                                <asp:Label ID="lblEMDOB" CssClass="error-message" runat="server"></asp:Label>
-                            </div>
-                        </div>
-                        <div class="container-gender">
-                            <asp:Label ID="Gender" CssClass="content-label" Text="Gender" runat="server"></asp:Label>
-                            <div class="container-gender-selection">
-                                <asp:RadioButtonList ID="RadioButtonList1"  runat="server" RepeatDirection="Vertical" RepeatColumns="2">
-                                    <asp:ListItem Selected ="True" Class="ItemMale">Male</asp:ListItem>
-                                    <asp:ListItem Class="ItemFemale">Female</asp:ListItem>
-                                </asp:RadioButtonList>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="middle-background-container">
                 <div style="padding-left:30%;">
                     <div class="container-student-information">
                         <div class="header-container">
-                            <asp:Image ID="Image2" CssClass="header-image" ImageUrl="~/Images/Registeration/2.png" runat="server" />
+                            <asp:Image ID="Image2" CssClass="header-image" ImageUrl="~/Images/Registeration/1.png" runat="server" />
                             <div class="header-label-container">
                                 <asp:Label ID="lblStudentInformation" CssClass="header-label" Text="Student Information" runat="server"></asp:Label>
                             </div>
@@ -87,7 +35,7 @@
                         </div>
                         <div class="container-section-holder">
                             <asp:Label ID="lblStudentID" CssClass="content-label" Text="Student ID" runat="server"></asp:Label>
-                            <asp:TextBox ID="txtStudentID" CssClass="content-input" placeholder="Example: 1620345" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtStudentID" CssClass="content-input" placeholder="Example: 1620345 (This will be used as login ID.)" runat="server"></asp:TextBox>
                             <asp:Label ID="lblEMStudentID" CssClass="error-message" runat="server"></asp:Label>
                         </div>
                         <div class="container-section-holder">
@@ -107,14 +55,14 @@
                 <div style="padding-left:30%">
                     <div class="container-account-information">
                         <div class="header-container">
-                            <asp:Image ID="Image3" CssClass="header-image" ImageUrl="~/Images/Registeration/3.png" runat="server" />
+                            <asp:Image ID="Image3" CssClass="header-image" ImageUrl="~/Images/Registeration/2.png" runat="server" />
                             <div class="header-label-container">
                                 <asp:Label ID="lblAccountInformation" CssClass="header-label" Text="Account Information" runat="server"></asp:Label>
                             </div>
                         </div>
                         <div class="container-section-holder">
-                            <asp:Label ID="lblUsername" CssClass="content-label" Text="Username" runat="server"></asp:Label>
-                            <asp:TextBox ID="txtUsername" CssClass="content-input" placeholder="You will be using this username to login." runat="server"></asp:TextBox>
+                            <asp:Label ID="lblFullName" CssClass="content-label" Text="Full Name" runat="server"></asp:Label>
+                            <asp:TextBox ID="txtUsername" CssClass="content-input" runat="server"></asp:TextBox>
                             <asp:Label ID="lblEMUsername" CssClass="error-message" runat="server"></asp:Label>
                         </div>
                         <div class="container-section-holder">

@@ -114,7 +114,7 @@
                     <div class="form-horizontal">
                         <div class="email-input">
                             <div id="email-icon">
-                                <img style="width:22px;height:22px;margin-top:11px;margin-left:11px;" src="Images/Login/email-icon.png" />
+                                <img style="width:22px;height:22px;margin-top:11px;margin-left:11px;" src="Images/Registeration/humanheadicon.png" />
                             </div>
                             <input id="email" type="email" placeholder="Email" />
                         </div>

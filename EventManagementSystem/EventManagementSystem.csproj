@@ -152,6 +152,7 @@
     <Content Include="Images\Registeration\3.png" />
     <Content Include="Images\Registeration\comfirm-pass-icon.png" />
     <Content Include="Images\Registeration\emailicon.png" />
+    <Content Include="Images\Registeration\humanheadicon.png" />
     <Content Include="Images\Registeration\password-icon.png" />
     <Content Include="Images\Registeration\usericon.png" />
     <Content Include="obj\Debug\EventManagementSystem.csproj.FileListAbsolute.txt" />

@@ -1,38 +1,88 @@
 ﻿
 
 .startDate { 
-    height:35px; 
-    width: 200px;   
+    border: 1px solid #c4c4c4;
+    height: 35px;
+    width: 190px;
+    font-size: 16px;
+    padding: 4px 4px 4px 10px;
+    border-radius: 4px;
     float: left;
-    clear: left
+    clear: left;
   }
 
 .endDate{
-    height:35px; 
-    width: 200px;  
-    float: left;
-}
-
-.ddlVenue{
-    height:35px; 
-    width: 415px; 
+    border: 1px solid #c4c4c4;
+    height: 35px;
+    width: 190px;
+    font-size: 16px;
+    padding: 4px 4px 4px 10px;
+    border-radius: 4px;
     float: left;
     clear: left;
 }
 
-.ddlStartTime{
-    height:35px; 
-    width: 200px; 
+.ddlVenue {
+    border: 1px solid #c4c4c4;
+    height: 45px;
+    width: 420px;
+    font-size: 16px;
+    padding: 4px 4px 4px 10px;
+    border-radius: 4px;
     float: left;
-    margin-left: 15px;
+    clear: left;
+     margin-top: 3px;
 }
 
-.ddlEndTime{
-    height:35px; 
-    width: 200px; 
+    .ddlVenue:focus {
+        outline: none;
+        border: 1px solid #7bc1f7;
+        box-shadow: 0px 0px 8px #7bc1f7;
+        -moz-box-shadow: 0px 0px 8px #7bc1f7;
+        -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+    }
+
+.ddlStartTime {
+    border: 1px solid #c4c4c4;
+    height: 45px;
+    width: 206px;
+    font-size: 16px;
+    padding: 4px 4px 4px 10px;
+    border-radius: 4px;
     float: left;
-    margin-left: 15px;
+    margin-left: 8px;
 }
+
+    .ddlStartTime:focus {
+        outline: none;
+        border: 1px solid #7bc1f7;
+        box-shadow: 0px 0px 8px #7bc1f7;
+        -moz-box-shadow: 0px 0px 8px #7bc1f7;
+        -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+    }
+
+
+
+.ddlEndTime {
+    border: 1px solid #c4c4c4;
+    height: 45px;
+    width: 206px;
+    font-size: 16px;
+    padding: 4px 4px 4px 10px;
+    border-radius: 4px;
+    float: left;
+    margin-left: 8px;
+}
+
+    .ddlEndTime:focus {
+        outline: none;
+        border: 1px solid #7bc1f7;
+        box-shadow: 0px 0px 8px #7bc1f7;
+        -moz-box-shadow: 0px 0px 8px #7bc1f7;
+        -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+    }
+
+
 
 .container-Title {
     width: 100%;
@@ -41,18 +91,25 @@
 
 
 .imgNav{
-    width: 1700px;
-    height: 400px;
+    width: 1150px;
+    height: 240px;
+    float: left;
+    clear: left;
+    margin-left: 125px;
 }
 
 .container-CheckAvailability {
-     width: 100%;
+    width: 100%;
     height: 700px;
+
 
 }
 
-.container-Navigation{
-    margin-left: 270px;
+.container-StartDateTime {
+    float: left;
+    clear: left;
+    height: 100%;
+    width: 420px;
 }
 
 .container-Date-Location-Time {
@@ -64,42 +121,44 @@
 }
 
 .container-Button{
-    width: 800px;
+    width: 419px;
     height: 90px;
-    margin-top: 20px;
+    margin-top: 41px;
     float: left;
     clear: left;
-    margin-left: 110px;
+    margin-left: 10px;
 }
 .btnProceed{
     float: left;
-    font-family: Arial;
-    color: #ffffff;
     background: #A5DC86;
+    font-family: Arial;
+    padding: 10px 60px 10px 60px;
+    color: #ffffff;
     font-size: 20px;
-    width: 150px;
-    height: 35px;
     text-decoration: none;
     border-style: none;
 }
 .btnCancel{
     float: left;
-    margin-left: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
     font-family: Arial;
+    padding: 10px 60px 10px 60px;
     color: #ffffff;
+    background-color:#D46752;
     font-size: 20px;
     text-decoration: none;
     border-style: none;
 }
 
 .container-EndDateTime{
-    margin-top: 8px;
+    margin-top: 13px;
     float: left;
     clear: left;
 }
 
 .container-Venue{
-    margin-top: 8px;
+    margin-top: 13px;
     float: left;
     clear: left;
 }
@@ -107,7 +166,9 @@
 .container-check{
     float: left;
     clear: left;
-    margin-left: 550px;
+    width: 100%;
+    height: 460px;
+    background-color: #CDEAEE;
 }
 
 .lblVenue{
@@ -131,3 +192,53 @@
     font-weight: bold;
 }
 
+.title{
+    margin-top: 80px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    position: relative;
+    line-height: 24px;
+    color: #435a65;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+.state{
+    margin-left: 200px;
+    margin-bottom: 80px;
+    font-size: 30px;
+    float: left;
+    clear: left;
+}
+
+.desc {
+    margin-left: 497px;
+    font-size: 18px;
+    float: left;
+    clear: left;
+}
+
+.container-Navigation{
+    float: left;
+    clear: left;
+    width: 100%;
+}
+
+.container-check2 {
+    float: left;
+    clear: left;
+    width: 450px;
+}
+.container-EndDateTime2 {
+    float: left;
+    clear: left;
+    width: 100%;
+    margin-top: 3px;    
+}
+.container-StartDateTime2 {
+    float: left;
+    clear: left;
+    width: 100%;
+    margin-top: 3px;    
+}

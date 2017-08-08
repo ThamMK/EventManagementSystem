@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/MainPage.Master" CodeBehind="CheckAvailability.aspx.cs" Inherits="EventManagementSystem.CheckAvailability" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/TestMaster.Master" CodeBehind="CheckAvailability.aspx.cs" Inherits="EventManagementSystem.CheckAvailability" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!DOCTYPE html>
@@ -21,86 +21,94 @@
         <div class="container-CheckAvailability">
 
             <div class="container-Navigation">
+                <div class="title">Create Event</div>
+                <div class="desc">Check date, location, and time availability.</div>
                 <asp:Image ID="imgNav" CssClass="imgNav" ImageUrl="~/Images/Event/Navigation1.png" runat="server" />
+                <div class="state">
+                    Your current state is <span style="font-weight: bold; color: #12ABE3">check the date, location and time availability.</span>
+                </div>
 
             </div>
             <div class="container-check">
-                <div class="container-StartDateTime">
-                    <asp:Label ID="lblStartDate" CssClass="lblStartDate" runat="server" Text="Start Date"></asp:Label>
-                    <div class="container-StartDateTime2">
+                <div style="padding-left: 35%;margin-top:80px;">
+                    <div class="container-check2">
+                    <div class="container-StartDateTime">
+                        <asp:Label ID="lblStartDate" CssClass="lblStartDate" runat="server" Text="Start Date"></asp:Label>
+                        <div class="container-StartDateTime2">
+                            <asp:TextBox ID="startDate" CssClass="startDate" runat="server" placeholder="dd-mm-yyyy" OnTextChanged="datetimepicker_TextChanged" AutoPostBack="true"></asp:TextBox>
 
-                        <asp:TextBox ID="startDate" CssClass="startDate" runat="server" placeholder="dd-mm-yyyy" OnTextChanged="datetimepicker_TextChanged" AutoPostBack="true"></asp:TextBox>
-
-                        <script type="text/javascript" >
-                            $(document).ready(function () {
-                                $(".startDate").focus(function () {
-                                    $(".startDate").flatpickr({
-                                        minDate: "today",
-                                        allowInput: "true",
-                                        dateFormat: "d-m-Y"
-                                    })
+                            <script type="text/javascript">
+                                $(document).ready(function () {
+                                    $(".startDate").focus(function () {
+                                        $(".startDate").flatpickr({
+                                            minDate: "today",
+                                            allowInput: "true",
+                                            dateFormat: "d-m-Y"
+                                        })
+                                    });
                                 });
-                            });
 
-                        </script>
-                        <asp:DropDownList ID="ddlStartTime" CssClass="ddlStartTime" runat="server" Enabled="false" AutoPostBack="True">
+                            </script>
+                            <asp:DropDownList ID="ddlStartTime" CssClass="ddlStartTime" runat="server" Enabled="false" AutoPostBack="True">
 
-                            <asp:ListItem Value="" Text="Time"></asp:ListItem>
+                                <asp:ListItem Value="" Text="Time"></asp:ListItem>
+
+                            </asp:DropDownList>
+
+                        </div>
+                    </div>
+
+                    <div class="container-Venue">
+
+                        <asp:Label ID="lblVenue" CssClass="lblVenue" runat="server" Text="Please select a venue"></asp:Label>
+
+                        <asp:DropDownList ID="ddlVenue" CssClass="ddlVenue" runat="server" Enabled="false" AutoPostBack="True" OnSelectedIndexChanged="ddlVenue_SelectedIndexChanged">
+
+                            <asp:ListItem Value="" Text="Venue"></asp:ListItem>
+                            <asp:ListItem Value="1">Yum Yum</asp:ListItem>
+                            <asp:ListItem Value="2">Sport Complex</asp:ListItem>
+                            <asp:ListItem Value="3">Red Brick</asp:ListItem>
+                            <asp:ListItem Value="4">Toilet</asp:ListItem>
 
                         </asp:DropDownList>
+                    </div>
+                    <div class="container-EndDateTime">
+
+                        <asp:Label ID="lblEnd" CssClass="lblEnd" runat="server" Text="End Date"></asp:Label>
+
+                        <div class="container-EndDateTime2">
+
+                            <asp:TextBox ID="endDate" CssClass="endDate" runat="server" placeholder="dd-mm-yyyy" AutoPostBack="true"></asp:TextBox>
+
+                            <script type="text/javascript">
+                                $(document).ready(function () {
+                                    $(".endDate").focus(function () {
+                                        $(".endDate").flatpickr({
+                                            minDate: "today",
+                                            allowInput: "true",
+                                            dateFormat: "d-m-Y"
+                                        })
+                                    });
+                                });
+
+                            </script>
+
+                            <asp:DropDownList ID="ddlEndTime" CssClass="ddlEndTime" runat="server" Enabled="false" AutoPostBack="True">
+
+                                <asp:ListItem Value="" Text="Time"></asp:ListItem>
+
+                            </asp:DropDownList>
+
+                        </div>
+
+                    </div>
+                    <div class="container-Button">
+
+                        <asp:Button ID="btnProceed" CssClass="btnProceed" runat="server" Text="Proceed" OnClick="btnProceed_Click" />
+                        <asp:Button ID="btnCancel" CssClass="btnCancel" runat="server" Text="Cancel" />
 
                     </div>
                 </div>
-
-                <div class="container-Venue">
-
-                    <asp:Label ID="lblVenue" CssClass="lblVenue" runat="server" Text="Please select a venue"></asp:Label>
-
-                    <asp:DropDownList ID="ddlVenue" CssClass="ddlVenue" runat="server" Enabled="false" AutoPostBack="True" OnSelectedIndexChanged="ddlVenue_SelectedIndexChanged">
-
-                        <asp:ListItem Value="" Text="Venue"></asp:ListItem>
-                        <asp:ListItem Value="1">Yum Yum</asp:ListItem>
-                        <asp:ListItem Value="2">Sport Complex</asp:ListItem>
-                        <asp:ListItem Value="3">Red Brick</asp:ListItem>
-                        <asp:ListItem Value="4">Toilet</asp:ListItem>
-
-                    </asp:DropDownList>
-                </div>
-                <div class="container-EndDateTime">
-
-                    <asp:Label ID="lblEnd" CssClass="lblEnd" runat="server" Text="End Date"></asp:Label>
-
-                    <div class="container-EndDateTime2">
-
-                        <asp:TextBox ID="endDate" CssClass="endDate" runat="server" placeholder="dd-mm-yyyy" AutoPostBack="true"></asp:TextBox>
-
-                        <script type="text/javascript">
-                            $(document).ready(function () {
-                                $(".endDate").focus(function () {
-                                    $(".endDate").flatpickr({
-                                        minDate: "today",
-                                        allowInput: "true",
-                                        dateFormat: "d-m-Y"
-                                    })
-                                });
-                            });
-
-                        </script>
-
-                        <asp:DropDownList ID="ddlEndTime" CssClass="ddlEndTime" runat="server" Enabled="false" AutoPostBack="True">
-
-                            <asp:ListItem Value="" Text="Time"></asp:ListItem>
-
-                        </asp:DropDownList>
-
-                    </div>
-
-                </div>
-                <div class="container-Button">
-
-                    <asp:Button ID="btnProceed" CssClass="btnProceed" runat="server" Text="Proceed" OnClick="btnProceed_Click" />
-                    <asp:Button ID="btnCancel" CssClass="btnCancel" runat="server" Text="Cancel" />
-
                 </div>
             </div>
         </div>

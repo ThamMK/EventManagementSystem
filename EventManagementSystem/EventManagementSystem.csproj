@@ -144,9 +144,11 @@
     <Content Include="Images\Login\user-icon.png" />
     <Content Include="Images\Navigation\cross-blue.png" />
     <Content Include="Images\Navigation\cross.png" />
+    <Content Include="Images\Navigation\down.png" />
     <Content Include="Images\Navigation\logo.png" />
     <Content Include="Images\Navigation\search-button-blue.png" />
     <Content Include="Images\Navigation\search-button.png" />
+    <Content Include="Images\Navigation\user.png" />
     <Content Include="Images\Registeration\2.png" />
     <Content Include="Images\Registeration\1.png" />
     <Content Include="Images\Registeration\3.png" />

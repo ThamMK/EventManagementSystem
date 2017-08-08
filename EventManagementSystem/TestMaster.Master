@@ -33,6 +33,28 @@
         });
     </script>
 
+    <script>
+        /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.user')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
     <style>
         body {
             margin:0;
@@ -87,6 +109,27 @@
 
         .nav.shrink .right-navi a:before{
             top:-16px;
+        }
+
+        .nav.shrink #user{
+            transition: all ease .5s;
+            height:60px;
+            margin-top:0px;
+        }
+
+        .nav.shrink #user-img{
+            transition: all ease .5s;
+            margin-top:0px;
+        }
+
+        .nav.shrink #user-info{
+            transition: all ease .5s;
+            margin-top:10px
+        }
+
+        .nav.shrink #down-img{
+            transition: all ease .5s;
+            margin-top:18px
         }
 
         .right-side{
@@ -238,6 +281,79 @@
             font-family:sans-serif;
         }
 
+        #user{
+            float:left;
+            width:250px;
+            height:80px;
+            background-color:deepskyblue;
+            margin-top:-3px;
+            color:white;
+            transition: all ease .5s;
+            display:none;
+        }
+
+        #user-img{
+            width:60px;
+            height:60px;
+            float:left;
+            margin-top:10px;
+            margin-left:5px;
+            margin-right:5px;
+            transition: all ease .5s;
+        }
+
+        #user-info{
+            margin-top:20px;
+            float:left;
+            transition: all ease .5s;
+        }
+
+        #down-img{
+            width:20px;
+            height:20px;
+            margin-top:28px;
+            margin-right:30px;
+            float:right;
+            transition: all ease .5s;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 250px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            margin-left:605px;
+            margin-top:76px;
+            transition: all ease .5s;
+        }
+
+        .nav.shrink .dropdown-content{
+            margin-top:60px;
+            transition: all ease .5s;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {background-color: #f1f1f1}
+
+        .show {display:block;}
+
     </style>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -269,8 +385,20 @@
                         </ul>
 
                         <img src="Images/Navigation/search-button.png" id="search-button" onmouseover="this.src='Images/Navigation/search-button-blue.png'" onmouseout="this.src='Images/Navigation/search-button.png'" />
-                        <asp:Button runat="server" Text="Login" CssClass="login-button-main" Width="125px" Height="45px" PostBackUrl="~/Login.aspx"/>
-                        <asp:Button runat="server" Text="Sign Up" CssClass="signup-button-main" Width="125px" Height="45px" PostBackUrl="~/Registration.aspx"/>
+                        <asp:Button runat="server" Text="Login" CssClass="login-button-main" Width="125px" Height="45px" PostBackUrl="~/Login.aspx" ID="btnLogin" />
+                        <asp:Button runat="server" Text="Sign Up" CssClass="signup-button-main" Width="125px" Height="45px" PostBackUrl="~/Registration.aspx" ID="btnSignUp" />
+                        <div id="user" onclick="myFunction()" class="user" runat="server">
+                            <img src="Images/Navigation/user.png" id="user-img" class="user"/>
+                            <div id="user-info" class="user">
+                                <div class="user">Welcome,</div>
+                                <div class="user">Shim Wei Hean</div>
+                            </div>
+                            <img src="Images/Navigation/down.png" id='down-img' class="user"/>
+                        </div>
+                        <div id="myDropdown" class="dropdown-content">
+                            <asp:HyperLink runat="server" Text="My Upcoming Event" NavigateUrl="~/CancelEvent.aspx"></asp:HyperLink>
+                            <asp:LinkButton ID="logout" runat="server" OnClick="logout_Click" Text="Logout"/>
+                        </div>
 
                     </div>
                 </div>

@@ -2,7 +2,8 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">
     <script>
-        function checkValidation(){
+        
+        function checkValidation() {
             var msg = "";
 
                 var email = document.getElementById("email");
@@ -66,6 +67,7 @@
                     return false;
                 }
                 else {
+                    
                     return true;
                 }
 
@@ -132,7 +134,7 @@
 
                         <div class="form-group">
                             <div class="login-button">
-                                <button id="btn-submit" type="submit" onclick="return checkValidation()">Log In</button>
+                                <asp:Button CssClass="btnsubmit" OnClientClick="return checkValidation()" Text="Log In" runat="server" OnClick="btnSubmit_Click"></asp:Button>
                             </div>
                         </div>
                     </div>

@@ -2,7 +2,8 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">
     <script>
-        function checkValidation(){
+        
+        function checkValidation() {
             var msg = "";
 
                 var email = document.getElementById("email");
@@ -17,7 +18,7 @@
                 }
                 else {
                     if (!(emailRe.test(email.value))) {
-                        msg += "The email is in wrong format.\n"
+                        msg += "The college ID is in wrong format.\n"
                         email.style.borderColor = "red";
                         email.style.backgroundColor = "#FDE1DF";
                     }
@@ -28,7 +29,7 @@
                 }
 
                 if (pwd.value == "") {
-                    if (msg.indexOf("Please enter your username.\n") == -1)
+                    if (msg.indexOf("Please enter your college ID.\n") == -1)
                         msg += 'Please enter your password\n'
                     else {
                         msg = msg.replace("Please enter your username.\n", "Please enter your username and your password.\n")
@@ -66,6 +67,7 @@
                     return false;
                 }
                 else {
+                    
                     return true;
                 }
 
@@ -114,9 +116,9 @@
                     <div class="form-horizontal">
                         <div class="email-input">
                             <div id="email-icon">
-                                <img style="width:22px;height:22px;margin-top:11px;margin-left:11px;" src="Images/Registeration/humanheadicon.png" />
+                                <img style="width:22px;height:22px;margin-top:11px;margin-left:11px;" src="Images/Login/user-icon.png" />
                             </div>
-                            <input id="email" type="email" placeholder="Email" />
+                            <input id="email" type="email" placeholder="College ID" />
                         </div>
 
                         <div class="password-input">
@@ -132,7 +134,7 @@
 
                         <div class="form-group">
                             <div class="login-button">
-                                <button id="btn-submit" type="submit" onclick="return checkValidation()">Log In</button>
+                                <asp:Button CssClass="btnsubmit" OnClientClick="return checkValidation()" Text="Log In" runat="server" OnClick="btnSubmit_Click"></asp:Button>
                             </div>
                         </div>
                     </div>

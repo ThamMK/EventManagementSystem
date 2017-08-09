@@ -120,7 +120,7 @@
 
 }
 
-#btn-submit{
+.btnsubmit{
     background-color:deepskyblue;
     border:none;
     cursor:pointer;
@@ -134,7 +134,7 @@
     width:380px;
 }
 
-#btn-submit:hover{
+.btnsubmit:hover{
     background-color:white;
     border:1px solid deepskyblue;
     color:deepskyblue;

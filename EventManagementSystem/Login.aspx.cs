@@ -13,5 +13,11 @@ namespace EventManagementSystem
         {
 
         }
+
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+            Application["Login"] = "Login";
+            Response.Redirect("~/Homepage.aspx");
+        }
     }
 }

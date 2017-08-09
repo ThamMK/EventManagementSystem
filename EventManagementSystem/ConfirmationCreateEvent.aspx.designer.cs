@@ -13,13 +13,13 @@ namespace EventManagementSystem {
     public partial class ConfirmationCreateEvent {
         
         /// <summary>
-        /// imgNav3 control.
+        /// imgNav2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgNav3;
+        protected global::System.Web.UI.WebControls.Image imgNav2;
         
         /// <summary>
         /// imgeOne control.
@@ -85,6 +85,15 @@ namespace EventManagementSystem {
         protected global::System.Web.UI.WebControls.Label lblEventDescription;
         
         /// <summary>
+        /// txtConfirmDescription control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtConfirmDescription;
+        
+        /// <summary>
         /// lblStart control.
         /// </summary>
         /// <remarks>
@@ -94,22 +103,22 @@ namespace EventManagementSystem {
         protected global::System.Web.UI.WebControls.Label lblStart;
         
         /// <summary>
-        /// startdatetimepicker control.
+        /// startDateTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox startdatetimepicker;
+        protected global::System.Web.UI.WebControls.TextBox startDateTextBox;
         
         /// <summary>
-        /// txtStartTime control.
+        /// ddlStartTime control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtStartTime;
+        protected global::System.Web.UI.WebControls.DropDownList ddlStartTime;
         
         /// <summary>
         /// lblEnd control.
@@ -121,22 +130,22 @@ namespace EventManagementSystem {
         protected global::System.Web.UI.WebControls.Label lblEnd;
         
         /// <summary>
-        /// enddatetimepicker control.
+        /// endDateTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox enddatetimepicker;
+        protected global::System.Web.UI.WebControls.TextBox endDateTextBox;
         
         /// <summary>
-        /// txtEndTime control.
+        /// ddlEndTime control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEndTime;
+        protected global::System.Web.UI.WebControls.DropDownList ddlEndTime;
         
         /// <summary>
         /// lblCategory control.
@@ -148,13 +157,13 @@ namespace EventManagementSystem {
         protected global::System.Web.UI.WebControls.Label lblCategory;
         
         /// <summary>
-        /// txtCategory control.
+        /// ddlCategory control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCategory;
+        protected global::System.Web.UI.WebControls.DropDownList ddlCategory;
         
         /// <summary>
         /// lblEventImage control.

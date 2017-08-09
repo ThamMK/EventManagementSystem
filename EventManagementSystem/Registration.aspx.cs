@@ -17,13 +17,16 @@ namespace EventManagementSystem
         
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
-           
+            Boolean pass = true;
             if(txtStudentID.Text == "")
             {
                 lblEMStudentID.Text = "Please fill in your student id.";
-            }else if(txtStudentID.Text != "1620701")
+                pass = false;
+            }
+            else if(txtStudentID.Text != "1620701")
             {
                 lblEMStudentID.Text = "Sorry, but this student id did not exist.";
+                pass = false;
             }else
             {
                 lblEMStudentID.Text = "";
@@ -31,13 +34,20 @@ namespace EventManagementSystem
             if(txtStudentCourse.Text == "")
             {
                 lblEMStudentCourse.Text = "Please fill in your course.";
-            }else if(txtStudentCourse.Text != "Software Engineering")
+                pass = false;
+            }
+            else if(txtStudentCourse.Text != "Software Engineering")
             {
                 lblEMStudentCourse.Text = "Sorry, but this course name did not exist.";
+                pass = false;
             }
             else
             {
                 lblEMStudentCourse.Text = "";
+            }
+            if (pass)
+            {
+                Response.Redirect("Homepage.aspx");
             }
         }
     }
